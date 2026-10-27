@@ -6,6 +6,26 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.3</title>
+      <pubDate>Tue, 27 Oct 2026 22:08:09 GMT</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>0.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.3 gets Bench ready for other people to use, and adds a few things you&#x27;ll notice right away.</p>
+<p><strong>Your own tab shortcuts.</strong> Add one-click tabs for commands you run often in Settings &gt; Shortcuts. They show up at the right of the tab bar and in the + menu, and can be limited to one project or to projects with a certain file. JavaScript projects also get a dev server button that runs <code>dev</code> with the project&#x27;s package manager.</p>
+<p><strong>Setup checklist.</strong> Bench now checks for Claude Code, git, the GitHub CLI, and Tailscale, and shows what it found with links to anything missing. It appears once on first launch and lives in Settings &gt; Setup. Bench also finds these tools the same way your shell does, so tools installed outside Homebrew work too.</p>
+<p><strong>Safer agent cleanup.</strong> When an agent&#x27;s pull request merges, Bench only removes its worktree if nothing would be lost: no uncommitted or unpushed work. Removed worktrees go to the Trash. Automatic cleanup is now a setting in Settings &gt; General, and it&#x27;s off by default.</p>
+<p><strong>Updates ask first.</strong> New installs ask before checking for updates. Installing an update while the Mac is idle is now a setting in Settings &gt; Updates, off by default.</p>
+<p><strong>iPhone companion.</strong></p>
+<ul><li>Bench no longer replaces an existing Tailscale Serve setup. If something else is using it, Bench uses a /bench path instead.</li><li>The phone can only read files that show up in the project&#x27;s file list.</li></ul>
+<p><strong>Also:</strong></p>
+<ul><li>Bench &gt; Acknowledgements credits Ghostty, Sparkle, and the other open source projects Bench is built on.</li><li>Bench saves less of what Claude passes to its tools. Whole file contents no longer sit in Bench&#x27;s support folder.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.3-3/Bench-0.3-3.zip" type="application/octet-stream" sparkle:edSignature="melvtervr/qpz62LYUUhXzH4pWYw2JMIXGed9QPYKfJUYqDi6yvwBpXxc2goDWg1grjMuHB9FHU+f7NZ9y8cCg==" length="10542926"/>
+    </item>
+    <item>
       <title>Bench 0.2</title>
       <pubDate>Tue, 27 Oct 2026 20:17:01 GMT</pubDate>
       <sparkle:version>2</sparkle:version>
