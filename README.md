@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/icon.png" width="128" alt="Bench app icon">
+  <img src="images/app-icon.png" width="128" alt="Bench app icon">
 </p>
 
 <h1 align="center">Bench</h1>
