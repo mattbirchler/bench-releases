@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bench</title>
+    <link>https://mattbirchler.github.io/bench-releases/appcast.xml</link>
+    <description>Updates for Bench, a Mac app for running Claude Code.</description>
+    <language>en</language>
+  </channel>
+</rss>
