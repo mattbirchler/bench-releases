@@ -6,6 +6,21 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.3.1</title>
+      <pubDate>Tue, 27 Oct 2026 22:42:01 GMT</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.3.1 makes the window match your terminal.</p>
+<p><strong>Matches your terminal theme.</strong> The sidebar, toolbar, changes panel, diffs, and files now use the colors of your Ghostty theme, and the window goes light or dark to match it. If your theme switches between light and dark with the system, Bench follows along. Prefer the system look? Turn off &quot;Match the terminal theme&quot; in Settings &gt; General.</p>
+<p><strong>Also:</strong></p>
+<ul><li>The button that shows and hides the changes panel is back on the right side of the toolbar, above the panel it opens.</li><li>The app icon&#x27;s chevron no longer shows a thin line through it.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.3.1-4/Bench-0.3.1-4.zip" type="application/octet-stream" sparkle:edSignature="iScxIfaIZEvO8ElzM+GEMmH/3gmlXeZpX+5vsDJ9Y8mbQ0UcjR6CB6S3nrzow8V9wuwb9vL3bOYgGnnzEgcLAA==" length="10550634"/>
+    </item>
+    <item>
       <title>Bench 0.3</title>
       <pubDate>Tue, 27 Oct 2026 22:08:09 GMT</pubDate>
       <sparkle:version>3</sparkle:version>
