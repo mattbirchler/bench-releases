@@ -34,4 +34,4 @@ If this policy changes, the new version will be posted here with a new date.
 
 ## Contact
 
-Questions: [EMAIL TO DECIDE](mailto:EMAIL-TO-DECIDE)
+Questions: [matt@birchtree.me](mailto:matt@birchtree.me)

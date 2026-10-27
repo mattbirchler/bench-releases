@@ -27,4 +27,4 @@ To look around first, tap **Try a Demo** on the iPhone app's first screen.
 
 ## Contact
 
-Email [EMAIL TO DECIDE](mailto:EMAIL-TO-DECIDE) with what happened and your Mac's macOS version.
+Email [matt@birchtree.me](mailto:matt@birchtree.me) with what happened and your Mac's macOS version.
