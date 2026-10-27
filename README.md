@@ -14,7 +14,9 @@
   &nbsp;·&nbsp; Free &nbsp;·&nbsp; Apple silicon, macOS 26 or later
 </p>
 
-<!-- MAC HERO: the main window with a Claude tab working and the changes panel open -->
+<p align="center">
+  <img src="images/mac-hero.png" alt="Bench on the Mac: Claude Code working in a tab, with the changed files listed on the right">
+</p>
 
 ---
 
@@ -26,7 +28,9 @@ Add a project folder and Bench gives it a window of tabs: Claude Code, shells, f
 
 The changes panel lists every file Claude touches, live, with additions and deletions. Click one for a full diff, or switch to Files to browse the rest of the project. Stage what you like, and see which commits your branch has that the base branch doesn't.
 
-<!-- MAC SHOT: a diff tab with the changes panel -->
+<p align="center">
+  <img src="images/mac-diff.png" alt="A diff tab in Bench next to the list of changed files">
+</p>
 
 ## Hand work to agents on their own branches
 
