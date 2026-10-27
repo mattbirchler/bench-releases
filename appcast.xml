@@ -5,5 +5,18 @@
     <link>https://mattbirchler.github.io/bench-releases/appcast.xml</link>
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
+    <item>
+      <title>Bench 0.2</title>
+      <pubDate>Tue, 27 Oct 2026 20:17:01 GMT</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>0.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<p>This is the first version of Bench that keeps itself up to date.</p>
+<ul><li><strong>Automatic updates.</strong> New versions download in the background. They install when you quit Bench or click Restart to Update at the bottom of the sidebar. If Claude is busy, Bench asks before restarting, and Claude tabs pick up their conversations afterward. A Mac nobody is using installs updates by itself after 30 minutes with nothing running.</li><li><strong>Files sidebar.</strong> The right sidebar has a Changes / Files switch. Files shows the project&#x27;s folders and updates as files come and go. Click a file to open it in a tab with line numbers that reloads as Claude edits it. This works for projects on your other Macs too.</li><li><strong>Your messages in remote conversations.</strong> Messages you send while Claude is busy, and messages that start with a paste, now show up when you watch a session from another Mac or your iPhone.</li></ul>
+<p>Settings has a new Updates tab with the version and a switch for automatic checks.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.2-2/Bench-0.2-2.zip" type="application/octet-stream" sparkle:edSignature="/A3eVbjcFxLcA3uFTWCi9LHf+NPeAv7e/+CQRBS5FwUHt0vPzM7B7sJroIbZR9o2KFS87fNkW+8UAaLyj0YzAA==" length="10389735"/>
+    </item>
   </channel>
 </rss>
