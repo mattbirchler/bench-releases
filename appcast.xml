@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5</title>
+      <pubDate>Wed, 28 Oct 2026 17:15:34 GMT</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.5 lets you read and run any Claude tab as a chat, right on your Mac.</p>
+<ul><li><strong>Chat or terminal, per tab.</strong> Switch a Claude tab between its terminal and a chat with the buttons in the tab bar, or View &gt; Show as Chat (⌥⌘T). Claude keeps running in the terminal either way, so the raw terminal is always one click away. Settings &gt; General picks which one new Claude tabs start in.</li><li><strong>In your terminal&#x27;s colors.</strong> The chat uses your Ghostty theme, light or dark, so it looks like part of Bench rather than a separate app.</li><li><strong>See what Claude did.</strong> Files it read sit on a quiet timeline, and you can click one to open it. Edits show the lines that changed. Commands show whether they worked and the last lines they printed.</li><li><strong>Where you&#x27;re reading.</strong> The end of the conversation shows what Claude is doing or that it&#x27;s waiting on you, with a timer and a Stop button.</li><li><strong>Answer with the keyboard.</strong> When Claude asks to run something, Return allows it and Escape denies it, just like in the terminal. Questions and permissions get cards right above the message box.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5-8/Bench-0.5-8.zip" type="application/octet-stream" sparkle:edSignature="++UfkUVEDdsU/eUWWZrQU1W2rNVffbphFZjN+yHGrweuUqzgj5f9D9MulMySPoe54rOXaP5ZEf6UYsmw1AEADg==" length="10766058"/>
+    </item>
+    <item>
       <title>Bench 0.4.2</title>
       <pubDate>Wed, 28 Oct 2026 14:42:33 GMT</pubDate>
       <sparkle:version>7</sparkle:version>
