@@ -6,6 +6,24 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.4</title>
+      <pubDate>Wed, 28 Oct 2026 12:02:28 GMT</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>0.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.4 tells you what&#x27;s new, answers Claude&#x27;s questions from anywhere, and gives the terminal a softer edge.</p>
+<p><strong>See what&#x27;s new.</strong> When an update is ready, the button at the bottom of the sidebar shows what&#x27;s in it before you restart. After Bench updates, a What&#x27;s New window lists everything that changed since the version you last used. You can open it any time from Bench &gt; What&#x27;s New in Bench.</p>
+<p><strong>Answer Claude&#x27;s questions from another Mac.</strong> When Claude asks you a multiple-choice question, you can now answer it while watching the session from another Mac: pick an option, tick several where it allows, or write your own answer. Bench enters it on the Mac where Claude is running. The tab also turns orange as soon as Claude asks, instead of a few seconds later.</p>
+<p><strong>Compacting is easy to spot.</strong> While Claude compacts a conversation you&#x27;re watching from another Mac, a banner says so, and the conversation shows a clear &quot;Conversation compacted&quot; card afterward instead of a line of small gray text.</p>
+<p>Answering questions and the compacting banner come to the iPhone app in its next update.</p>
+<p><strong>A rounded terminal.</strong> The terminal, diffs, and files now sit in the window as a card with rounded corners, below a tab bar that matches the sidebars.</p>
+<p>Claude tabs that are already open pick up question and compacting detection the next time Claude starts in them.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.4-5/Bench-0.4-5.zip" type="application/octet-stream" sparkle:edSignature="Znb7iLb2Qzqub6NPzQ5iszWU1ndY8hVJNwKPsnrAISHNTF3KhdAUNvPgkLiepIyXXMPvSpQzbUImkhf/t1V2BA==" length="10647829"/>
+    </item>
+    <item>
       <title>Bench 0.3.1</title>
       <pubDate>Tue, 27 Oct 2026 22:42:01 GMT</pubDate>
       <sparkle:version>4</sparkle:version>
