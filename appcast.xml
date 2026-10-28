@@ -6,6 +6,20 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.4.2</title>
+      <pubDate>Wed, 28 Oct 2026 14:42:33 GMT</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>0.4.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.4.2 makes answering Claude from your phone or another Mac smoother.</p>
+<ul><li><strong>Trust a new folder from anywhere.</strong> When Claude starts in a folder it hasn&#x27;t opened before, it asks whether you trust it before doing anything else. That question used to show up only in the Mac&#x27;s terminal, so a session started from your phone got stuck. Now it appears as a card you can answer from your phone or another Mac. Bench only passes your answer along. It never trusts a folder for you.</li><li><strong>Answers take effect right away.</strong> After you allow or deny a permission from another device, the card goes away as soon as Bench has your answer. Before, it stayed until Claude moved on, which made it look like the tap hadn&#x27;t worked. Answered questions clear the same way, and the tab stops showing orange on the Mac.</li></ul>
+<p>Trusting a folder from your phone needs the latest Bench beta for iPhone.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.4.2-7/Bench-0.4.2-7.zip" type="application/octet-stream" sparkle:edSignature="KlCS984mWL/BiBBReSAJPp8sH8ZLP9RQTgqmzvJIPOY8GAD+WA+QDwyMHuu5mw2HxRo1kMEpHAYBNg317472DA==" length="10665084"/>
+    </item>
+    <item>
       <title>Bench 0.4.1</title>
       <pubDate>Wed, 28 Oct 2026 12:30:58 GMT</pubDate>
       <sparkle:version>6</sparkle:version>
