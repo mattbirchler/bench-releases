@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.1</title>
+      <pubDate>Wed, 28 Oct 2026 17:57:19 GMT</pubDate>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>0.5.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.5.1 brings the chat view&#x27;s step cards to your phone, and lets the phone dress in your terminal&#x27;s colors.</p>
+<ul><li><strong>Your phone in your Mac&#x27;s colors.</strong> The Bench iPhone app (1.1 build 7 and later) can take on the background and text colors of your Ghostty theme, light or dark. You can turn this off from the phone&#x27;s menu.</li><li><strong>Edits, commands and Stop on the phone.</strong> The phone now shows the lines Claude changed, whether each command worked and what it printed, and a Stop button while Claude is working. This needs the new phone build too.</li><li><strong>Other Macs get the same.</strong> When you watch a Claude session on another Mac, you see command results and can stop Claude from there.</li><li><strong>Stopped commands say so.</strong> A command you stopped or denied now reads &quot;Stopped&quot; instead of &quot;Failed&quot;.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.1-9/Bench-0.5.1-9.zip" type="application/octet-stream" sparkle:edSignature="D5URCa8kR3fjMvmgYW95DH8z/UoZ4paC3T4tjVn/R5UFTqvf1/RGELBiMrhZ8uql+Hloc/ly5dFb1OuwXM4aAg==" length="10785167"/>
+    </item>
+    <item>
       <title>Bench 0.5</title>
       <pubDate>Wed, 28 Oct 2026 17:15:34 GMT</pubDate>
       <sparkle:version>8</sparkle:version>
