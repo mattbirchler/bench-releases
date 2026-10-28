@@ -6,6 +6,20 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.4.1</title>
+      <pubDate>Wed, 28 Oct 2026 12:30:58 GMT</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.4.1 fixes two problems some people saw after updating to 0.4.</p>
+<ul><li><strong>Your Active projects stay Active.</strong> Restarting Bench soon after opening it could move every project to Inactive. Bench now keeps your Active list no matter when you quit or update.</li><li><strong>⌘1 to ⌘9 always work.</strong> If your Active list was empty when Bench opened, the shortcuts for jumping between Active projects didn&#x27;t come back after you marked projects Active again. They now follow the list as it changes.</li></ul>
+<p>If your projects moved to Inactive after the 0.4 update, mark them Active once more and they&#x27;ll stay that way.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.4.1-6/Bench-0.4.1-6.zip" type="application/octet-stream" sparkle:edSignature="shprsBdXL6BapcI02AQR7/0WIGHUoQZdrMA9Uh2DjF5cE0LrCE16KiwEL1HWyhGNcKsFDMOOJRC2A1bE/iFpDQ==" length="10647640"/>
+    </item>
+    <item>
       <title>Bench 0.4</title>
       <pubDate>Wed, 28 Oct 2026 12:02:28 GMT</pubDate>
       <sparkle:version>5</sparkle:version>
