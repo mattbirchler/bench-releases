@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.3</title>
+      <pubDate>Thu, 29 Oct 2026 02:26:45 GMT</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>0.5.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.5.3 makes the chat view easier to follow while Claude works.</p>
+<ul><li><strong>The chat stays at the bottom.</strong> New text and tool steps used to pile up out of sight while Claude worked on a long turn. Now the chat follows along as the conversation grows. Scroll up to read something earlier and it stays put, with a button to jump back to the latest. Sending a message always brings you back down.</li><li><strong>See messages you&#x27;ve queued.</strong> A message you send while Claude is busy now shows up right away as a Queued bubble under what Claude is doing. It becomes a normal message once Claude reads it. Before, it didn&#x27;t appear until then, which could be a whole turn later.</li><li><strong>Paste images into the chat.</strong> Press Command-V in the message box to attach a screenshot, a copied image, or image files copied in Finder. Text still pastes as text.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.3-11/Bench-0.5.3-11.zip" type="application/octet-stream" sparkle:edSignature="ucLuOXJpNzgX5LZ3gHvMYXiHp4VObYkQyQmwxPbFUn+X5fXcZ4GwOvhiAdjgR3KDy3YkM2yfv6owXdqSOEbCBw==" length="10813100"/>
+    </item>
+    <item>
       <title>Bench 0.5.2</title>
       <pubDate>Thu, 29 Oct 2026 01:40:51 GMT</pubDate>
       <sparkle:version>10</sparkle:version>
