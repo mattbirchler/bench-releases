@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.2</title>
+      <pubDate>Thu, 29 Oct 2026 01:40:51 GMT</pubDate>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>0.5.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.5.2 opens long conversations much faster.</p>
+<ul><li><strong>Big chats open in a moment.</strong> Long Claude sessions write transcripts of hundreds of megabytes. The chat view used to read all of it before showing anything, which could take several seconds. Now it reads from the end, just far enough to show the recent conversation, so even the biggest sessions open in well under a second. The top of the chat says when older messages are left out, and nothing in the transcript is changed.</li><li><strong>Faster on your phone and other Macs too.</strong> They get the same speedup when they open a long session on this Mac.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.2-10/Bench-0.5.2-10.zip" type="application/octet-stream" sparkle:edSignature="UkwQ+iHUBwruvIjq5MQtt2YAKpngWXoyggOTeNQtxPOarbJtZRnpkbxKClfjQQcJ90JNS3djoSVeOWsjJkEgBg==" length="10787780"/>
+    </item>
+    <item>
       <title>Bench 0.5.1</title>
       <pubDate>Wed, 28 Oct 2026 17:57:19 GMT</pubDate>
       <sparkle:version>9</sparkle:version>
