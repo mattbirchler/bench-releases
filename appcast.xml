@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.6</title>
+      <pubDate>Thu, 29 Oct 2026 21:32:44 GMT</pubDate>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>0.5.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.5.6 makes the sidebar sort itself, and lets you send queued messages right away.</p>
+<ul><li><strong>Active projects take care of themselves.</strong> Projects you&#x27;ve worked in lately show under Active, most recent first. Sending Claude a prompt, opening a tab or starting an agent counts, and so does work Claude Code remembers from outside Bench. After a few days without use (3 by default, set in Settings &gt; General) a project moves to Inactive, and it comes back as soon as you use it again.</li><li><strong>Pin to Top.</strong> Right-click a project and choose Pin to Top to keep it at the top of Active. Drag pinned projects to put them in your order. Move to Inactive and Make Active are still there too.</li><li><strong>The iPhone app matches.</strong> With the latest TestFlight build, your phone shows the same Active list and a folding Inactive section, with Pin to Top and Move to Inactive when you long-press a project.</li><li><strong>Send queued messages now.</strong> A message you queued while Claude was busy has a Send Now button, which stops the step Claude is on and hands it your message, like Ctrl+Return in the terminal. Control-Return in the chat view&#x27;s message box does the same.</li><li><strong>Compacting no longer stretches the window.</strong> Running Compact from the chat view kept the content from fitting the window until it finished. Fixed.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.6-14/Bench-0.5.6-14.zip" type="application/octet-stream" sparkle:edSignature="9zXTELKJF6RQPnkSV0qOBS3tHbMZydbIZj3roNgplxyoOZFH0BmY2q6DgTTuEt/FH4xenccnU7c6Ejxz52i1CQ==" length="11001825"/>
+    </item>
+    <item>
       <title>Bench 0.5.5</title>
       <pubDate>Thu, 29 Oct 2026 20:50:16 GMT</pubDate>
       <sparkle:version>13</sparkle:version>
