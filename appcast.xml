@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.4</title>
+      <pubDate>Thu, 29 Oct 2026 19:21:24 GMT</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>0.5.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.5.4 makes the chat view quicker, smoother, and better at showing what Claude is up to.</p>
+<ul><li><strong>See Claude&#x27;s subagents.</strong> When Claude sends out agents, each gets a card in the chat with what it&#x27;s for and what it&#x27;s doing right now. While they run, they also show in the right sidebar under the checklist, so they don&#x27;t scroll away. When a background agent or command finishes, a quiet line in the chat says so.</li><li><strong>Sending feels instant.</strong> Your message shows the moment you press Return, and new messages slide in while the conversation glides up to make room.</li><li><strong>See and change the model.</strong> The model Claude is using shows next to the context meter, as soon as a session starts. Click it to switch to Fable, Opus, Sonnet or Haiku.</li><li><strong>Edit or remove queued messages.</strong> A message you sent while Claude was busy now has Edit and Remove under it. The other queued messages stay queued.</li><li><strong>Compact or clear without typing.</strong> The new / menu next to the paperclip runs Compact Conversation or Clear Conversation.</li><li><strong>Copy a message.</strong> Hover over a message and click the copy button beside it.</li><li><strong>Your draft stays put.</strong> Text and pictures in the message box are still there when you switch projects and come back.</li><li><strong>Picture previews.</strong> Pictures you attach or paste show as thumbnails instead of file names.</li><li><strong>Right-click changed files.</strong> Files in the Changes sidebar have a menu to open them, show them in Finder, or copy their full or relative path. The Files tab can copy either path too.</li><li><strong>Simpler context meter.</strong> Context use is now just text, like &quot;64k of 1M&quot;, which turns orange and then red as it fills.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.4-12/Bench-0.5.4-12.zip" type="application/octet-stream" sparkle:edSignature="4Yg3oEfvqmF02bk4JXLnJnomfyeHbLxY5Wd5MMr0lVUINGASVe9rVgkLWzUg3uC2iveGkwGsBM6zBXuRVLZxDw==" length="10960139"/>
+    </item>
+    <item>
       <title>Bench 0.5.3</title>
       <pubDate>Thu, 29 Oct 2026 02:26:45 GMT</pubDate>
       <sparkle:version>11</sparkle:version>
