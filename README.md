@@ -15,14 +15,35 @@
 </p>
 
 <p align="center">
-  <img src="images/mac-hero.png" alt="Bench on the Mac: Claude Code working in a tab, with the changed files listed on the right">
+  <img src="images/mac-chat.png" alt="Bench on the Mac: a Claude Code session shown as a chat, with command cards, the model and context use in the message box, and projects sorted into Active and Inactive">
 </p>
 
 ---
 
+## Terminal or chat, same session
+
+Claude Code runs in a real terminal in every Claude tab, built on Ghostty, so it uses your font, theme, and keybindings. Press ⌥⌘T and the same session turns into a chat: edits show as diffs, commands fold their output away, and questions and permission prompts become cards with real buttons. It's still Claude Code underneath, so you can flip back any time. Choose which one new tabs open as in Settings.
+
+The chat view has the touches you'd expect from a messaging app:
+
+- **Your message shows the instant you send it,** and new turns glide in.
+- **Claude's suggested next message** shows faintly in the empty message box. Press Right Arrow or Tab to take it.
+- **Queued messages** can be edited, removed, or sent right away (Control-Return), like Ctrl+Return in the terminal.
+- **Subagents get cards** that show what each one is doing right now, and stay pinned in the sidebar while they run.
+- **The model and context** sit in the message box, like "Opus 5.5" and "183k / 1M". Click the model to switch.
+- **Compact or clear** from the / menu, and Shift-Return for a new line.
+
 ## Every project gets its own workspace
 
-Add a project folder and Bench gives it a window of tabs: Claude Code, shells, files, and diffs, side by side. The sidebar shows each project's branch, whether Claude is working, waiting on you, or done, and how long it's been at it. Switch between projects without losing your place.
+Add a project folder and Bench gives it tabs for Claude, shells, files, and diffs, side by side. The sidebar shows each project's branch, pull request, and whether Claude is working, waiting on you, or done.
+
+**Active projects sort themselves.** Projects you've worked in lately sit under Active, newest first, counting work Claude Code remembers from outside Bench too. Pin the ones you always want on top. The rest fold away under Inactive and come back as soon as you use them.
+
+**Every project has a start page.** When a project has no tabs open, or you press +, you get a big Start Claude button, a shell, an agent, your shortcuts, and your last few conversations to pick back up in one click.
+
+<p align="center">
+  <img src="images/mac-start.png" alt="A project's start page in Bench: the project icon, a Start Claude button, Shell and Agent on a Branch, and four recent conversations to resume">
+</p>
 
 ## See the changes as Claude makes them
 
@@ -36,23 +57,41 @@ The changes panel lists every file Claude touches, live, with additions and dele
 
 Start an agent with a prompt and Bench gives it a fresh git worktree, so it can't step on what you're doing. Each agent shows up under its project with its own status, its pull request, and whether checks passed. When the PR merges, Bench can clean up the worktree for you.
 
-## Keep an eye on it from your iPhone
+## Looks like your terminal
 
-The Bench iPhone app connects to your Mac over your own Tailscale network. See every session at a glance, read along as Claude works, tap Allow or Deny when it asks permission, reply with a message or a photo, and review diffs from the couch.
+Bench takes on your Ghostty theme's colors for its sidebars, chat, and diffs, and goes light or dark to match. Here's the same session in Catppuccin Mocha, Catppuccin Latte, Dracula, Solarized Light, Gruvbox Dark, and Lumen.
 
 <p align="center">
-  <img src="images/iphone.png" alt="The Bench iPhone app: the project list, a working session with its checklist, and a permission prompt" width="900">
+  <img src="images/themes.png" alt="The same Bench window in six terminal themes: Catppuccin Mocha, Catppuccin Latte, Dracula, Solarized Light, Gruvbox Dark, and Lumen">
 </p>
 
-The iPhone app is coming soon through TestFlight. Your code goes straight from your Mac to your phone and never through anyone's servers.
+## Keep an eye on it from your iPhone
+
+The Bench iPhone app connects to your Mac over your own Tailscale network. See every session at a glance, read along as Claude works, answer its questions, tap Allow or Deny when it asks permission, reply with a message or a photo, stop it mid-step, and review diffs from the couch. A notification and a Live Activity tell you when Claude needs you or finishes.
+
+<p align="center">
+  <img src="images/iphone.png" alt="The Bench iPhone app: the project list with Active and Inactive sections, a working session with a live subagent and checklist, and a finished session with a suggested reply" width="900">
+</p>
+
+The iPhone app is in beta on TestFlight. Your code goes straight from your Mac to your phone and never through anyone's servers.
+
+## A welcome that sets you up
+
+The first time you open Bench, it checks your Mac for the tools it uses, asks whether you'd like Claude tabs as a terminal or a chat, matches your theme, suggests projects from the folders you've already used Claude Code in, and pairs your iPhone. Help > Welcome to Bench shows it again.
+
+<p align="center">
+  <img src="images/mac-welcome.png" alt="The Bench welcome screen with the app icon, a short description, and a Get Started button">
+</p>
 
 ## And a lot of small things
 
+- **Overview.** Every Claude session across every project in one grid, with the ones that need you first.
 - **One-click shortcuts.** Add your own tab shortcuts for commands you run all the time, and get a dev server button in JavaScript projects.
-- **Pick up where you left off.** Resume past Claude conversations from History, and Bench brings your tabs back when it relaunches.
+- **Pick up where you left off.** Resume past Claude conversations from History or a project's start page, and Bench brings your tabs back when it relaunches.
+- **Your draft stays put.** Text in the message box is still there when you switch projects and come back.
 - **Menu bar status.** See what's working and what needs you without switching apps.
 - **Previews.** Open your local dev server in a tab next to the code.
-- **Other Macs.** Pair a second Mac and see its projects in the same sidebar.
+- **Other Macs.** Pair a second Mac and see its projects, and start Claude on it, from the same sidebar.
 - **Updates itself.** New versions download in the background and install when you quit.
 
 ## Requirements
@@ -68,7 +107,7 @@ Optional: the [GitHub CLI](https://cli.github.com) for pull request status, and 
 
 1. Download the zip from the [latest release](https://github.com/mattbirchler/bench-releases/releases/latest) and open it.
 2. Drag Bench into your Applications folder.
-3. Open Bench and add a project folder.
+3. Open Bench. The welcome walks you through the rest.
 
 Bench is signed and notarized by Apple.
 
