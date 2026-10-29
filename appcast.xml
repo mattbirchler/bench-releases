@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.5</title>
+      <pubDate>Thu, 29 Oct 2026 20:50:16 GMT</pubDate>
+      <sparkle:version>13</sparkle:version>
+      <sparkle:shortVersionString>0.5.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.5.5 adds a few touches to the chat view&#x27;s message box.</p>
+<ul><li><strong>Claude&#x27;s suggested next message.</strong> After a turn, Claude Code often guesses what you&#x27;ll say next and shows it faintly in its terminal. That guess now shows faintly in the chat view&#x27;s empty message box too. Press Right Arrow or Tab to fill it in, then Return to send. On iPhone it&#x27;s a chip you can tap.</li><li><strong>Shift-Return adds a line.</strong> Shift-Return (or Option-Return) starts a new line in the message box instead of sending.</li><li><strong>Context reads with a slash,</strong> like &quot;64k / 1M&quot;.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.5-13/Bench-0.5.5-13.zip" type="application/octet-stream" sparkle:edSignature="JCuz/lbX6ExSR0t8jKtxiCiTjhXtEw0kPTGY7jtz7OKwIOSUKb86GfgYUQOYRCCGUPyIcCQdldzU0sjxHujmBQ==" length="10964161"/>
+    </item>
+    <item>
       <title>Bench 0.5.4</title>
       <pubDate>Thu, 29 Oct 2026 19:21:24 GMT</pubDate>
       <sparkle:version>12</sparkle:version>
