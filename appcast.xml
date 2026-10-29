@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.7</title>
+      <pubDate>Thu, 29 Oct 2026 23:18:53 GMT</pubDate>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>0.5.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Bench 0.5.7 adds a start page for your projects and a new welcome for first launch.</p>
+<ul><li><strong>A start page for every project.</strong> A project with no tabs open now shows its icon, a big Start Claude button, Shell and Agent on a Branch, your dev server and shortcuts, and your last few conversations to pick back up in a click. Projects on your other Macs get the same page.</li><li><strong>The + button opens a New Tab page.</strong> Instead of a small menu, + shows the start page in place of your current tab. Pick anything, or click another tab, to close it. ⌘T still opens Claude right away.</li><li><strong>A new welcome.</strong> First launch now walks you through checking your Mac&#x27;s tools, choosing whether new Claude tabs open as a terminal or a chat, matching your terminal theme, adding projects (suggested from folders you&#x27;ve already used Claude Code in), and pairing your iPhone. See it any time with Help &gt; Welcome to Bench.</li><li><strong>Other Macs&#x27; projects fill the window.</strong> The view for a project on another Mac no longer shrinks to a strip in the middle.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.7-15/Bench-0.5.7-15.zip" type="application/octet-stream" sparkle:edSignature="QatOtgZQbsSssOcdobOCMSTBXSiKKs3Y+pSds5ZAb43ZIdMAE+E9DCX8WlYQu2ejL0TMEyRFMdnWW/DI9BxuAg==" length="11193996"/>
+    </item>
+    <item>
       <title>Bench 0.5.6</title>
       <pubDate>Thu, 29 Oct 2026 21:32:44 GMT</pubDate>
       <sparkle:version>14</sparkle:version>
