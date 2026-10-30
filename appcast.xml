@@ -6,6 +6,22 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.6.0</title>
+      <pubDate>Fri, 30 Oct 2026 13:29:07 GMT</pubDate>
+      <sparkle:version>18</sparkle:version>
+      <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Every page Claude makes, one click away</h3>
+<p>When Claude publishes an artifact for you (a dashboard, a mockup, a write-up), Bench now keeps track of it.</p>
+<ul><li><strong>An Artifacts tab</strong> in the right panel, next to Changes and Files, lists every page Claude has published for the project, across all its conversations. Newest first, with which version it&#x27;s on and which conversation made it. Click one to open it in your browser, or hover for Copy Link.</li><li><strong>A card in the chat</strong> whenever Claude publishes or updates a page, with an Open button. No more digging links out of replies.</li><li><strong>On your iPhone</strong>, the ••• menu in a conversation has Artifacts too. Tap a page to open it in the Claude app or Safari.</li></ul>
+<h3>Folders without git look right</h3>
+<p>A project that isn&#x27;t a git repository used to show a lonely &quot;Not a Git Repository&quot; message floating in the right panel. Now it gets a small note at the top with the project&#x27;s files right below.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.6.0-18/Bench-0.6.0-18.zip" type="application/octet-stream" sparkle:edSignature="DMn4I6KjD3yv+OPhqHPkwhtuwnuGX0NZbAGgu0K0qQnlBwiLFHfIzRUk/fo8rz6euoRajGfx09knHUkQo7oADg==" length="11343562"/>
+    </item>
+    <item>
       <title>Bench 0.5.9</title>
       <pubDate>Fri, 30 Oct 2026 12:37:39 GMT</pubDate>
       <sparkle:version>17</sparkle:version>
