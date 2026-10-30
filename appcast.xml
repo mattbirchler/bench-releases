@@ -6,6 +6,20 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.9</title>
+      <pubDate>Fri, 30 Oct 2026 12:37:39 GMT</pubDate>
+      <sparkle:version>17</sparkle:version>
+      <sparkle:shortVersionString>0.5.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Switch models right from the chat view</h3>
+<p>Picking a model in the chat view now just works. Before, Claude asked &quot;Switch model?&quot; in its terminal, out of sight, and the chat view got stuck until you went to the terminal to answer.</p>
+<ul><li>On a long conversation, the chat view asks first and explains the cost: the next reply re-reads the whole conversation on the new model, so it&#x27;s slower and uses more of your limits. Short conversations switch right away.</li><li>Works from your iPhone too.</li><li>Typing <code>/model</code> in the terminal still gets Claude&#x27;s usual question.</li><li>Claude tabs that were already open pick this up after they restart.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.9-17/Bench-0.5.9-17.zip" type="application/octet-stream" sparkle:edSignature="DdnmeuLtrGQl+xDeoxeQT1kSxW1iV2KqZ/M9708Nt9rUsbtl07c5I5fGTPZoMtJzhRiezd/xX2jr/ry7m5DDBw==" length="11255415"/>
+    </item>
+    <item>
       <title>Bench 0.5.8</title>
       <pubDate>Fri, 30 Oct 2026 12:15:56 GMT</pubDate>
       <sparkle:version>16</sparkle:version>
