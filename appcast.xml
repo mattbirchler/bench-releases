@@ -6,6 +6,26 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.6.3</title>
+      <pubDate>Fri, 30 Oct 2026 22:42:10 GMT</pubDate>
+      <sparkle:version>21</sparkle:version>
+      <sparkle:shortVersionString>0.6.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Slash commands in the chat</h3>
+<p>Type / in the chat view and Bench suggests matching commands, including your own and your plugins&#x27;. Use the arrow keys to pick one, Tab to fill it in, and Return to run it. Commands that open a picker, like /model, go to the terminal, where the picker shows.</p>
+<p>This also brings slash command suggestions to the iPhone and iPad app.</p>
+<h3>Drag images into the chat</h3>
+<p>Drop image files anywhere on the chat view to attach them to your next message, the same as pasting. Other kinds of files are turned away.</p>
+<h3>Tell your other Macs apart</h3>
+<p>When the sidebar shows projects on another Mac, drifting clouds and that Mac&#x27;s name sit behind them, so you always know you&#x27;re not working on this one.</p>
+<h3>Also</h3>
+<p>The Claude mark in an empty chat is sharp again.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.6.3-21/Bench-0.6.3-21.zip" type="application/octet-stream" sparkle:edSignature="H+v9s148zuQHWhBj+G5wHRdr5++ngcAIYFCHUx/pk5bec5HIuSod5bhlpEYDqLjwn8t7XlYHkYl7tN8/Dwf+Aw==" length="11409283"/>
+    </item>
+    <item>
       <title>Bench 0.6.2</title>
       <pubDate>Fri, 30 Oct 2026 14:01:56 GMT</pubDate>
       <sparkle:version>20</sparkle:version>
