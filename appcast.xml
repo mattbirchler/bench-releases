@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.6.2</title>
+      <pubDate>Fri, 30 Oct 2026 14:01:56 GMT</pubDate>
+      <sparkle:version>20</sparkle:version>
+      <sparkle:shortVersionString>0.6.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Chat really is the default when you pick it</h3>
+<p>If you set Settings &gt; General &gt; Show new Claude tabs as to Chat, every new Claude tab now opens as a chat. Before, it only applied to tabs from the + button and ⌘T: a new project&#x27;s first tab, and the tab for a new agent on a branch, still opened as a terminal.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.6.2-20/Bench-0.6.2-20.zip" type="application/octet-stream" sparkle:edSignature="fFtmupSLam6Ak8pNFA+08auYC0PPmcazS2jhBtrZ7uVrOMaHhvIQBZKZpJEUVq5Nc6lQOGnUEmrcS/ve0WXvCA==" length="11351638"/>
+    </item>
+    <item>
       <title>Bench 0.6.1</title>
       <pubDate>Fri, 30 Oct 2026 13:45:27 GMT</pubDate>
       <sparkle:version>19</sparkle:version>
