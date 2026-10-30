@@ -6,6 +6,22 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.5.8</title>
+      <pubDate>Fri, 30 Oct 2026 12:15:56 GMT</pubDate>
+      <sparkle:version>16</sparkle:version>
+      <sparkle:shortVersionString>0.5.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Your Claude plan&#x27;s limits, right in the sidebar</h3>
+<p>Three small rings at the bottom of the sidebar show how much of your 5-hour, weekly, and per-model (like Fable) limits you&#x27;ve used. No status line setup needed.</p>
+<ul><li><strong>Pace tick:</strong> a small tick on each ring marks how far into that window you are. If the ring has passed its tick, you&#x27;re using that limit faster than it refills.</li><li><strong>Hover</strong> to see exact percentages and how long until each limit resets. <strong>Click</strong> for the details.</li><li>Your own status line keeps working exactly as before.</li><li>Turn the rings or the ticks off in Settings &gt; General.</li><li>Paired iPhones show the same rings above the project list.</li></ul>
+<h3>Also</h3>
+<ul><li>File changes in the chat view show as solid blocks again, instead of rows of rounded lines.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.5.8-16/Bench-0.5.8-16.zip" type="application/octet-stream" sparkle:edSignature="POkmpQDflaOCJg3QSheEX3uTOZ1L5VRvAokeZbccNK1D8T4I3ZBxHXJTgLh0BiAuFUe4bqx9P6c6edfE1jUKBQ==" length="11249269"/>
+    </item>
+    <item>
       <title>Bench 0.5.7</title>
       <pubDate>Thu, 29 Oct 2026 23:18:53 GMT</pubDate>
       <sparkle:version>15</sparkle:version>
