@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.6.1</title>
+      <pubDate>Fri, 30 Oct 2026 13:45:27 GMT</pubDate>
+      <sparkle:version>19</sparkle:version>
+      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Tables look right in the chat view</h3>
+<p>Tables in Claude&#x27;s replies now use the full width of the chat, like they do in the terminal. Short columns stay compact, long text wraps neatly inside its column, and rows no longer overlap each other. A table only scrolls sideways when it has more columns than can fit.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.6.1-19/Bench-0.6.1-19.zip" type="application/octet-stream" sparkle:edSignature="Abtjv5GCh2fxvbP8BMo3o0Q4i48W206WunpDMoSja0RVl1Y4dP1MdIifhKpOhL6zWu+JMe1X+Qwltdb6lBLZBg==" length="11351563"/>
+    </item>
+    <item>
       <title>Bench 0.6.0</title>
       <pubDate>Fri, 30 Oct 2026 13:29:07 GMT</pubDate>
       <sparkle:version>18</sparkle:version>
