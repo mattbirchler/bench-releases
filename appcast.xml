@@ -6,6 +6,19 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.5</title>
+      <pubDate>Sat, 31 Oct 2026 15:04:53 GMT</pubDate>
+      <sparkle:version>28</sparkle:version>
+      <sparkle:shortVersionString>0.7.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Workbench 0.7.5 cleans up the project sidebar so it&#x27;s easier to read at a glance.</p>
+<ul><li><strong>One status line per project.</strong> Instead of the branch, pull request, checks, and deploy all squeezed onto one line, each project now shows the one thing that matters most: what Claude is doing, a problem like failing checks or a failed deploy (in red), a deploy in progress, an open pull request, or a branch that isn&#x27;t your default. Projects with nothing going on take up a single line.</li><li><strong>Details on hover.</strong> Rest the pointer on a project to see everything else: its branch, pull request and checks, the last deploy, local servers, and its folder. Click the pull request, deploy, or a server to open it.</li><li><strong>A quieter right edge.</strong> Just the activity dot now. The pin and server icons moved into the details card.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.5-28/Workbench-0.7.5-28.zip" type="application/octet-stream" sparkle:edSignature="XvRqZZbtLlhkiRekqgHx8pecNwvd96DDymAM0nsnRuo4qIV9gVogP7zL3235YFZGOzbO8gcHGeEvTkopgcnRDg==" length="11688532"/>
+    </item>
+    <item>
       <title>Workbench 0.7.4</title>
       <pubDate>Sat, 31 Oct 2026 14:09:22 GMT</pubDate>
       <sparkle:version>27</sparkle:version>
