@@ -6,6 +6,22 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.1</title>
+      <pubDate>Sat, 31 Oct 2026 12:31:53 GMT</pubDate>
+      <sparkle:version>24</sparkle:version>
+      <sparkle:shortVersionString>0.7.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>See your deploys land</h3>
+<p>After a pull request merges, Workbench follows the deploy of that change and shows how it went: Deploying, Deployed, or Deploy failed, right beside the branch in the sidebar and in the Overview. Click it to open your host&#x27;s page for that deploy. When it finishes, you get a notification on your Mac, and on your iPhone if it&#x27;s paired.</p>
+<p>It works with hosts that report deploys to GitHub, like Railway, Vercel, Netlify, and Render. There&#x27;s nothing to set up or sign in to beyond the GitHub CLI you already use for pull requests.</p>
+<h3>Fixes</h3>
+<p>Setup no longer says Tailscale isn&#x27;t running when Workbench was opened from the Finder or the Dock.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.1-24/Workbench-0.7.1-24.zip" type="application/octet-stream" sparkle:edSignature="jd1Xfi7bQ9ncJ0qVpBayu9yXF+T/qbl3TJSz0T4cD6LIqOhaw2L9evrJOdhIzn/juPYIr1RADTlEX8LRgp14AQ==" length="11463619"/>
+    </item>
+    <item>
       <title>Workbench 0.7</title>
       <pubDate>Sat, 31 Oct 2026 02:45:58 GMT</pubDate>
       <sparkle:version>23</sparkle:version>
