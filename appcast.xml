@@ -6,6 +6,19 @@
     <description>Updates for Bench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Bench 0.6.4</title>
+      <pubDate>Sat, 31 Oct 2026 01:06:51 GMT</pubDate>
+      <sparkle:version>22</sparkle:version>
+      <sparkle:shortVersionString>0.6.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Much lighter on your Mac</h3>
+<p>Bench now uses a small fraction of the CPU it did before. The sidebar&#x27;s animations (a working project&#x27;s sparkles, the clouds for work on another Mac, the glow when Claude is waiting, and Claude&#x27;s spinning symbol) used to be redrawn by Bench many times a second, and with a few projects busy that added up to about a quarter of a CPU core all day. macOS now plays them on its own. They look exactly the same, and Bench drops to around 1 to 5 percent while it&#x27;s showing status. Better for your battery, and quieter fans.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.6.4-22/Bench-0.6.4-22.zip" type="application/octet-stream" sparkle:edSignature="82aOPITrRJDgxLc3uqg8i573Cxc56RA+VFiYK7g/rAYVbl2G5A1Hwfyj8xxiK3OuW+542bmi5iNWE4fJnrSVBw==" length="11414481"/>
+    </item>
+    <item>
       <title>Bench 0.6.3</title>
       <pubDate>Fri, 30 Oct 2026 22:42:10 GMT</pubDate>
       <sparkle:version>21</sparkle:version>
