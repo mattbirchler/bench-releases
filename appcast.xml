@@ -6,6 +6,20 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.6</title>
+      <pubDate>Sat, 31 Oct 2026 15:13:37 GMT</pubDate>
+      <sparkle:version>29</sparkle:version>
+      <sparkle:shortVersionString>0.7.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Workbench 0.7.6 brings the cleaner project list from 0.7.5 to your iPhone.</p>
+<ul><li><strong>Your phone&#x27;s project cards match the Mac sidebar.</strong> Each card shows one line under the project name: what Claude is doing, or else the one thing that matters most, like failing checks or a failed deploy (in red), a deploy in progress, an open pull request, or a branch that isn&#x27;t your default. Projects with nothing going on show just their name.</li><li><strong>Deploys on your phone.</strong> Your Mac now sends deploy status to the phone, so you can see a deploy in progress or a failed one right on the project list.</li></ul>
+<p>Get the matching iPhone app from the latest TestFlight build.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.6-29/Workbench-0.7.6-29.zip" type="application/octet-stream" sparkle:edSignature="+wwBENvILlAIyphlXvO/X91n8RShKCNXByzisd544SJlev12Z2AcNA53fR1rBd72fDLke9TU585W/aOogV6sAw==" length="11707777"/>
+    </item>
+    <item>
       <title>Workbench 0.7.5</title>
       <pubDate>Sat, 31 Oct 2026 15:04:53 GMT</pubDate>
       <sparkle:version>28</sparkle:version>
