@@ -6,6 +6,20 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.3</title>
+      <pubDate>Sat, 31 Oct 2026 13:13:51 GMT</pubDate>
+      <sparkle:version>26</sparkle:version>
+      <sparkle:shortVersionString>0.7.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Settings, rebuilt</h3>
+<p>Settings now opens right in the Workbench window instead of a separate one. Press Command-comma and the sidebar turns into Settings&#x27; sections, with Back at the top to return to your projects. Each section follows your terminal theme like the rest of the app, and every setting explains what it does right underneath.</p>
+<p>The sections are General, Claude (chat or terminal tabs, recaps, and the morning summary, with a button to write one now), Usage, Shortcuts, iPhone, Setup, and Updates. Usage and Costs lives in Settings now; Shift-Command-U and the plan rings in the sidebar still take you straight there.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.3-26/Workbench-0.7.3-26.zip" type="application/octet-stream" sparkle:edSignature="dZPHyT5NMVGNs0rocfR5W93xHgKYtJnG5giRXdMOOMJ/qRI9YAjcAY1PG8m2PWCYLpSAywAbL7+maIC9zsFHAQ==" length="11633366"/>
+    </item>
+    <item>
       <title>Workbench 0.7.2</title>
       <pubDate>Sat, 31 Oct 2026 12:36:26 GMT</pubDate>
       <sparkle:version>25</sparkle:version>
