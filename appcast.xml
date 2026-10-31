@@ -6,6 +6,19 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.4</title>
+      <pubDate>Sat, 31 Oct 2026 14:09:22 GMT</pubDate>
+      <sparkle:version>27</sparkle:version>
+      <sparkle:shortVersionString>0.7.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Workbench 0.7.4 brings more of your Mac to your iPhone. With the latest TestFlight build of Workbench for iPhone, your phone can now:</p>
+<ul><li><strong>Show what Claude Code has cost you.</strong> The phone&#x27;s new Settings screen has a Usage and Costs page with the last 30 days at API prices, broken down by model, the same as the Usage page on your Mac.</li><li><strong>Show the morning summary.</strong> Your Mac&#x27;s daily summary of what Claude got done appears at the top of the phone&#x27;s project list.</li><li><strong>Pick which notifications you get.</strong> Turn off any kind on the phone (Claude needs you, Claude finished, pull request checks, deploys, or the morning summary) and your Mac stops sending it to that phone.</li><li><strong>See which Mac is which.</strong> The phone shows each paired Mac&#x27;s status and the version of Workbench it&#x27;s running.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.4-27/Workbench-0.7.4-27.zip" type="application/octet-stream" sparkle:edSignature="FPUJ5BdNAqXb1JYYKaoODwB2r8NmplZKIOv0hspoKggQNI9iCADi2bHhey1aow03vyC0udXtsxJo7ZPufbTKDw==" length="11678046"/>
+    </item>
+    <item>
       <title>Workbench 0.7.3</title>
       <pubDate>Sat, 31 Oct 2026 13:13:51 GMT</pubDate>
       <sparkle:version>26</sparkle:version>
