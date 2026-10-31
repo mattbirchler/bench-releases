@@ -6,6 +6,22 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.8</title>
+      <pubDate>Sat, 31 Oct 2026 18:27:53 GMT</pubDate>
+      <sparkle:version>31</sparkle:version>
+      <sparkle:shortVersionString>0.7.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>A faster phone</h3>
+<p>This update is mostly for the iPhone app, which gets a new build alongside it. Install both to get the full effect.</p>
+<p><strong>Conversations open and update without stalling on the phone.</strong> Workbench now sends the phone small copies of the screenshots in a conversation instead of the full pictures, and the whole picture only when you open one. A long session that used to arrive as several megabytes arrives as a few hundred kilobytes. It also sends the last stretch of a conversation first, with earlier messages a tap away, instead of everything at once.</p>
+<p><strong>The Mac&#x27;s chat view is a little lighter too.</strong> Replies are parsed once rather than every time the conversation redraws, and rows that haven&#x27;t changed are left alone.</p>
+<p>Phones on the previous build keep working exactly as before. The new behavior switches on once the phone app updates.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.8-31/Workbench-0.7.8-31.zip" type="application/octet-stream" sparkle:edSignature="k1Wef0LDYjhBGTcaMs7ZZohdAOeYad3xxy4q5PwRD6ESMNqO7AYofbnA863aBUvCVsSYVLFOpElRRKhNN8nYBQ==" length="11788358"/>
+    </item>
+    <item>
       <title>Workbench 0.7.7</title>
       <pubDate>Sat, 31 Oct 2026 16:15:59 GMT</pubDate>
       <sparkle:version>30</sparkle:version>
