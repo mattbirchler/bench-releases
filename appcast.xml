@@ -6,6 +6,19 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.7</title>
+      <pubDate>Sat, 31 Oct 2026 16:15:59 GMT</pubDate>
+      <sparkle:version>30</sparkle:version>
+      <sparkle:shortVersionString>0.7.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Workbench 0.7.7 makes restarting, like for an update, much safer when you have several Claude sessions going. This update is the first that can do this, so it starts working from your next restart after installing it.</p>
+<ul><li><strong>Every conversation comes back on its own.</strong> After a restart, all your Claude tabs pick their conversations back up right away, not just the one on screen. They show up in Overview, on your phone, and in notifications without you clicking through each one.</li><li><strong>Pick up interrupted work in one click.</strong> If Claude was in the middle of something when Workbench quit, that tab now says the restart stopped it, with a Continue button. Continue asks Claude to carry on where it left off and sends any messages you had queued. The sidebar marks those projects so you can find them.</li><li><strong>Drafts are kept.</strong> Text you typed but hadn&#x27;t sent is still there after a restart, and so is an agent&#x27;s first task if Claude hadn&#x27;t started on it yet.</li><li><strong>Restart When Claude Is Done.</strong> When an update is ready and Claude is busy, Restart to Update now names the busy tabs and offers to wait. Workbench restarts by itself as soon as Claude finishes everywhere.</li><li><strong>A clearer progress bar.</strong> A busy project&#x27;s checklist now shows as a bar inside its sidebar row, with a segment for each step and a count like 3/7, instead of a thin line along the edge.</li><li><strong>Open buttons on published pages.</strong> When Claude publishes an artifact, its card in the conversation has an Open button again, on your Mac and your phone, and the page shows up in the Artifacts list.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.7-30/Workbench-0.7.7-30.zip" type="application/octet-stream" sparkle:edSignature="TOdquIfVnt25tErQm1bcfFNeiNzjVryDq581n9qSAhyRF8hVz/y9ZWPQWehEIkpRxe/4aC8rWKbQ/bf5T6+ICw==" length="11741766"/>
+    </item>
+    <item>
       <title>Workbench 0.7.6</title>
       <pubDate>Sat, 31 Oct 2026 15:13:37 GMT</pubDate>
       <sparkle:version>29</sparkle:version>
