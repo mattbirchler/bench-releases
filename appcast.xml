@@ -6,6 +6,23 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.2</title>
+      <pubDate>Sat, 31 Oct 2026 12:36:26 GMT</pubDate>
+      <sparkle:version>25</sparkle:version>
+      <sparkle:shortVersionString>0.7.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Recaps of what Claude did</h3>
+<p>When Claude finishes a turn where it did some work, Workbench now writes a sentence about what got done, like &quot;Fixed the login crash and opened PR #12. The build passes.&quot; Recaps show in the Overview, under a project in the sidebar that finished while you were looking elsewhere, and on your iPhone in notifications and Live Activities. A small, fast Claude model writes them on your own Claude plan, using very little of it, and they never show up in your past sessions. Turn them off in Settings &gt; General.</p>
+<h3>A morning summary</h3>
+<p>Each morning at 8, Workbench sums up what Claude got done across all your projects since the day before: one line per project, plus anything left open. It sits at the top of the Overview next to pull requests whose checks failed or that are ready to merge, and arrives as a notification on your Mac and iPhone. Pick the time or turn it off in Settings &gt; General, or choose View &gt; Write Morning Summary Now any time.</p>
+<h3>Usage and costs</h3>
+<p>A new Usage and Costs page (Shift-Command-U, or click the plan rings at the bottom of the sidebar) shows how many tokens your Claude Code sessions on this Mac have used and what they would cost at Claude API prices: a daily chart by model, what prompt caching saved you, and breakdowns by model and project, with your plan&#x27;s limits up top. It follows your terminal theme&#x27;s colors. Claude Code clears out its old logs after about a month, so Workbench keeps its own daily totals and your history grows from here.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.2-25/Workbench-0.7.2-25.zip" type="application/octet-stream" sparkle:edSignature="jbcu87tcgLuIq/rACogRQ+LVF+PJ14qb8GWxs9ICO+2YwjbZHS/vPREy94hw459vnbC8gSlONwBmNgKovtfNCA==" length="11622228"/>
+    </item>
+    <item>
       <title>Workbench 0.7.1</title>
       <pubDate>Sat, 31 Oct 2026 12:31:53 GMT</pubDate>
       <sparkle:version>24</sparkle:version>
