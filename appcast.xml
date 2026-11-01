@@ -6,6 +6,20 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.10</title>
+      <pubDate>Sun, 01 Nov 2026 12:26:19 GMT</pubDate>
+      <sparkle:version>33</sparkle:version>
+      <sparkle:shortVersionString>0.7.10</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>A calmer activity meter</h3>
+<p><strong>The CPU and memory meter is easier to follow.</strong> The bars at the foot of the sidebar now update every 10 seconds instead of every few, and every 30 seconds while Workbench is behind other windows.</p>
+<p><strong>The project list in its card holds still.</strong> Resting the pointer on the meter still shows which projects are using your Mac, but the list refreshes every 10 seconds and is sorted by memory, which stays steady, instead of CPU, which swings from moment to moment. CPU numbers appear about 2 seconds after the card opens.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.10-33/Workbench-0.7.10-33.zip" type="application/octet-stream" sparkle:edSignature="Tu7wKUK6wYCM6zXLm5WLzMFEs++6GmACTec6uDFg8DnePqwRkf8IdjXNs2HfpUAr+Hd5FLthR8615nsHzkvaAw==" length="11973972"/>
+    </item>
+    <item>
       <title>Workbench 0.7.9</title>
       <pubDate>Sun, 01 Nov 2026 12:08:37 GMT</pubDate>
       <sparkle:version>32</sparkle:version>
