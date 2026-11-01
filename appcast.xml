@@ -6,6 +6,24 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.14</title>
+      <pubDate>Sun, 01 Nov 2026 18:41:50 GMT</pubDate>
+      <sparkle:version>37</sparkle:version>
+      <sparkle:shortVersionString>0.7.14</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>A roomier project list</h3>
+<p>The sidebar has a new <strong>Standard</strong> layout with room to see what each agent is up to without opening it:</p>
+<ul><li><strong>While Claude works:</strong> the step it&#x27;s on, the tool it&#x27;s running, and the last few things it did, with how long ago each one ran.</li><li><strong>When it needs you:</strong> its question and the command it wants to run, with <strong>Allow</strong> and <strong>Deny</strong> buttons right in the row.</li><li><strong>When it&#x27;s done:</strong> a fuller recap and how many lines changed, so you can decide whether to look now.</li></ul>
+<p>The layout you&#x27;ve been using is now called <strong>Compact</strong>. It&#x27;s still there for long project lists, and if you already have projects you&#x27;ll stay on it until you switch. Switch any time in <strong>View › Project List</strong> (Option-Command-1 for Standard, Option-Command-2 for Compact).</p>
+<h3>Phone notifications with no setup</h3>
+<p>Your iPhone used to need an Apple developer key on your Mac before it could get notifications. Not anymore: turn on notifications in Workbench on your phone and they just work.</p>
+<p>Notifications are also private now. Your Mac encrypts what each one says, and only your paired phone can read it. This needs the new TestFlight build of Workbench for iPhone. Older phone builds still get notifications, just without the encryption.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.14-37/Workbench-0.7.14-37.zip" type="application/octet-stream" sparkle:edSignature="F0Mc+rbs18divvVnJBNFXeDXjxebFbNr/dseu6M3W4ALkvqDlcdqt/BbpTMS2QkyJv1Y26sICvxJB7uhIl9+Bw==" length="12032879"/>
+    </item>
+    <item>
       <title>Workbench 0.7.12</title>
       <pubDate>Sun, 01 Nov 2026 16:14:37 GMT</pubDate>
       <sparkle:version>35</sparkle:version>
