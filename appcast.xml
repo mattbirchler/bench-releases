@@ -6,6 +6,24 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.9</title>
+      <pubDate>Sun, 01 Nov 2026 12:08:37 GMT</pubDate>
+      <sparkle:version>32</sparkle:version>
+      <sparkle:shortVersionString>0.7.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Sections, ⌘K, Send Tasks, and a Mac meter</h3>
+<p><strong>Your projects now sit in four sections.</strong> Pinned holds what you&#x27;ve pinned. Active holds projects where Claude is working or waiting on you, or that you used in the last 6 hours. Recent holds the last day&#x27;s work, and everything older folds away under Inactive. Projects in Active keep their place while you work instead of jumping to the top with every message. The &quot;Keep projects active for&quot; setting is gone, since these windows replace it.</p>
+<p><strong>Restarting no longer makes every project look busy.</strong> Workbench used to count a relaunch, when every Claude tab picks up its session again, as you using each project. It now goes by the last real message in each conversation, and the first launch of this version tidies up times that earlier restarts got wrong.</p>
+<p><strong>⌘K jumps anywhere.</strong> Press ⌘K, even from inside a terminal, type a few letters of a project, worktree branch, or menu command, and press Return. Picking a project with no tabs starts Claude there.</p>
+<p><strong>Send one message, start several agents.</strong> Send Tasks to Projects (⌥⌘N, or the orange button next to +) takes one message describing work across your projects. Claude splits it into one task per project, and you check each card (project, branch, and the exact prompt) before starting them all with ⌘↩. Each agent gets its own worktree.</p>
+<p><strong>See how hard your Mac is working.</strong> Two small bars at the foot of the sidebar show CPU and memory. They stay grey while things are fine and warm up under load. Rest the pointer on them to see which projects are using the most. It&#x27;s built to cost almost nothing, and it stops while Workbench is hidden. You can turn it off in Settings › General.</p>
+<p>The iPhone app shows the same four sections once its next update arrives. Until then it keeps its current two groups.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.9-32/Workbench-0.7.9-32.zip" type="application/octet-stream" sparkle:edSignature="iBsSyme5yJkWOY5oNxrp1fPKjynLcy0cqXJ+dMpz2ueUjO8LponEkx5+ze2ebTM7UCpQrGO3hm6QgPqN/KazBQ==" length="11973694"/>
+    </item>
+    <item>
       <title>Workbench 0.7.8</title>
       <pubDate>Sat, 31 Oct 2026 18:27:53 GMT</pubDate>
       <sparkle:version>31</sparkle:version>
