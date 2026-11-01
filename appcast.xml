@@ -6,6 +6,20 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.12</title>
+      <pubDate>Sun, 01 Nov 2026 16:14:37 GMT</pubDate>
+      <sparkle:version>35</sparkle:version>
+      <sparkle:shortVersionString>0.7.12</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Send Tasks moved to the Overview</h3>
+<p><strong>Send Tasks has a home that matches what it does.</strong> The button that splits one message into tasks for several projects used to sit in the project tab bar, next to controls that only act on the current project, which made it look like a per-project action. It now lives at the top of the Overview, the page that spans every project. The Overview&#x27;s empty state offers it too, so when nothing is running you can fan work out from right there.</p>
+<p>The File menu command and ⌥⌘N still open it from anywhere.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.12-35/Workbench-0.7.12-35.zip" type="application/octet-stream" sparkle:edSignature="UmduTRKLacUyf29MsEO8qm9Z0uYhbWF/2eHNcERLqj376VLVAuVA0xeKnp9Pazx3aguaKfnO7Z8X/LHWNeE4AA==" length="11977618"/>
+    </item>
+    <item>
       <title>Workbench 0.7.11</title>
       <pubDate>Sun, 01 Nov 2026 13:20:44 GMT</pubDate>
       <sparkle:version>34</sparkle:version>
