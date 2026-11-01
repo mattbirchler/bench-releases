@@ -6,6 +6,22 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.11</title>
+      <pubDate>Sun, 01 Nov 2026 13:20:44 GMT</pubDate>
+      <sparkle:version>34</sparkle:version>
+      <sparkle:shortVersionString>0.7.11</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Sections you can tell apart</h3>
+<p><strong>Your current work stands out.</strong> Pinned and Active now sit together on a slightly raised panel at the top of the sidebar, so what you&#x27;re working on reads as one block. The Add Project button moved onto the first section&#x27;s title.</p>
+<p><strong>Recent is compact.</strong> The last day&#x27;s projects use smaller rows without a status line, under a &quot;Last day&quot; label, so more fit and they read as a step down from what&#x27;s active. Using one moves it back up to Active.</p>
+<p><strong>Inactive is quieter.</strong> Folded-away projects are compact and dimmed until you pick one.</p>
+<p>The iPhone app gets the same treatment in its next TestFlight build: compact, lighter rows for Recent and Inactive, and pinned projects keep their card when you reorder them.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.11-34/Workbench-0.7.11-34.zip" type="application/octet-stream" sparkle:edSignature="TkIagqzZqvKFjRMeDMq8kVhAaVlc6AN6DQ3ldnDBC+9BOcVVLfGHU57E+JhdrL28+UTAFunDXu0UsCXtDa7NDQ==" length="11975759"/>
+    </item>
+    <item>
       <title>Workbench 0.7.10</title>
       <pubDate>Sun, 01 Nov 2026 12:26:19 GMT</pubDate>
       <sparkle:version>33</sparkle:version>
