@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="images/mac-chat.png" alt="Workbench on the Mac: a Claude Code session shown as a chat with command cards and a summary of a finished TestFlight upload, the sidebar sorted into Pinned, Active, Recent and Inactive, and the changes panel on the right">
+  <img src="images/mac-chat.png" alt="Workbench on the Mac with three projects in different states: Recipes working through a five-step checklist with two subagents running and three changed files in the right panel, Field Notes waiting on a question, and Website finished with a one-line recap">
 </p>
 
 ---
