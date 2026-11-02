@@ -6,6 +6,25 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.17</title>
+      <pubDate>Mon, 02 Nov 2026 21:44:46 GMT</pubDate>
+      <sparkle:version>40</sparkle:version>
+      <sparkle:shortVersionString>0.7.17</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>See what you&#x27;ve spent, if you use an API key</h3>
+<p>If Claude Code on your Mac runs on an Anthropic API key, or through Amazon Bedrock or Google Vertex, you pay by the token, and Workbench now shows it that way:</p>
+<ul><li><strong>A Month ring in the sidebar</strong> takes the place of the plan rings. It shows what you&#x27;ve spent this month at API prices.</li><li><strong>Set a monthly budget</strong> in Settings › Usage, for example to match your key&#x27;s spend limit. The ring fills toward it, with a tick for how far through the month you are, and the card warns you once you pass 80%.</li><li><strong>The Usage page</strong> opens with this month&#x27;s spending, and no longer says &quot;Your Claude plan covers this&quot; when you don&#x27;t have one.</li><li><strong>On your iPhone</strong>, the strip above your projects reads like &quot;Spent $312 of $500&quot;, and Usage and Costs starts with this month. This needs the next TestFlight build.</li></ul>
+<p>Workbench works out which kind of account you have from Claude Code itself, including an API key set in your shell profile. The total comes from Claude Code&#x27;s logs on this Mac, so anything else that uses the same key isn&#x27;t counted. If you&#x27;re on a Pro or Max plan, nothing changes.</p>
+<h3>Send Feedback</h3>
+<p>There&#x27;s a new Send Feedback button in the toolbar and in the Help menu. Tell me what&#x27;s broken, confusing, or missing, or what you love. Every message is read.</p>
+<h3>Also</h3>
+<ul><li>Switches in Settings and the welcome are now drawn in Workbench&#x27;s own colors, so they&#x27;re easy to read in dark mode and match your terminal theme.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.17-40/Workbench-0.7.17-40.zip" type="application/octet-stream" sparkle:edSignature="r8CTV+7nK/e8dzeMox1FbaF8nNadMRlMwMLCRChc4eIrFbsm91m38v8cD0eWQ1AatWQZSNXjRSsY9HlEcnllAw==" length="12675144"/>
+    </item>
+    <item>
       <title>Workbench 0.7.16</title>
       <pubDate>Mon, 02 Nov 2026 16:48:56 GMT</pubDate>
       <sparkle:version>39</sparkle:version>
