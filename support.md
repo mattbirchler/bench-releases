@@ -10,7 +10,7 @@ Workbench is a free Mac app for running Claude Code, with an iPhone app that con
 ## Using the iPhone app
 
 1. Install [Tailscale](https://tailscale.com) on your Mac and iPhone, and sign in to the same account.
-2. On the Mac, open Workbench > Settings > iPhone and turn the companion on.
+2. On the Mac, open Workbench > Settings > iPhone and turn on **Let my iPhone connect to Workbench**.
 3. In the iPhone app, tap Scan Code and scan the code on your Mac.
 
 To look around first, tap **Try a Demo** on the iPhone app's first screen.
@@ -19,7 +19,9 @@ To look around first, tap **Try a Demo** on the iPhone app's first screen.
 
 **"Can't find the Mac."** Check that Tailscale is connected on both devices.
 
-**"Found the Mac, but Workbench isn't answering."** Make sure Workbench is open on the Mac and the companion is turned on in Settings > iPhone.
+**"Found the Mac, but Workbench isn't answering."** Make sure Workbench is open on the Mac and **Let my iPhone connect to Workbench** is on in Settings > iPhone.
+
+**No notifications on your phone.** Turn on notifications in the iPhone app's Settings. Then, on the Mac, right-click each project you want to hear about and choose **Send Notifications to iPhone**. A bell shows on projects that notify.
 
 **Claude tabs say Claude Code isn't installed.** Install it, then open a new Claude tab. Settings > Setup shows where Workbench looked.
 
