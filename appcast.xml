@@ -6,6 +6,29 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.15</title>
+      <pubDate>Mon, 02 Nov 2026 02:04:00 GMT</pubDate>
+      <sparkle:version>38</sparkle:version>
+      <sparkle:shortVersionString>0.7.15</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Projects on your other Macs show what&#x27;s going on</h3>
+<p>When you work on a project that lives on another Mac, the sidebar now shows as much as it does for projects on this Mac:</p>
+<ul><li><strong>Hover card:</strong> rest on a remote project to see what you asked, what Claude last said, its task list, its latest actions, and its sub-agents, plus the branch, pull request, and last deploy.</li><li><strong>More in each row:</strong> in the Standard layout, busy rows list the last few things Claude did, waiting rows show its question with Allow and Deny, and finished rows show the recap.</li><li><strong>Task list and agents in the chat:</strong> with the right panel hidden, the chat pins Claude&#x27;s task list or its sub-agents above the message box.</li></ul>
+<p>Update Workbench on both Macs to get all of it. A Mac on an older version still works, it just shows less.</p>
+<h3>Clearer progress everywhere</h3>
+<ul><li>Steps read in plain words. &quot;Ran git log --oneline -30&quot; now reads &quot;Showed recent commits&quot;. Permission prompts still show the exact command, so you always see what you&#x27;re allowing.</li><li>A busy project&#x27;s hover card starts with the work under way: your prompt, Claude&#x27;s latest note, its steps, and its recent actions.</li><li>Clicking anywhere on a sidebar row opens the project, even while its hover card is showing.</li></ul>
+<h3>A cleaner Send Tasks screen</h3>
+<p>Each task is now a simple card with the project&#x27;s icon, its branch, and the full prompt, which you can edit in place. Tasks Claude couldn&#x27;t match to a project are marked so you can pick one.</p>
+<h3>One strip of meters</h3>
+<p>CPU, memory, and your plan limits now sit together as one row of small rings at the bottom of the sidebar. They stay grey until something needs your attention.</p>
+<h3>Removed</h3>
+<p>The morning summary (&quot;Since Yesterday&quot; and the Overview summary card) is gone. It wasn&#x27;t pulling its weight.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.15-38/Workbench-0.7.15-38.zip" type="application/octet-stream" sparkle:edSignature="AIsimo9+gtVpWgftN3/vdfxVhUpA1VPDULVqVBeGbBf9+vGzcqcw+4eDm7jSg6jXt59Es1mNNJNRYYMiGX7DAA==" length="12088507"/>
+    </item>
+    <item>
       <title>Workbench 0.7.14</title>
       <pubDate>Sun, 01 Nov 2026 18:41:50 GMT</pubDate>
       <sparkle:version>37</sparkle:version>
