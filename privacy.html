@@ -19,17 +19,23 @@ footer { margin-top: 3em; color: var(--muted); font-size: .9em; }
 <body>
 <main>
 <h1>Workbench privacy policy</h1>
-<p><em>Last updated October 27, 2026</em></p>
+<p><em>Last updated November 2, 2026</em></p>
 <p>Workbench is made by Matt Birchler (Birchtree Productions). This policy covers the Workbench Mac app and the Workbench iPhone app.</p>
 <h2>The short version</h2>
-<p>Workbench doesn't collect, store, or share any of your data. There are no accounts, analytics, ads, or trackers.</p>
+<p>Workbench never collects your code, prompts, conversations, or files. To help improve it, both apps send anonymous usage counts, like how many Claude tabs were opened, and you can turn that off in Settings. There are no accounts, ads, or trackers.</p>
 <h2>The Mac app</h2>
 <p>Workbench runs on your Mac and keeps its settings and project list there. It doesn't send your code, prompts, or anything else to us.</p>
-<p>On its own, Workbench only connects to the internet to check for updates. It downloads a small feed file from GitHub, where Workbench is hosted. Like any website, GitHub may log that request.</p>
+<p>On its own, Workbench connects to the internet to check for updates and, unless you turn it off, to send the usage analytics described below. Updates come from a small feed file on GitHub, where Workbench is hosted. Like any website, GitHub may log that request.</p>
 <p>Claude Code, which you install separately, talks to Anthropic under Anthropic's own terms and privacy policy. Workbench doesn't change what Claude Code sends.</p>
 <h2>The iPhone app</h2>
 <p>The iPhone app connects directly to Workbench on your own Mac, over your own Tailscale network. Your projects, sessions, and code go from your Mac to your phone and nowhere else. We never see them.</p>
 <ul><li><strong>Camera:</strong> used only to scan the pairing code Workbench shows on your Mac. Nothing is recorded or saved.</li><li><strong>Pairing details:</strong> stored in your phone's keychain.</li><li><strong>Notifications:</strong> off unless you turn them on. If you do, your phone's notification token is sent to your own Mac, which sends notifications through Apple's push service.</li></ul>
+<h2>Usage analytics</h2>
+<p>Both apps send anonymous usage events to <a href="https://posthog.com">PostHog</a>, an analytics service, so I can see which features get used and where setup gets stuck. An event says that something happened, for example:</p>
+<ul><li>the app launched, or a step of the Mac app's welcome was shown</li><li>a project was added, a Claude tab opened, or an agent started</li><li>a reply was sent, or a command was allowed or denied, from the iPhone</li></ul>
+<p>Events carry counts, yes or no values, and choices from fixed lists (like "chat" or "terminal"), plus the app version, your device model, and your operating system version. Each install has a random ID, created on your device and not linked to your name, email, or Apple account, so I can count how many people use Workbench and whether they come back.</p>
+<p>Events never include your code, prompts, messages, Claude's replies, file or folder names, project or branch names, or your device's name. Your time zone and language are removed before an event is sent, and PostHog is set not to keep your IP address or work out your location.</p>
+<p>To turn analytics off, go to <strong>Settings &gt; General &gt; Privacy</strong> in the Mac app, or <strong>Settings &gt; Privacy</strong> in the iPhone app.</p>
 <h2>Children</h2>
 <p>Workbench isn't directed at children and doesn't knowingly collect information from anyone.</p>
 <h2>Changes</h2>
