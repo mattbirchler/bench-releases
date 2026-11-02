@@ -6,6 +6,22 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.18</title>
+      <pubDate>Mon, 02 Nov 2026 23:40:37 GMT</pubDate>
+      <sparkle:version>41</sparkle:version>
+      <sparkle:shortVersionString>0.7.18</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Inactive projects start fresh</h3>
+<p>When a project moves to Inactive, whether it&#x27;s gone a day without use or you chose Move to Inactive, Workbench now closes its tabs. Coming back to it shows the New Tab page instead of a Claude tab from days ago, so you can start something new or pick up a past session from the list.</p>
+<ul><li>Tabs that are still working stay open: Claude in the middle of a task or waiting on you, or a program like a dev server running in a shell.</li><li>The project you&#x27;re looking at keeps its tabs until you leave it.</li><li>Workbench also starts faster with lots of projects, since it no longer resumes old Claude sessions in projects you haven&#x27;t touched.</li></ul>
+<h3>Settings › Remote Access</h3>
+<p>The iPhone page in Settings is now called Remote Access, since it&#x27;s also where you pair an iPad or another Mac.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.18-41/Workbench-0.7.18-41.zip" type="application/octet-stream" sparkle:edSignature="sCYVbDexhdLrTaJoK9IxTRYvqu2vEIVqATVkOEuz6P7MNa+EmKcbExRq8MNKUPg6bzlG29pATRVwfb03Zj7mDg==" length="12680371"/>
+    </item>
+    <item>
       <title>Workbench 0.7.17</title>
       <pubDate>Mon, 02 Nov 2026 21:44:46 GMT</pubDate>
       <sparkle:version>40</sparkle:version>
