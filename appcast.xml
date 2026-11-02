@@ -6,6 +6,31 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.16</title>
+      <pubDate>Mon, 02 Nov 2026 16:48:56 GMT</pubDate>
+      <sparkle:version>39</sparkle:version>
+      <sparkle:shortVersionString>0.7.16</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Pick which projects notify your iPhone</h3>
+<p>Your phone now only gets notifications for the projects you choose. Right-click a project in the sidebar and choose <strong>Send Notifications to iPhone</strong>. A bell on its row shows it&#x27;s on. The setting is off for every project to start, so turn it on for the ones you care about after updating. Worktrees follow their project.</p>
+<h3>A Lock Screen dashboard</h3>
+<p>With the latest Workbench beta on your iPhone, tap the Lock Screen button at the top of Projects to keep every Claude session on your Lock Screen at once: what needs you, what&#x27;s working, and what&#x27;s done. This Mac keeps it up to date. Workbench no longer starts a Lock Screen activity for a session on its own.</p>
+<h3>Do more on another Mac from this one</h3>
+<p>When a project on another Mac is on screen:</p>
+<ul><li>Start an agent and pick the branch it starts from. It branches from main like the New Agent sheet would, copies the suggested .env files, and no longer hangs on Starting if the connection drops. New Agent on a Branch is in the right-click menu too.</li><li>Close Claude tabs, and clean up or discard agents, with the same warnings you&#x27;d see on that Mac.</li><li>Run and stop tab shortcuts like the dev server, and see which ports they&#x27;re on.</li><li>⌥⌘N opens Brain Dump for that Mac, and ⌘T, ⇧⌘T and ⇧⌘N act on that project instead of the last one on this Mac.</li><li>The Changes panel looks like it does for local projects: grouped by folder, with the branch header showing ahead/behind and push state. Refresh and the compare-against picker work too.</li><li>Work there uses the same orange working animation as work here. The blue Mac name is the only sign a project is remote.</li></ul>
+<p>Update Workbench on both Macs for all of this.</p>
+<h3>Brain Dump</h3>
+<p>Send Tasks is now called Brain Dump, and its button sits in the top bar next to the sidebar toggle. Agents with long prompts now start reliably.</p>
+<h3>Easier setup</h3>
+<p>The welcome notices when Claude Code is installed but not signed in and offers a sign-in window right there (also in Settings). It also warns you before you continue without a tool Workbench needs.</p>
+<h3>Anonymous usage data</h3>
+<p>Workbench now shares anonymous counts of what you use, like how many agents you start, to help improve it. Never your code, prompts, project names, or location. Turn it off any time with <strong>Share Anonymous Usage Data</strong> in Settings.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.16-39/Workbench-0.7.16-39.zip" type="application/octet-stream" sparkle:edSignature="x+MRmLcdKdEnwSYiB7FGi1C99K2B1cjtqDps2GFsDE+4Xe1f+DtzaCDB92wSHqv5HJ3XJiGbYrMVCAptD1C7Ag==" length="12614961"/>
+    </item>
+    <item>
       <title>Workbench 0.7.15</title>
       <pubDate>Mon, 02 Nov 2026 02:04:00 GMT</pubDate>
       <sparkle:version>38</sparkle:version>
