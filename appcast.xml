@@ -6,6 +6,28 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.20</title>
+      <pubDate>Tue, 03 Nov 2026 21:12:25 GMT</pubDate>
+      <sparkle:version>43</sparkle:version>
+      <sparkle:shortVersionString>0.7.20</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>See your month&#x27;s spending without a plan</h3>
+<p>If your Claude account has no plan limits, like an API key, a company gateway, or an Enterprise plan billed by usage, the foot of the sidebar now shows what you&#x27;ve spent this month. Before, some of these accounts showed nothing there.</p>
+<ul><li><strong>Working to a quota?</strong> Set a monthly budget on the Usage page and the ring fills toward it.</li><li><strong>It&#x27;s an estimate.</strong> The number is worked out at standard API prices from Claude Code&#x27;s logs on this Mac, so a negotiated rate or use on other computers won&#x27;t be included.</li></ul>
+<h3>All your projects in Brain Dump</h3>
+<p>Brain Dump used to stop at 10 project icons. Now it shows every one, so you can look through them while you decide what to work on. Point at an icon to see the project&#x27;s name right away.</p>
+<h3>The top of the window acts like a title bar</h3>
+<p>Double-click empty space in the tab row or the panel header to zoom the window, the same as any other Mac app, and drag from there to move it. It follows your Mac&#x27;s title bar double-click setting.</p>
+<h3>Updates install themselves when your Mac is idle</h3>
+<p>Updates now install by default after 30 minutes with no input, as long as nothing would be interrupted. Workbench restarts to do this, so this also applies when you step away from your main Mac. If you&#x27;d rather choose when, turn off <strong>Install updates when this Mac is idle</strong> in Settings. If you already turned it off, it stays off.</p>
+<h3>Also in this version</h3>
+<p>Workbench now keeps a small log on your Mac of how long chats take to open, to help track down chats that stay blank for a while. It has no conversation text in it and isn&#x27;t sent anywhere.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.20-43/Workbench-0.7.20-43.zip" type="application/octet-stream" sparkle:edSignature="qIQLvGkVLEg5PnWE+SK3OzxMwLZ8eoNRNx9QQ29pWukwtjL+GqtDAMKKx8ztbyJ2h8wFMO4ukOtcDRjmYvflAQ==" length="12870483"/>
+    </item>
+    <item>
       <title>Workbench 0.7.19</title>
       <pubDate>Tue, 03 Nov 2026 14:47:44 GMT</pubDate>
       <sparkle:version>42</sparkle:version>
