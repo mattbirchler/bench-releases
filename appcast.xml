@@ -6,6 +6,28 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.7.19</title>
+      <pubDate>Tue, 03 Nov 2026 14:47:44 GMT</pubDate>
+      <sparkle:version>42</sparkle:version>
+      <sparkle:shortVersionString>0.7.19</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>A different Claude account for each project</h3>
+<p>Keep a work account for work repos and a personal one for everything else. Each project now picks which Claude account its tabs sign in with.</p>
+<ul><li><strong>Settings › Claude Accounts</strong> lists each account with its email, plan, and how many projects use it. <strong>Add Account</strong> walks you through naming it, signing in, and choosing its projects.</li><li><strong>Switch from the project&#x27;s menu</strong> in the sidebar, or the button next to New Claude Tab. Right-click New Claude Tab for a one-off tab on another account.</li><li><strong>Already use several accounts?</strong> Workbench finds them on your Mac and adds them for you.</li><li><strong>Usage follows along.</strong> The sidebar rings show the selected project&#x27;s account, and the Usage page has a card for each one.</li></ul>
+<p>Recaps and other background work still use your main account, and your phone and the menu bar still show its plan usage.</p>
+<h3>Worktrees you made yourself show up in the sidebar</h3>
+<p>Worktrees you made in a terminal or with Claude Code now appear under their project, wherever they live. Nothing starts until you open one.</p>
+<ul><li><strong>They&#x27;re yours.</strong> Workbench never deletes them, even with automatic cleanup on.</li><li><strong>Don&#x27;t want one listed?</strong> Right-click it and choose <strong>Remove from Sidebar</strong>. Its folder and branch stay put, and <strong>Show Hidden Worktrees</strong> on the project brings it back.</li></ul>
+<h3>Choose where new worktrees go</h3>
+<p>Settings › General › Agents has a new setting for where new agents&#x27; worktrees go, with a folder for each repo inside the one you pick. The default is still next to the repo, and worktrees you already have stay where they are.</p>
+<h3>Links in chat look like links</h3>
+<p>Links in Claude&#x27;s replies are now blue, and the pointer turns into a hand over them, so you can tell what&#x27;s clickable.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.7.19-42/Workbench-0.7.19-42.zip" type="application/octet-stream" sparkle:edSignature="mVm7iq6lgq3PkcxC24s8681MvNW7IX5Fhs/C67bf/32eC3FFL4x9jwlgtSc75klie35HNUWBDuv+1aYGCypRDA==" length="12843643"/>
+    </item>
+    <item>
       <title>Workbench 0.7.18</title>
       <pubDate>Mon, 02 Nov 2026 23:40:37 GMT</pubDate>
       <sparkle:version>41</sparkle:version>
