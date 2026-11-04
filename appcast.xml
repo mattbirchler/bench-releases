@@ -6,6 +6,28 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.8</title>
+      <pubDate>Wed, 04 Nov 2026 03:44:00 GMT</pubDate>
+      <sparkle:version>44</sparkle:version>
+      <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Get Workbench for iPhone</h3>
+<p>The iPhone app is in public beta on TestFlight. Answer Claude&#x27;s questions, allow a command, or send a follow-up from your phone, and get a notification when a session needs you.</p>
+<p>A small card at the bottom of the sidebar links to the beta. It goes away once you open it, close it, or pair a phone. The link is also in <strong>Settings › Remote Access</strong> and on the iPhone step of setup.</p>
+<h3>Updates no longer interrupt you</h3>
+<p>After an update, Workbench used to open What&#x27;s New on top of your work. Now a small card at the bottom of the sidebar says which version you&#x27;re on. Click it to see what changed, or close it.</p>
+<h3>Connecting to your Mac is more reliable</h3>
+<ul><li><strong>Renamed your Mac?</strong> Workbench now sets up Tailscale for the new name, so your phone and other Macs can connect again instead of failing.</li><li><strong>Remote Access only reports it&#x27;s working when it is.</strong> If HTTPS isn&#x27;t working yet, the Mac you&#x27;re connecting to says what&#x27;s wrong, which is usually HTTPS Certificates being off in Tailscale.</li><li><strong>Clearer errors.</strong> When a secure connection to another Mac fails, Workbench says what usually causes it and where to fix it.</li></ul>
+<h3>Screenshots in feedback</h3>
+<p>Send Feedback now takes up to four screenshots, so it&#x27;s easier to show what you mean. The form also uses standard Mac colors instead of your terminal theme.</p>
+<h3>Recaps and Brain Dump use the right Claude account</h3>
+<p>If you use more than one Claude account, recaps and Brain Dump now run on the project&#x27;s own account instead of your main one, and what they use now shows on the Usage page. Brain Dump also splits up your messages with a smaller, faster model.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.8-44/Workbench-0.8-44.zip" type="application/octet-stream" sparkle:edSignature="y4eV/Fgd4PIT7x3z9BrRRjkWRH78uQBuW+wlwKPW0mFI2L1E9C3PoKrCM51GXtJvicvhPyRkdJIlcENk+z1SBw==" length="12917140"/>
+    </item>
+    <item>
       <title>Workbench 0.7.20</title>
       <pubDate>Tue, 03 Nov 2026 21:12:25 GMT</pubDate>
       <sparkle:version>43</sparkle:version>
