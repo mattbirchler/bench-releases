@@ -6,6 +6,38 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.8.1</title>
+      <pubDate>Thu, 05 Nov 2026 13:46:41 GMT</pubDate>
+      <sparkle:version>45</sparkle:version>
+      <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Split panes</h3>
+<p>Keep Claude and a terminal on screen together instead of flipping between tabs. Press <strong>⌘D</strong> to open a shell beside the tab you&#x27;re in, or <strong>⇧⌘D</strong> to open one below it.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.8.1/split-panes.png" alt="Claude&#x27;s chat on the left and a running dev server on the right, with the sidebar sorted into custom groups" style="max-width:100%;height:auto;border-radius:8px"></p>
+<ul><li><strong>⌘]</strong> or a click switches sides. The side you&#x27;re typing in gets a ring, and the other side dims a little.</li><li>Drag the line between them to resize, or double-click it to make both sides the same size.</li><li>Already have the tab you want beside Claude, like your dev server? Right-click a tab and choose <strong>Split With</strong>.</li><li>Right-click the joined tab to stack the panes, swap sides, or unsplit. Splits come back after you quit and reopen.</li></ul>
+<h3>Group projects your way</h3>
+<p>The sidebar can now use groups you make, like a backend and its apps together. Turn it on in <strong>Settings › General › Group projects</strong>, or <strong>View › Group Projects › Custom Groups</strong>.</p>
+<ul><li>Drag projects into a group, or right-click one and choose <strong>Move to Group</strong>.</li><li>Fold a group away when you&#x27;re not using it. Projects you haven&#x27;t grouped wait in <strong>Ungrouped</strong>.</li><li><strong>By Activity</strong>, the Pinned, Active, Recent, and Inactive sections you have now, is still there if you prefer it.</li></ul>
+<h3>Code in the chat stands out, and copies with one click</h3>
+<p>Variable names, commands, and file names in Claude&#x27;s replies now take your terminal theme&#x27;s blue, the way Claude Code shows them in the terminal, on a soft background. They&#x27;re easy to spot even if you use a monospaced font for everything.</p>
+<p>Click one to copy it. No more carefully selecting <code>STRIPE_SECRET_KEY</code> with the mouse. Code blocks have a copy button in their corner too.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.8.1/copy-code.png" alt="A table of variable names in the chat, with &quot;Copied&quot; above the one that was clicked" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Make the chat yours</h3>
+<p>Pick the chat&#x27;s font, its code font, and its text size in <strong>Settings › General › Chat Text</strong>, with a preview as you go. While a chat is on screen, <strong>⌘+</strong>, <strong>⌘−</strong>, and <strong>⌘0</strong> change the size.</p>
+<p>You can also choose the color of the ring around a split&#x27;s focused side, in <strong>Settings › General › Appearance</strong>. The choices come from your Ghostty theme, so they still fit when you change themes.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.8.1/chat-and-appearance-settings.png" alt="Settings with the new Group projects, Focused pane, and Chat Text options" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Smaller improvements</h3>
+<ul><li><strong>⌘1 to ⌘9 follow the sidebar</strong>, top to bottom, including your agents&#x27; worktrees. With another Mac&#x27;s list showing, they open that Mac&#x27;s projects.</li><li><strong>Option-Backspace and Control-Backspace delete the previous word</strong> in the terminal, like they do in other Mac terminals.</li></ul>
+<h3>Fixes</h3>
+<ul><li>The chat no longer opens blank until Claude prints something.</li><li>On the Mac, a code block with a long first line no longer hides every line after it.</li><li>Quotes in the chat read like they do in the terminal: one unbroken bar, full-brightness text, and no cut-off lines around them.</li><li>When pairing another Mac over Tailscale fails, Workbench now says why, like a link from a different tailnet or HTTPS Certificates turned off. Before, it only said &quot;Connecting&quot;.</li></ul>
+<h3>On iPhone</h3>
+<p>Custom groups and the new code styling come to the iPhone app in its next TestFlight beta.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.8.1-45/Workbench-0.8.1-45.zip" type="application/octet-stream" sparkle:edSignature="nXHD2g9/XxwpMhxFjXIS5Sm5gGV8F1SnRNib4aAl6m7cC3Q0FyNNnYMEUbvHleIgSdNdtYF+bJNHglaG5/U1Bw==" length="13150574"/>
+    </item>
+    <item>
       <title>Workbench 0.8</title>
       <pubDate>Wed, 04 Nov 2026 03:44:00 GMT</pubDate>
       <sparkle:version>44</sparkle:version>
