@@ -6,6 +6,28 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.8.2</title>
+      <pubDate>Thu, 05 Nov 2026 21:41:10 GMT</pubDate>
+      <sparkle:version>46</sparkle:version>
+      <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>A cleaner, glassier window</h3>
+<p>The tabs now sit up in the title bar, so the whole top of the window is one tidy strip and your work gets more room. The open tab flows straight into what&#x27;s under it.</p>
+<p>The message box is now glass, and the conversation scrolls underneath it. The same glass shows up on the other things that float: the jump-to-latest button, the checklist and agents bars, the slash-command list, the usage and Mac meters at the bottom of the sidebar, and the command bar (<strong>⌘K</strong>).</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.8.2/glass-chat.png" alt="Claude&#x27;s chat with the glass message box, the conversation scrolling under it, and the tabs in the title bar" style="max-width:100%;height:auto;border-radius:8px"></p>
+<ul><li>The <strong>Terminal | Chat</strong> switch now appears when you point at a Claude tab, and slides between the two.</li><li>Shortcuts and past sessions moved into the <strong>+</strong> menu next to New Claude.</li><li>A split shows as one tab with both halves in it. Click the mark between them to put the panes side by side or one above the other, swap sides, or separate them back into two tabs.</li><li>When the message box holds more than fits, its text fades at the edges so you can tell there&#x27;s more.</li></ul>
+<h3>Reviewing changes is much nicer</h3>
+<p>Diffs and files now show code in color, using your terminal theme. Diffs show the whole file with the long unchanged parts folded away, so you see what changed in context. Click <strong>Show 13 lines</strong> to open a fold.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.8.2/diffs.png" alt="A diff of checkout.ts in color, with the added lines marked and unchanged lines folded" style="max-width:100%;height:auto;border-radius:8px"></p>
+<ul><li><strong>Changes | File</strong> in a diff&#x27;s header flips between the diff and the whole file. The file view marks changed lines in its margin.</li><li>The up and down arrows in the header (or <strong>Control-Option-↑</strong> and <strong>↓</strong>) step from change to change, and on into the next file.</li><li>You can select across lines in a diff, copy without the line numbers, and search with <strong>⌘F</strong>.</li><li>Clicking a file opens it in a preview tab that the next file you click replaces, so tabs don&#x27;t pile up. Double-click a file to keep its tab.</li><li>Click a commit to review it on one page: its message, the files it touched, and every diff in one scroll. <strong>Review All</strong> does the same for everything on your branch.</li><li>Changed files show an icon for their type, and buttons to open them or show them in Finder when you point at them.</li></ul>
+<h3>Fixes</h3>
+<ul><li>Workbench no longer crashes when the window is narrow with both the sidebar and the right panel open.</li><li>Status colors (added, removed, done, failed) are easier to read in both light and dark mode.</li><li>VoiceOver can now name every control in Settings.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.8.2-46/Workbench-0.8.2-46.zip" type="application/octet-stream" sparkle:edSignature="AE05Rs9ErghmOWO77GWB7XVowNZkCu8qR8SDJeoasn0wiOB2A3qngHkXd7hBrRgPAuEJd7x5WD0HpB7Es4rmCw==" length="22171586"/>
+    </item>
+    <item>
       <title>Workbench 0.8.1</title>
       <pubDate>Thu, 05 Nov 2026 13:46:41 GMT</pubDate>
       <sparkle:version>45</sparkle:version>
