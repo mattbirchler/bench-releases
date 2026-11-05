@@ -6,6 +6,21 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.8.3</title>
+      <pubDate>Thu, 05 Nov 2026 22:20:07 GMT</pubDate>
+      <sparkle:version>47</sparkle:version>
+      <sparkle:shortVersionString>0.8.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Send Feedback is always there</h3>
+<p>The feedback button at the top right now stays put when the right panel is open. Before, it often disappeared to make room for the panel&#x27;s Changes, Files and Artifacts switch. Now that switch makes room instead. Workbench is in beta, so please keep the feedback coming.</p>
+<h3>Fixes</h3>
+<ul><li><strong>Approve Claude&#x27;s plan from the chat view or your phone.</strong> When Claude asked you to approve a plan, the chat view and the iPhone app used to tell you to answer in the terminal. Now they show the choices as buttons, like Claude&#x27;s other questions.</li><li><strong>The Files view shows every folder</strong> in a project folder that holds several repos. Before, it could run out of room on one repo&#x27;s build output and leave later folders off the list.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.8.3-47/Workbench-0.8.3-47.zip" type="application/octet-stream" sparkle:edSignature="mCxR+epnnxCbeJPtN7jbgvJ1A3k7AXHwdoUEzCWrZYzVwYbQIxY8PxfePWNbL86Kr1TiXjuwAoHmiOIxJCv9DA==" length="22166237"/>
+    </item>
+    <item>
       <title>Workbench 0.8.2</title>
       <pubDate>Thu, 05 Nov 2026 21:41:10 GMT</pubDate>
       <sparkle:version>46</sparkle:version>
