@@ -10,10 +10,21 @@ Workbench is a free Mac app for running Claude Code, with an iPhone app that con
 ## Using the iPhone app
 
 1. Install [Tailscale](https://tailscale.com) on your Mac and iPhone, and sign in to the same account.
-2. On the Mac, open Workbench > Settings > iPhone and turn on **Let my iPhone connect to Workbench**.
+2. On the Mac, open Workbench > Settings > Remote Access and turn on the switch at the top (**Let my iPhone and other Macs connect**).
 3. In the iPhone app, tap Scan Code and scan the code on your Mac.
 
 To look around first, tap **Try a Demo** on the iPhone app's first screen.
+
+## Using another Mac
+
+You can work in a second Mac's projects from the same sidebar.
+
+1. Install [Tailscale](https://tailscale.com) on both Macs, and sign in to the same account.
+2. On the Mac you want to reach, open Workbench > Settings > Remote Access, turn on the switch at the top, and click **Copy Pairing Link**. The link starts with `bench://pair`.
+3. Send that link to the other Mac (with Universal Clipboard, a note, or a message to yourself).
+4. On the other Mac, click **+** next to This Mac at the top of the sidebar, paste the link, and click **Connect**.
+
+The pairing link holds a secret, so keep it to yourself. Click **Make a New Code** to replace it.
 
 ## Common problems
 

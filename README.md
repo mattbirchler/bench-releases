@@ -101,7 +101,7 @@ The first time you open Workbench, it checks your Mac for the tools it uses, inc
 - **Pick up where you left off.** Resume past conversations from Past Sessions (⌘Y) or a project's start page, and Workbench brings your tabs back when it relaunches.
 - **Your draft stays put.** Text in the message box is still there when you switch projects and come back.
 - **Menu bar status.** See what's working and what needs you without switching apps.
-- **Other Macs.** Pair a second Mac and work in its projects from the same sidebar: read and answer its sessions, start Claude tabs and agents, look at its changes, run its shortcuts, and clean up its agents.
+- **Other Macs.** Pair a second Mac and work in its projects from the same sidebar: read and answer its sessions, start Claude tabs and agents, look at its changes, run its shortcuts, and clean up its agents. Copy the pairing link from Settings > Remote Access on one Mac, then click **+** next to This Mac on the other. The [support page](support.md#using-another-mac) has the steps.
 - **Updates itself.** New versions download in the background and install when you quit. A What's New window tells you what changed.
 
 ## Requirements
