@@ -6,6 +6,32 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.8.4</title>
+      <pubDate>Fri, 06 Nov 2026 16:53:38 GMT</pubDate>
+      <sparkle:version>48</sparkle:version>
+      <sparkle:shortVersionString>0.8.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<h3>Pick a color theme</h3>
+<p>Workbench now comes with 36 color themes. Choose one for light mode and one for dark mode in <strong>Settings › General › Colors</strong>, or while setting up, and Workbench switches between them with your Mac&#x27;s appearance. The terminal tabs, sidebars, chat and diffs all take the theme&#x27;s colors. If you&#x27;d rather keep your Ghostty theme, that&#x27;s still an option.</p>
+<p>Your theme&#x27;s own color now shows up throughout, instead of the same orange everywhere: the Start Claude button, the send button, the checklist and timer, and the sidebar rows for sessions Claude is working on. Your messages in the chat view get a soft tint of it too, so they stand out from Claude&#x27;s. A few themes have no color of their own, and those keep the orange.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.8.4/themes.png" alt="The same Workbench window in six themes: Clean Slate, Northern Lights, Oat Milk, Indigo Works, Sakura Note, and Hearth" style="max-width:100%;height:auto;border-radius:8px"></p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.8.4/theme-settings.png" alt="The Colors setting with a row of light themes and a row of dark themes" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Read Claude&#x27;s plan in the chat</h3>
+<p>When Claude asks you to approve a plan, the chat view now shows the plan itself, so you don&#x27;t have to switch to the terminal and scroll back to read it. Long plans fold after a screenful, with <strong>Show Full Plan</strong> to read the rest, and the question card has a <strong>Read the Plan</strong> button so you can read it all right before you answer. The iPhone app shows the plan too.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.8.4/plan.png" alt="A plan in the chat view, with Show Full Plan, and the question card asking you to approve it with a Read the Plan button" style="max-width:100%;height:auto;border-radius:8px"></p>
+<p>Clicking a file name in the chat now opens files outside the project, like Claude&#x27;s plan files, in a read-only tab. Before, those looked like links but did nothing.</p>
+<h3>Close several tabs at once</h3>
+<p>Right-click a tab for <strong>Close Other Tabs</strong>, <strong>Close Tabs to the Right</strong> and <strong>Close All Tabs</strong>. If any of those tabs is still working, Workbench asks once instead of once per tab.</p>
+<h3>Fixes and smaller changes</h3>
+<ul><li><strong>Switching models feels instant.</strong> The model you pick shows right away, with a small spinner until Claude confirms. A switch made with <code>/model</code> in the terminal shows up right away too.</li><li><strong>A quieter sidebar.</strong> The large card that popped up when you hovered over a project is gone.</li><li><strong>Settings looks right in every theme.</strong> The strip at the top of Settings and the selected section now follow your theme, so they&#x27;re easy to see on dark themes. You can also browse the themes with arrows, for mice that can&#x27;t scroll sideways.</li><li><strong>The New Agent sheet matches your theme.</strong> It no longer shows a dark box inside a light sheet when your theme and your Mac disagree on light or dark.</li><li><strong>Pairing another Mac is easier to find.</strong> The switch in <strong>Settings › Remote Access</strong> is now called &quot;Let my iPhone and other Macs connect&quot;, and the directions point to the <strong>+</strong> next to This Mac at the top of the sidebar.</li><li><strong>No stray blue box on the welcome screens</strong> when Keyboard navigation is turned on in macOS.</li><li><strong>&quot;Left running&quot;</strong> is the new name for processes still going after you close their tab, with a note on what that means.</li></ul>
+<h3>For the iPhone app</h3>
+<p>With this version on your Mac, the iPhone beta can show code in color in diffs and files, open the whole file around a change with unchanged stretches folded away, review a commit by tapping it, and show file type icons. Phones that use <strong>Match Mac</strong> for their colors follow your Mac&#x27;s theme, including its accent color.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.8.4-48/Workbench-0.8.4-48.zip" type="application/octet-stream" sparkle:edSignature="jh7y6dHIv0iCY92nnyClxCZQbXl3aibKbn9LZv4Xs1howk3H788WF4hbIp7Y/IR2THA3XrPSlAPbM1Pg0iMBBQ==" length="22255255"/>
+    </item>
+    <item>
       <title>Workbench 0.8.3</title>
       <pubDate>Thu, 05 Nov 2026 22:20:07 GMT</pubDate>
       <sparkle:version>47</sparkle:version>
