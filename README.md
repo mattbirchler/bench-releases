@@ -17,14 +17,14 @@
 </p>
 
 <p align="center">
-  <img src="images/mac-chat.png" alt="Workbench on the Mac with three projects in different states: Recipes working through a five-step checklist with two subagents running and three changed files in the right panel, Field Notes waiting on a question, and Website finished with a one-line recap">
+  <img src="images/mac-chat.png" alt="Workbench on the Mac in the Northern Lights theme with three projects in different states: Recipes working through a five-step checklist with its edits in the chat and three changed files in the right panel, Field Notes waiting for its plan to be approved, and Website finished with a one-line recap">
 </p>
 
 ---
 
 ## Terminal or chat, same session
 
-Claude Code runs in a real terminal in every Claude tab, built on Ghostty, so it uses your font, theme, and keybindings. Press ⌥⌘T and the same session turns into a chat: edits show as diffs, commands fold their output away, and questions and permission prompts become cards with real buttons. It's still Claude Code underneath, so you can flip back any time. Pick which one new tabs open as in Settings > Claude.
+Claude Code runs in a real terminal in every Claude tab, built on Ghostty, so it uses your font and keybindings. Press ⌥⌘T and the same session turns into a chat: edits show as diffs, commands fold their output away, and questions and permission prompts become cards with real buttons. It's still Claude Code underneath, so you can flip back any time. Pick which one new tabs open as in Settings > Claude.
 
 The chat view has the touches you'd expect from a messaging app:
 
@@ -32,20 +32,21 @@ The chat view has the touches you'd expect from a messaging app:
 - **Claude's suggested next message** shows faintly in the empty message box. Press Right Arrow or Tab to take it.
 - **Slash commands autocomplete** as you type `/`: the built-in ones, your own, the project's, and your skills.
 - **Queued messages** can be edited, removed, or sent right away (Control-Return), like Ctrl+Return in the terminal.
+- **Claude's plan shows in the chat** when it asks you to approve one, with a Read the Plan button on the question card.
 - **Subagents get cards** that show what each one is doing right now. With the right panel hidden, the task list or the running agents stay pinned above the message box.
 - **The model and context** sit in the message box, like "Opus 5.5" and "76k / 1M". Click the model to switch.
 - **Compact or clear** from the / button, and Shift-Return for a new line.
 
 ## Every project gets its own workspace
 
-Add a project folder and Workbench gives it tabs for Claude, shells, files, diffs, and previews of your dev server, side by side. The sidebar shows each project's branch, pull request, and whether Claude is working, waiting on you, or done. Rest the pointer on a project to see what Claude is doing, what it's asking, and a one-line recap of what it last finished.
+Add a project folder and Workbench gives it tabs for Claude, shells, files, diffs, and previews of your dev server, side by side. The sidebar shows each project's branch, pull request, and whether Claude is working, waiting on you, or done. Under each project, the sidebar shows what Claude is doing, what it's asking, and a one-line recap of what it last finished.
 
 **Projects sort themselves.** Pin the ones you always want on top. Projects Claude is working in, or that you used in the last few hours, sit under Active. The ones from the last day are under Recent, and the rest fold away under Inactive until you use them again. Work Claude Code remembers from outside Workbench counts too.
 
 **Every project has a start page.** When a project has no tabs open, or you press +, you get a big Start Claude button, a shell, an agent on a new branch, your shortcuts, and your last few conversations to pick back up in one click.
 
 <p align="center">
-  <img src="images/mac-start.png" alt="A project's start page in Workbench: the project icon, a Start Claude button, Shell, Agent on a Branch, two shortcuts, and four recent conversations to pick back up">
+  <img src="images/mac-start.jpg" alt="A project's start page in Workbench in the Clean Slate theme: the project icon, a blue Start Claude button, Shell, Agent on a Branch, and four recent conversations to pick back up">
 </p>
 
 ## See the changes as Claude makes them
@@ -62,12 +63,14 @@ Start an agent with a prompt and Workbench gives it a fresh git worktree on its 
 
 **Brain Dump** (⌥⌘N, or the brain button at the top of the sidebar) starts several at once. Describe everything you want done across your projects, and Claude splits it into one task per project, each with a branch and a prompt you can edit. Nothing starts until you click Start.
 
-## Looks like your terminal
+## Pick your colors
 
-Workbench takes on your Ghostty theme's colors for its sidebars, chat, and diffs, and switches between light and dark with your Mac. Here's the same session in Catppuccin Mocha, Catppuccin Latte, Dracula, Solarized Light, Gruvbox Dark, and Rosé Pine.
+Workbench comes with 36 color themes. Pick one for light mode and one for dark mode in Settings > General, and Workbench switches between them with your Mac. The terminal, sidebars, chat, and diffs all take the theme's colors, and its accent color shows up on buttons, checklists, and your messages in the chat. Clean Slate and Northern Lights are the defaults. If you'd rather use your Ghostty theme, that's an option too.
+
+Here's the same session in Clean Slate, Northern Lights, Oat Milk, Indigo Works, Sakura Note, and Hearth.
 
 <p align="center">
-  <img src="images/themes.png" alt="The same Workbench window in six terminal themes: Catppuccin Mocha, Catppuccin Latte, Dracula, Solarized Light, Gruvbox Dark, and Rosé Pine">
+  <img src="images/themes.png" alt="The same Workbench window in six built-in themes: Clean Slate, Northern Lights, Oat Milk, Indigo Works, Sakura Note, and Hearth">
 </p>
 
 ## Keep an eye on it from your iPhone
@@ -85,10 +88,10 @@ The iPhone app is in beta on TestFlight and needs iOS 27. It also runs as a full
 
 ## A welcome that sets you up
 
-The first time you open Workbench, it checks your Mac for the tools it uses, including whether Claude Code is signed in, and offers to sign you in right there. Then it asks whether you'd like Claude tabs as a terminal or a chat, matches your theme, suggests projects from the folders you've already used Claude Code in, and pairs your iPhone. Help > Welcome to Workbench shows it again.
+The first time you open Workbench, it checks your Mac for the tools it uses, including whether Claude Code is signed in, and offers to sign you in right there. Then it asks whether you'd like Claude tabs as a terminal or a chat, lets you pick a color theme, suggests projects from the folders you've already used Claude Code in, and pairs your iPhone. Help > Welcome to Workbench shows it again.
 
 <p align="center">
-  <img src="images/mac-welcome.png" alt="The Workbench welcome screen with the app icon, a short description, and a Get Started button">
+  <img src="images/mac-welcome.jpg" alt="The Workbench welcome screen with the app icon, a short description, and a Get Started button">
 </p>
 
 ## And a lot of small things
@@ -99,6 +102,7 @@ The first time you open Workbench, it checks your Mac for the tools it uses, inc
 - **Usage and costs.** See what your sessions would cost at API prices, by day, model, and project (⇧⌘U).
 - **One-click shortcuts.** Add tab shortcuts for commands you run all the time, and get a dev server button in JavaScript projects. Its ports show up so you can open a preview.
 - **Pick up where you left off.** Resume past conversations from Past Sessions (⌘Y) or a project's start page, and Workbench brings your tabs back when it relaunches.
+- **Close tabs in bulk.** Right-click a tab for Close Other Tabs, Close Tabs to the Right, or Close All Tabs.
 - **Your draft stays put.** Text in the message box is still there when you switch projects and come back.
 - **Menu bar status.** See what's working and what needs you without switching apps.
 - **Other Macs.** Pair a second Mac and work in its projects from the same sidebar: read and answer its sessions, start Claude tabs and agents, look at its changes, run its shortcuts, and clean up its agents. Copy the pairing link from Settings > Remote Access on one Mac, then click **+** next to This Mac on the other. The [support page](support.md#using-another-mac) has the steps.
