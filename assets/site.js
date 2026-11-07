@@ -6,7 +6,7 @@
   const RELEASES_REPO = "mattbirchler/bench-releases";
   const RELEASES_API = `https://api.github.com/repos/${RELEASES_REPO}/releases?per_page=100`;
   const RELEASES_PAGE = `https://github.com/${RELEASES_REPO}/releases/latest`;
-  const CACHE_KEY = "wb-releases-v1";
+  const CACHE_KEY = "wb-releases-v2";
   const CACHE_MINUTES = 15;
 
   // ---------- Releases ----------
@@ -25,7 +25,9 @@
       const releases = (await response.json())
         .filter((r) => !r.draft && !r.prerelease)
         .map((r) => {
-          const asset = (r.assets || []).find((a) => /\.(zip|dmg)$/i.test(a.name));
+          // The disk image when a release has one, otherwise the zip.
+          const assets = r.assets || [];
+          const asset = assets.find((a) => /\.dmg$/i.test(a.name)) || assets.find((a) => /\.zip$/i.test(a.name));
           const match = /^v?([\d.]+)-(\d+)$/.exec(r.tag_name) || [];
           return {
             tag: r.tag_name,
@@ -37,6 +39,7 @@
             url: r.html_url,
             download: asset ? asset.browser_download_url : r.html_url,
             size: asset ? asset.size : 0,
+            format: asset ? asset.name.split(".").pop().toLowerCase() : "",
           };
         });
       try { sessionStorage.setItem(CACHE_KEY, JSON.stringify({ at: Date.now(), releases })); } catch (e) { /* full */ }
@@ -46,7 +49,7 @@
     return releasesPromise;
   }
 
-  // Download buttons link to the releases page until the latest zip is known.
+  // Download buttons link to the releases page until the latest download is known.
   function wireDownloads() {
     document.querySelectorAll("[data-download]").forEach((a) => { if (!a.href) a.href = RELEASES_PAGE; });
     fetchReleases().then((releases) => {

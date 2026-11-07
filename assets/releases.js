@@ -50,7 +50,7 @@
       const link = document.createElement("a");
       link.className = "release-dl";
       link.href = release.download;
-      link.textContent = `Download ${release.version} (${Math.round(release.size / 1e6)} MB zip)`;
+      link.textContent = `Download ${release.version} (${Math.round(release.size / 1e6)} MB ${release.format === "dmg" ? "disk image" : release.format})`;
       head.querySelector(".release-meta").append(link);
     }
     const body = document.createElement("div");
