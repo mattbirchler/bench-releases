@@ -3,37 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Workbench support</title>
-<style>
-:root { color-scheme: light dark; --ink: #1b1a18; --muted: #6e6b66; --bg: #f1f2f4; --accent: #c4623f; }
-@media (prefers-color-scheme: dark) { :root { --ink: #ece9e3; --muted: #9a978f; --bg: #21242e; --accent: #e08a6a; } }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
-main { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
-h1 { font-size: 2em; line-height: 1.2; margin: 0 0 .6em; }
-h2 { font-size: 1.2em; margin: 1.8em 0 .4em; }
-a { color: var(--accent); }
-code { font: .9em ui-monospace, "SF Mono", monospace; }
-footer { margin-top: 3em; color: var(--muted); font-size: .9em; }
-</style>
+<title>Workbench Support</title>
+<meta name="description" content="Setting up Workbench, the iPhone app, and a second Mac, plus fixes for common problems.">
+<meta name="theme-color" content="#111522">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Martian+Mono:wdth,wght@75..112.5,300..700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
 </head>
 <body>
-<main>
-<h1>Workbench support</h1>
-<p>Workbench is a free Mac app for running Claude Code, with an iPhone app that connects to it. Download the Mac app from the <a href="https://github.com/mattbirchler/bench-releases/releases/latest">latest release</a>.</p>
-<h2>Getting started</h2>
-<ol><li>Install <a href="https://claude.com/product/claude-code">Claude Code</a> and sign in.</li><li>Open Workbench and add a project folder. Workbench &gt; Settings &gt; Setup shows anything that's missing.</li></ol>
-<h2>Using the iPhone app</h2>
-<ol><li>Install <a href="https://tailscale.com">Tailscale</a> on your Mac and iPhone, and sign in to the same account.</li><li>On the Mac, open Workbench &gt; Settings &gt; iPhone and turn on <strong>Let my iPhone connect to Workbench</strong>.</li><li>In the iPhone app, tap Scan Code and scan the code on your Mac.</li></ol>
-<p>To look around first, tap <strong>Try a Demo</strong> on the iPhone app's first screen.</p>
-<h2>Common problems</h2>
-<p><strong>"Can't find the Mac."</strong> Check that Tailscale is connected on both devices.</p>
-<p><strong>"Found the Mac, but Workbench isn't answering."</strong> Make sure Workbench is open on the Mac and <strong>Let my iPhone connect to Workbench</strong> is on in Settings &gt; iPhone.</p>
-<p><strong>No notifications on your phone.</strong> Turn on notifications in the iPhone app's Settings. Then, on the Mac, right-click each project you want to hear about and choose <strong>Send Notifications to iPhone</strong>. A bell shows on projects that notify.</p>
-<p><strong>Claude tabs say Claude Code isn't installed.</strong> Install it, then open a new Claude tab. Settings &gt; Setup shows where Workbench looked.</p>
-<p><strong>Pull requests don't show up.</strong> Install the <a href="https://cli.github.com">GitHub CLI</a> and run <code>gh auth login</code> in a terminal.</p>
-<h2>Contact</h2>
-<p>Email <a href="mailto:matt@birchtree.me">matt@birchtree.me</a> with what happened and your Mac's macOS version.</p>
-<footer><a href="https://github.com/mattbirchler/bench-releases">Workbench</a></footer>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/app-icon.webp" alt="" width="30" height="30"><span>Workbench</span></a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav-hide" href="./#features">Features</a>
+      <a href="releases.html">Version history</a>
+      <a class="nav-hide" href="support.html" aria-current="page">Support</a>
+      <a class="btn btn-primary btn-small" data-download href="https://github.com/mattbirchler/bench-releases/releases/latest">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap page-head">
+    <h1 class="display">Support</h1>
+    <p>Workbench is a free Mac app for running Claude Code, with an iPhone app that connects to it.</p>
+  </div>
+
+  <div class="wrap">
+    <article class="prose">
+      <h2 id="getting-started">Getting started</h2>
+      <ol>
+        <li>Install <a href="https://claude.com/product/claude-code">Claude Code</a> and sign in.</li>
+        <li><a data-download href="https://github.com/mattbirchler/bench-releases/releases/latest">Download Workbench</a>, open the zip, and drag Workbench into your Applications folder.</li>
+        <li>Open Workbench and add a project folder. Workbench &gt; Settings &gt; Setup shows anything that's missing.</li>
+      </ol>
+
+      <h2 id="iphone">Using the iPhone app</h2>
+      <ol>
+        <li>Install <a href="https://tailscale.com">Tailscale</a> on your Mac and iPhone, and sign in to the same account.</li>
+        <li>On the Mac, open Workbench &gt; Settings &gt; Remote Access and turn on the switch at the top (<strong>Let my iPhone and other Macs connect</strong>).</li>
+        <li>In the iPhone app, tap Scan Code and scan the code on your Mac.</li>
+      </ol>
+      <p>To look around first, tap <strong>Try a Demo</strong> on the iPhone app's first screen.</p>
+
+      <h2 id="using-another-mac">Using another Mac</h2>
+      <p>You can work in a second Mac's projects from the same sidebar.</p>
+      <ol>
+        <li>Install <a href="https://tailscale.com">Tailscale</a> on both Macs, and sign in to the same account.</li>
+        <li>On the Mac you want to reach, open Workbench &gt; Settings &gt; Remote Access, turn on the switch at the top, and click <strong>Copy Pairing Link</strong>. The link starts with <code>bench://pair</code>.</li>
+        <li>Send that link to the other Mac (with Universal Clipboard, a note, or a message to yourself).</li>
+        <li>On the other Mac, click <strong>+</strong> next to This Mac at the top of the sidebar, paste the link, and click <strong>Connect</strong>.</li>
+      </ol>
+      <p>The pairing link holds a secret, so keep it to yourself. Click <strong>Make a New Code</strong> to replace it.</p>
+
+      <h2 id="problems">Common problems</h2>
+      <p><strong>"Can't find the Mac."</strong> Check that Tailscale is connected on both devices.</p>
+      <p><strong>"Found the Mac, but Workbench isn't answering."</strong> Make sure Workbench is open on the Mac and <strong>Let my iPhone connect to Workbench</strong> is on in Settings &gt; iPhone.</p>
+      <p><strong>No notifications on your phone.</strong> Turn on notifications in the iPhone app's Settings. Then, on the Mac, right-click each project you want to hear about and choose <strong>Send Notifications to iPhone</strong>. A bell shows on projects that notify.</p>
+      <p><strong>Claude tabs say Claude Code isn't installed.</strong> Install it, then open a new Claude tab. Settings &gt; Setup shows where Workbench looked.</p>
+      <p><strong>Pull requests don't show up.</strong> Install the <a href="https://cli.github.com">GitHub CLI</a> and run <code>gh auth login</code> in a terminal.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Email <a href="mailto:matt@birchtree.me">matt@birchtree.me</a> with what happened and your Mac's macOS version.</p>
+    </article>
+  </div>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/app-icon.webp" alt="" width="30" height="30"><span>Workbench</span></a>
+    <nav aria-label="Footer">
+      <a href="releases.html">Version history</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:matt@birchtree.me">Contact</a>
+    </nav>
+    <p class="legal">Made by <a href="https://birchtree.productions">Birchtree Productions</a>. Workbench is an independent app, not made by or affiliated with Anthropic. Claude and Claude Code are trademarks of Anthropic.</p>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workbench Version History</title>
+<meta name="description" content="Every Workbench release and what changed in it, newest first.">
+<meta name="theme-color" content="#111522">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Martian+Mono:wdth,wght@75..112.5,300..700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/releases.css">
+<script src="assets/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" defer></script>
+<script src="assets/releases.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/app-icon.webp" alt="" width="30" height="30"><span>Workbench</span></a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav-hide" href="./#features">Features</a>
+      <a href="releases.html" aria-current="page">Version history</a>
+      <a class="nav-hide" href="support.html">Support</a>
+      <a class="btn btn-primary btn-small" data-download href="https://github.com/mattbirchler/bench-releases/releases/latest">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap page-head">
+    <h1 class="display">Version history</h1>
+    <p class="lede">Every Workbench release, newest first. Workbench updates itself, so you'll get each of these automatically.</p>
+  </div>
+
+  <div class="wrap history">
+    <nav class="rail" aria-label="Versions" data-rail hidden></nav>
+    <div class="log" data-log aria-live="polite">
+      <p class="log-status" data-status>Loading releases from GitHub…</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/app-icon.webp" alt="" width="30" height="30"><span>Workbench</span></a>
+    <nav aria-label="Footer">
+      <a href="releases.html">Version history</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:matt@birchtree.me">Contact</a>
+    </nav>
+    <p class="legal">Made by <a href="https://birchtree.productions">Birchtree Productions</a>. Workbench is an independent app, not made by or affiliated with Anthropic. Claude and Claude Code are trademarks of Anthropic.</p>
+  </div>
+</footer>
+</body>
+</html>

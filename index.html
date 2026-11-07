@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workbench for Claude Code</title>
+<meta name="description" content="A free Mac app for running Claude Code across all your projects: terminal or chat in every tab, live diffs, agents on their own branches, 36 themes, and an iPhone app to keep up from anywhere.">
+<meta name="theme-color" content="#111522">
+<meta property="og:title" content="Workbench for Claude Code">
+<meta property="og:description" content="Run Claude across all your projects, control Claude Code running on a headless Mac, and keep an eye on everything from your iPhone.">
+<meta property="og:image" content="assets/img/mac-chat.webp">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Martian+Mono:wdth,wght@75..112.5,300..700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/home.css">
+<script src="assets/site.js"></script>
+<script src="assets/home.js" defer></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="spark" viewBox="-12 -12 24 24">
+    <g>
+      <rect x="-1.7" y="-11.5" width="3.4" height="9" rx="1.7"/>
+      <rect x="-1.7" y="-11.5" width="3.4" height="9" rx="1.7" transform="rotate(45)"/>
+      <rect x="-1.7" y="-11.5" width="3.4" height="9" rx="1.7" transform="rotate(90)"/>
+      <rect x="-1.7" y="-11.5" width="3.4" height="9" rx="1.7" transform="rotate(135)"/>
+      <rect x="-1.7" y="-11.5" width="3.4" height="9" rx="1.7" transform="rotate(180)"/>
+      <rect x="-1.7" y="-11.5" width="3.4" height="9" rx="1.7" transform="rotate(225)"/>
+      <rect x="-1.7" y="-11.5" width="3.4" height="9" rx="1.7" transform="rotate(270)"/>
+      <rect x="-1.7" y="-11.5" width="3.4" height="9" rx="1.7" transform="rotate(315)"/>
+    </g>
+  </symbol>
+  <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="branch" viewBox="0 0 24 24"><path d="M6 3v12M6 15a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm12-9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 0c0 6-12 3-12 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/app-icon.webp" alt="" width="30" height="30"><span>Workbench</span></a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav-hide" href="#features">Features</a>
+      <a href="releases.html">Version history</a>
+      <a class="nav-hide" href="support.html">Support</a>
+      <a class="btn btn-primary btn-small" data-download href="https://github.com/mattbirchler/bench-releases/releases/latest">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= Hero ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 class="display hero-title">A coding interface for how we work today<span class="caret" aria-hidden="true"></span></h1>
+      <p class="lede">Run Claude across all your projects, control Claude Code running on a headless Mac, and keep an eye on everything from your iPhone.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" data-download href="https://github.com/mattbirchler/bench-releases/releases/latest">
+          <svg aria-hidden="true"><use href="#download"/></svg>Download for Mac
+        </a>
+        <p class="hero-meta">Free. <span class="ver">Version <span data-latest-version>0.8.4</span>,</span> for Apple silicon Macs on macOS&nbsp;26 or later.</p>
+      </div>
+    </div>
+
+    <div class="icon3d" aria-hidden="true">
+      <div class="i3-aura"></div>
+      <div class="i3-shadow"></div>
+      <div class="i3-float">
+        <div class="i3-spin">
+          <div class="i3-obj">
+            <i class="i3-edge" style="--i:1"></i><i class="i3-edge" style="--i:2"></i><i class="i3-edge" style="--i:3"></i><i class="i3-edge" style="--i:4"></i><i class="i3-edge" style="--i:5"></i><i class="i3-edge" style="--i:6"></i><i class="i3-edge" style="--i:7"></i><i class="i3-edge" style="--i:8"></i><i class="i3-edge" style="--i:9"></i><i class="i3-edge" style="--i:10"></i><i class="i3-edge" style="--i:11"></i><i class="i3-edge" style="--i:12"></i><i class="i3-edge" style="--i:13"></i><i class="i3-edge" style="--i:14"></i>
+            <div class="i3-face"></div>
+            <svg class="i3-layer i3-prompt" viewBox="0 0 1024 1024"><path d="M263.128,296.247 L443.128,478.247 A48,48 0 0 1 443.128,545.753 L263.128,727.753 A48,48 0 0 1 194.872,660.247 L341.480,512 L194.872,363.753 A48,48 0 0 1 263.128,296.247 Z" fill="url(#i3-prompt-fill)"/><defs><linearGradient id="i3-prompt-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2E8"/></linearGradient></defs></svg>
+            <svg class="i3-layer i3-glyph" viewBox="0 0 1024 1024">
+              <path d="M669.0,512.0 C704.0,442.0 704.0,337.0 669.0,337.0 C634.0,337.0 634.0,442.0 669.0,512.0Z" fill="#F07890"/>
+              <path d="M669.0,512.0 C743.2,487.3 817.5,413.0 792.7,388.3 C768.0,363.5 693.7,437.8 669.0,512.0Z" fill="#F0A070"/>
+              <path d="M669.0,512.0 C739.0,547.0 844.0,547.0 844.0,512.0 C844.0,477.0 739.0,477.0 669.0,512.0Z" fill="#E8D47C"/>
+              <path d="M669.0,512.0 C693.7,586.2 768.0,660.5 792.7,635.7 C817.5,611.0 743.2,536.7 669.0,512.0Z" fill="#7CE0A8"/>
+              <path d="M669.0,512.0 C634.0,582.0 634.0,687.0 669.0,687.0 C704.0,687.0 704.0,582.0 669.0,512.0Z" fill="#70D4E8"/>
+              <path d="M669.0,512.0 C594.8,536.7 520.5,611.0 545.3,635.7 C570.0,660.5 644.3,586.2 669.0,512.0Z" fill="#7CA4F0"/>
+              <path d="M669.0,512.0 C599.0,477.0 494.0,477.0 494.0,512.0 C494.0,547.0 599.0,547.0 669.0,512.0Z" fill="#B48CF0"/>
+              <path d="M669.0,512.0 C644.3,437.8 570.0,363.5 545.3,388.3 C520.5,413.0 594.8,487.3 669.0,512.0Z" fill="#F078C8"/>
+            </svg>
+            <div class="i3-gloss"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap stage">
+    <div class="aw" role="img" aria-label="The Workbench window: a sidebar of projects where Recipes is working, Field Notes is waiting on you, and Website is done; Claude's chat writing ShoppingList.swift with diffs shown inline; and a checklist and changed files on the right.">
+      <div class="aw-glow" aria-hidden="true"></div>
+      <div class="aw-frame" aria-hidden="true">
+        <!-- Sidebar -->
+        <aside class="aw-side">
+          <div class="aw-lights"><i></i><i></i><i></i></div>
+          <div class="aw-row"><span class="aw-pill">This Mac</span><span class="aw-plus">+</span></div>
+          <div class="aw-overview"><span class="aw-grid"></span>Overview<span class="aw-badge">1</span></div>
+          <div class="aw-section">
+            <div class="aw-label">Pinned</div>
+            <div class="aw-proj is-working is-selected">
+              <span class="aw-av av-green">R</span>
+              <div class="aw-proj-body">
+                <div class="aw-proj-name">Recipes<svg class="spark spin"><use href="#spark"/></svg></div>
+                <div class="aw-proj-line"><b class="t-time" data-timer="568">9m 28s</b> Adding the button to…</div>
+                <div class="aw-sub">Building the app</div>
+                <div class="aw-progress"><i class="on"></i><i class="on"></i><i data-step="3"></i><i></i><i></i><span data-progress>2/5</span></div>
+              </div>
+            </div>
+            <div class="aw-newagent">+ New Agent on a Branch</div>
+          </div>
+          <div class="aw-label">Active</div>
+          <div class="aw-proj is-waiting">
+            <span class="aw-av av-yellow">F</span>
+            <div class="aw-proj-body">
+              <div class="aw-proj-name">Field Notes<span class="dot"></span></div>
+              <div class="aw-proj-line"><b class="t-time" data-timer="261">4m 21s</b> Waiting on you</div>
+              <div class="aw-bubble">Claude wants you to approve its plan.</div>
+            </div>
+          </div>
+          <div class="aw-proj is-done">
+            <span class="aw-av av-blue">W</span>
+            <div class="aw-proj-body">
+              <div class="aw-proj-name">Website<svg class="tick"><use href="#check"/></svg></div>
+              <div class="aw-proj-line">Finished just now</div>
+              <div class="aw-recap">Added the pricing page with the Free, Pro, and Team plans, and linked it from the header.</div>
+            </div>
+          </div>
+          <div class="aw-label aw-recent">Recent</div>
+          <div class="aw-mini"><span class="aw-av av-magenta">B</span>Blog</div>
+          <div class="aw-rings"><span><i class="ring r1"></i>CPU</span><span><i class="ring r2"></i>Memory</span><span><i class="ring r3"></i>Week</span></div>
+        </aside>
+
+        <!-- Chat -->
+        <div class="aw-main">
+          <div class="aw-tabs">
+            <span class="aw-tab"><svg class="spark"><use href="#spark"/></svg>Claude<span class="x">×</span></span>
+            <span class="aw-tabs-right"><span class="aw-newclaude"><svg class="spark"><use href="#spark"/></svg>New Claude</span><span class="aw-branchpill"><i>M</i>Main</span></span>
+          </div>
+          <div class="aw-chat">
+            <div class="aw-scroll" data-chat>
+              <div class="aw-msg"><svg class="spark"><use href="#spark"/></svg><p>I'll add a shopping list model first, then the button on each recipe, then the list screen.</p></div>
+              <div class="aw-tool">Updated its to-do list</div>
+              <div class="aw-card" data-step="diff1">
+                <div class="aw-card-head"><span class="ico">✎</span>Wrote <code>ShoppingList.swift</code> <em data-count="diff1">+0</em></div>
+                <pre class="aw-code" data-lines="diff1"><span><i>+</i><k>import</k> Foundation</span><span><i>+</i><k>import</k> Observation</span><span><i>+</i></span><span><i>+</i><c>/// Ingredients to buy, each remembering the recipe it came from.</c></span><span><i>+</i><z>@Observable</z></span><span><i>+</i><k>final class</k> <t>ShoppingList</t> {</span><span><i>+</i>    <k>struct</k> <t>Item</t>: <t>Identifiable</t>, <t>Codable</t>, <t>Hashable</t> {</span><span><i>+</i>        <k>var</k> id = <t>UUID</t>()</span></pre>
+                <div class="aw-more" data-more>23 more lines</div>
+              </div>
+              <div class="aw-msg" data-step="msg2"><svg class="spark"><use href="#spark"/></svg><p>The model is in. Each item remembers which recipe it came from, so removing a recipe clears its items too. Now the button on each recipe.</p></div>
+              <div class="aw-card" data-step="diff2">
+                <div class="aw-card-head"><span class="ico">✎</span>Edited <code>RecipeDetailView.swift</code> <em data-count="diff2">+0</em></div>
+                <pre class="aw-code" data-lines="diff2"><span><i>+</i>        .toolbar {</span><span><i>+</i>            <t>Button</t>(<v>"Add to Shopping List"</v>, systemImage: <v>"cart.badge.plus"</v>) {</span><span><i>+</i>                store.shoppingList.add(recipe.ingredients, from: recipe)</span><span><i>+</i>            }</span><span><i>+</i>        }</span></pre>
+              </div>
+              <div class="aw-msg" data-step="msg3"><svg class="spark"><use href="#spark"/></svg><p>Let me build it to make sure everything compiles before I start on the list screen.</p></div>
+              <div class="aw-cmd" data-step="cmd"><span class="ico">▤</span><code>xcodebuild -scheme Recipes -destination 'generic/platform=iOS Simulator'</code><span class="aw-status" data-cmd-status><svg class="spark spin"><use href="#spark"/></svg>Running</span></div>
+            </div>
+          </div>
+          <div class="aw-composer">
+            <div class="aw-input">Queue a message for when Claude finishes this step</div>
+            <div class="aw-composer-row"><span class="aw-icons">⌀</span><span class="aw-model">Opus 5.5 ⌃</span><span class="aw-ctx">68k / 1.0M</span><span class="aw-send">↑</span></div>
+          </div>
+        </div>
+
+        <!-- Changes -->
+        <aside class="aw-right">
+          <div class="aw-seg"><span class="on">Changes</span><span>Files</span><span>Artifacts</span></div>
+          <div class="aw-block">
+            <div class="aw-head">Checklist<span data-check-count>2 of 5</span></div>
+            <div class="aw-bar"><i data-check-bar></i></div>
+            <ul class="aw-checks">
+              <li class="done"><b></b>Add a ShoppingList model</li>
+              <li class="done"><b></b>Save the list with the recipes</li>
+              <li class="active" data-check="3"><b></b><span>Adding the button to each recipe<small class="t-time" data-timer="562">9m 22s</small></span></li>
+              <li data-check="4"><b></b><span>Shopping list screen with check-off</span></li>
+              <li><b></b>Write tests</li>
+            </ul>
+          </div>
+          <div class="aw-block">
+            <div class="aw-head"><span class="aw-branch"><svg><use href="#branch"/></svg>main</span></div>
+            <div class="aw-vs"><span>vs main</span><span>0 ahead · 0 behind</span><span class="aw-np">not pushed</span></div>
+          </div>
+          <div class="aw-block">
+            <div class="aw-head">Unstaged <span class="aw-total" data-total>+33</span></div>
+            <div class="aw-folder">Recipes/Models</div>
+            <div class="aw-file"><span>RecipeStore.swift</span><em>+2</em><b class="m">M</b></div>
+            <div class="aw-file" data-file="diff1"><span>ShoppingList.swift</span><em data-count="diff1">+31</em><b class="u">U</b></div>
+            <div class="aw-folder" data-file="diff2">Recipes/Views</div>
+            <div class="aw-file" data-file="diff2"><span>RecipeDetailView.swift</span><em data-count="diff2">+5</em><b class="m">M</b></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Features ================= -->
+<div id="features">
+
+<section class="feature">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <h2 class="display">Terminal or chat. Same session.</h2>
+      <p>Every Claude tab runs Claude Code in a real terminal, built on Ghostty, with your font and keybindings. Press <kbd>⌥⌘T</kbd> and the same session turns into a chat: edits show as diffs, commands fold their output away, and questions and permission prompts become cards with real buttons.</p>
+      <ul class="ticks">
+        <li>Slash commands autocomplete: built-in ones, yours, the project's, and your skills.</li>
+        <li>Claude's suggested next message waits in the box. Press <kbd>Tab</kbd> to take it.</li>
+        <li>Queue messages while Claude works, then edit, remove, or send them now.</li>
+        <li>Subagents get cards that show what each one is doing right now.</li>
+      </ul>
+    </div>
+    <figure class="feature-media">
+      <img class="shot" src="assets/img/mac-plan.webp" alt="A Claude tab in chat view showing Claude's plan for a notebook export, with a question card asking you to approve it and buttons for each answer" width="2400" height="1577" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <h2 class="display">Every project gets its own workspace.</h2>
+      <p>Add a folder and Workbench gives it tabs for Claude, shells, files, diffs, and previews of your dev server. The sidebar shows each project's branch, pull request, and whether Claude is working, waiting on you, or done, with a one-line recap of what it last finished.</p>
+      <p>Projects sort themselves. Pin the ones you always want on top. The ones you're using sit under Active, and the rest fold away until you need them.</p>
+    </div>
+    <figure class="feature-media">
+      <img class="shot" src="assets/img/mac-start.webp" alt="A project's start page in Workbench with a Start Claude button, Shell, Agent on a Branch, and four recent conversations" width="2400" height="1577" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <h2 class="display">Watch the changes land.</h2>
+      <p>The changes panel lists every file Claude touches, live, grouped by folder with additions and deletions. Click one for a full diff, and comment on lines to send notes back to Claude. The branch header shows how far ahead or behind you are, against whichever branch you pick.</p>
+    </div>
+    <figure class="feature-media">
+      <img class="shot" src="assets/img/mac-diff.webp" alt="A diff tab showing the lines Claude added to RecipeDetailView.swift, next to the checklist and the changes panel" width="2400" height="1577" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <h2 class="display">Hand work to agents on their own branches.</h2>
+      <p>Start an agent with a prompt and Workbench gives it a fresh git worktree on its own branch, so it can't step on what you're doing. Each one shows its status, its pull request, and whether checks passed. After a PR merges, Workbench follows the deploy on hosts like Vercel and Railway, then cleans up the worktree.</p>
+      <p><strong>Brain Dump</strong> (<kbd>⌥⌘N</kbd>) starts several at once. Describe everything you want done, and Claude splits it into one task per project, each with a branch and a prompt you can edit. Nothing starts until you click Start.</p>
+    </div>
+    <figure class="feature-media">
+      <div class="agents" aria-label="Three agents in the sidebar: agent/dark-mode opened PR #42 with checks passed and deployed; agent/pricing-page is working; agent/fix-sync is waiting on you" role="img">
+        <div class="agent is-done">
+          <span class="aw-av av-green">R</span>
+          <div><div class="agent-name"><svg><use href="#branch"/></svg>agent/dark-mode</div><div class="agent-line">Opened PR #42. Every screen uses semantic colors now.</div></div>
+          <div class="agent-tags"><span class="tag ok"><svg><use href="#check"/></svg>Checks passed</span><span class="tag ok">Deployed</span></div>
+        </div>
+        <div class="agent is-working">
+          <span class="aw-av av-blue">W</span>
+          <div><div class="agent-name"><svg><use href="#branch"/></svg>agent/pricing-page</div><div class="agent-line"><b class="t-time" data-timer="192">3m 12s</b> Writing pricing.astro</div></div>
+          <div class="agent-tags"><span class="tag work"><svg class="spark spin"><use href="#spark"/></svg>Working</span></div>
+        </div>
+        <div class="agent is-waiting">
+          <span class="aw-av av-yellow">F</span>
+          <div><div class="agent-name"><svg><use href="#branch"/></svg>agent/fix-sync</div><div class="agent-line">Claude wants to run: npm test</div></div>
+          <div class="agent-tags"><span class="tag wait">Needs you</span></div>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="feature themes-feature">
+  <div class="wrap">
+    <div class="feature-text wide">
+      <h2 class="display">36 themes to make it yours.</h2>
+      <p>Pick one theme for light mode and one for dark, and Workbench switches with your Mac. The terminal, sidebars, chat, and diffs all take the theme's colors, and its accent color shows up on buttons, checklists, and your messages. Prefer your Ghostty theme? That works too.</p>
+    </div>
+    <figure class="themes-media">
+      <img class="shot" src="assets/img/themes.webp" alt="The same Workbench window in six of its themes: Clean Slate, Northern Lights, Oat Milk, Indigo Works, Sakura Note, and Hearth" width="3048" height="1338" loading="lazy">
+      <figcaption>Clean Slate, Northern Lights, Oat Milk, Indigo Works, Sakura Note, and Hearth.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="feature" id="headless">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <h2 class="display">Run it on a headless Mac. Drive it from anywhere.</h2>
+      <p>Leave Workbench running on a Mac mini in the closet and work in its projects from your laptop's sidebar, as if they were local. Read and answer its sessions, start Claude tabs and agents, review its changes, and run its shortcuts, like the dev server. While an agent is working, Workbench keeps that Mac from going to sleep on its own.</p>
+      <p>The Macs connect over your own Tailscale network. Turn on Remote Access on the headless Mac, copy its pairing link, and paste it into the other one. The <a class="inline-link" href="support.html#using-another-mac">support page</a> has the steps.</p>
+    </div>
+    <figure class="feature-media">
+      <div class="agents remote" role="img" aria-label="The Workbench sidebar on a laptop, switched to a Mac mini over Tailscale: api-server is working on migration tests, ios-app is waiting for permission to run xcodebuild test, and docs is done.">
+        <div class="remote-bar" aria-hidden="true">
+          <span class="remote-pill">This Mac</span>
+          <span class="remote-pill on"><i></i>Mac mini</span>
+          <span class="remote-note">Connected over Tailscale</span>
+        </div>
+        <div class="agent is-working" aria-hidden="true">
+          <span class="aw-av av-blue">A</span>
+          <div><div class="agent-name">api-server</div><div class="agent-line"><b class="t-time" data-timer="724">12m 04s</b> Running the migration tests</div></div>
+          <div class="agent-tags"><span class="tag work"><svg class="spark spin"><use href="#spark"/></svg>Working</span></div>
+        </div>
+        <div class="agent is-waiting" aria-hidden="true">
+          <span class="aw-av av-yellow">I</span>
+          <div><div class="agent-name">ios-app</div><div class="agent-line">Claude wants to run: xcodebuild test</div></div>
+          <div class="agent-tags"><span class="tag wait">Needs you</span></div>
+        </div>
+        <div class="agent is-done" aria-hidden="true">
+          <span class="aw-av av-green">D</span>
+          <div><div class="agent-name">docs</div><div class="agent-line">Rewrote the setup guide and fixed the broken links.</div></div>
+          <div class="agent-tags"><span class="tag ok"><svg><use href="#check"/></svg>Done</span></div>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="feature phone">
+  <div class="wrap">
+    <div class="feature-text wide">
+      <h2 class="display">Keep up from your iPhone.</h2>
+      <p>The iPhone app connects to your Mac over your own Tailscale network, with nothing in between. Sessions that need you sit at the top. Read along as Claude works, answer its questions, tap Allow or Deny, reply with a message or a photo, and review diffs from the couch. You can start new tabs and agents too.</p>
+    </div>
+    <figure class="phone-media">
+      <img src="assets/img/iphone.webp" alt="The Workbench iPhone app: a project list with sessions that need you, are working, and are done; a working session with its checklist; and a permission prompt with Allow and Deny" width="2400" height="1589" loading="lazy">
+    </figure>
+    <ul class="phone-points">
+      <li><h3>Notifications you choose</h3><p>Right-click a project on the Mac to hear when Claude needs you, when it finishes, and when checks and deploys are done.</p></li>
+      <li><h3>A Lock Screen dashboard</h3><p>Put every session on your Lock Screen at once, kept up to date by your Mac.</p></li>
+      <li><h3>iPad too</h3><p>The app is in beta on TestFlight, needs iOS 27, and runs as a full iPad app.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap two-up">
+    <div>
+      <h2 class="display">Built for the keyboard.</h2>
+      <dl class="keys">
+        <div><dt><kbd>⌥⌘T</kbd></dt><dd>Flip a Claude tab between terminal and chat</dd></div>
+        <div><dt><kbd>⌘0</kbd></dt><dd>Every session in every project, in one grid</dd></div>
+        <div><dt><kbd>⌘J</kbd></dt><dd>Jump to the next session that needs you</dd></div>
+        <div><dt><kbd>⌘K</kbd></dt><dd>Go to any project or action</dd></div>
+        <div><dt><kbd>⌥⌘N</kbd></dt><dd>Brain Dump: start agents across projects</dd></div>
+        <div><dt><kbd>⌘Y</kbd></dt><dd>Pick up a past conversation</dd></div>
+        <div><dt><kbd>⇧⌘U</kbd></dt><dd>What your sessions would cost at API prices</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h2 class="display">And from the shell.</h2>
+      <p class="muted-p">Every tab Workbench opens has <code>bench</code> on its PATH, so you or Claude can talk to the app. Ask Claude to “tell me on my phone when the build finishes” and it knows what to do.</p>
+      <div class="term" role="img" aria-label="Terminal examples of the bench command: bench projects, bench add, bench notify, and bench notify --phone">
+        <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>zsh</span></div>
+        <pre aria-hidden="true"><span class="p">❯</span> bench projects
+<span class="o">Recipes      ~/Code/recipes      main
+Field Notes  ~/Code/field-notes  agent/export</span>
+<span class="p">❯</span> bench add ~/Code/thing
+<span class="p">❯</span> bench notify <span class="s">"Tests pass, PR is up"</span>
+<span class="p">❯</span> bench notify --phone <span class="s">"Deploy done"</span><span class="term-caret"></span></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap">
+    <h2 class="display small-things-title">The small things.</h2>
+    <ul class="small-things">
+      <li><h3>Your plan's limits</h3><p>Rings show your 5-hour, weekly, and per-model limits, grey until they need your attention.</p></li>
+      <li><h3>Menu bar status</h3><p>See what's working and what needs you without switching apps.</p></li>
+      <li><h3>Other Macs</h3><p>Pair a second Mac and work in its projects from the same sidebar.</p></li>
+      <li><h3>Shortcuts</h3><p>One-click buttons for commands you run all the time, plus a dev server button with port previews.</p></li>
+      <li><h3>Your draft stays put</h3><p>Text in the message box is still there when you switch projects and come back.</p></li>
+      <li><h3>Updates itself</h3><p>New versions download in the background and install when you quit.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="feature whats-new" data-whats-new hidden>
+  <div class="wrap">
+    <div class="release-card">
+      <div>
+        <h2 class="display">New in <span data-latest-version>0.8.4</span></h2>
+        <p class="release-date" data-latest-date></p>
+      </div>
+      <ul class="release-heads" data-latest-heads></ul>
+      <a class="btn btn-ghost" href="releases.html">Read the version history</a>
+    </div>
+  </div>
+</section>
+
+<section class="feature install" id="install">
+  <div class="wrap two-up">
+    <div>
+      <h2 class="display">Get started in a minute.</h2>
+      <ol class="steps">
+        <li><span>Download the zip and open it.</span></li>
+        <li><span>Drag Workbench into your Applications folder.</span></li>
+        <li><span>Open it. The welcome checks your Mac for what it needs, signs you in to Claude Code, and suggests projects from the folders you've already used.</span></li>
+      </ol>
+      <a class="btn btn-primary" data-download href="https://github.com/mattbirchler/bench-releases/releases/latest">
+        <svg aria-hidden="true"><use href="#download"/></svg>Download for Mac
+      </a>
+      <p class="fine">Signed and notarized by Apple. Free to use.</p>
+    </div>
+    <div class="reqs">
+      <h3>You'll need</h3>
+      <ul>
+        <li>A Mac with Apple silicon (M1 or later)</li>
+        <li>macOS 26 or later</li>
+        <li><a href="https://claude.com/product/claude-code">Claude Code</a>, installed and signed in</li>
+        <li>git, from Apple's command line tools (Workbench offers to install them)</li>
+      </ul>
+      <h3>Nice to have</h3>
+      <ul>
+        <li>The <a href="https://cli.github.com">GitHub CLI</a> for pull requests, checks, and deploys</li>
+        <li><a href="https://tailscale.com/download/mac">Tailscale</a> for the iPhone app and other Macs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/app-icon.webp" alt="" width="30" height="30"><span>Workbench</span></a>
+    <nav aria-label="Footer">
+      <a href="releases.html">Version history</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:matt@birchtree.me">Contact</a>
+    </nav>
+    <p class="legal">Made by <a href="https://birchtree.productions">Birchtree Productions</a>. Workbench is an independent app, not made by or affiliated with Anthropic. Claude and Claude Code are trademarks of Anthropic. Built with Ghostty, Sparkle, and other open source projects.</p>
+  </div>
+</footer>
+</body>
+</html>

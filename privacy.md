@@ -1,6 +1,6 @@
 # Workbench privacy policy
 
-*Last updated November 2, 2026*
+*Last updated November 7, 2026*
 
 Workbench is made by Matt Birchler (Birchtree Productions). This policy covers the Workbench Mac app and the Workbench iPhone app.
 
@@ -34,6 +34,10 @@ The iPhone app connects directly to Workbench on your own Mac, over your own Tai
 - **Pairing details:** stored in your phone's keychain.
 - **Notifications:** off unless you turn them on, and only for the projects you choose on your Mac. Your phone's notification token goes to your own Mac. Your Mac encrypts each notification's text so only your phone can read it, then sends it through Workbench's push service to Apple. The service and Apple only see "Open Workbench to see what happened." The service doesn't store or log anything.
 - **Lock Screen dashboard:** if you turn it on, your Mac sends its updates through the same push service to Apple. These updates aren't encrypted yet: they include your Mac's name, project names, and a short line about each session, like what Claude is doing or asking. Nothing is stored or logged. Turn the dashboard off and these updates stop.
+
+## This website
+
+This site doesn't use cookies or analytics. To show the latest version and the version history, your browser asks GitHub for Workbench's public release list. The site's fonts come from Google Fonts, and the version history page loads two small scripts from cdnjs. Those services see your browser's request the way any website would, under their own privacy policies. Your browser keeps the release list for 15 minutes so it isn't fetched again on every page, and it's never sent anywhere.
 
 ## Children
 

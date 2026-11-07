@@ -3,43 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Workbench privacy policy</title>
-<style>
-:root { color-scheme: light dark; --ink: #1b1a18; --muted: #6e6b66; --bg: #f1f2f4; --accent: #c4623f; }
-@media (prefers-color-scheme: dark) { :root { --ink: #ece9e3; --muted: #9a978f; --bg: #21242e; --accent: #e08a6a; } }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
-main { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
-h1 { font-size: 2em; line-height: 1.2; margin: 0 0 .6em; }
-h2 { font-size: 1.2em; margin: 1.8em 0 .4em; }
-a { color: var(--accent); }
-code { font: .9em ui-monospace, "SF Mono", monospace; }
-footer { margin-top: 3em; color: var(--muted); font-size: .9em; }
-</style>
+<title>Workbench Privacy Policy</title>
+<meta name="description" content="What the Workbench Mac and iPhone apps collect, what they connect to, and what never leaves your devices.">
+<meta name="theme-color" content="#111522">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Martian+Mono:wdth,wght@75..112.5,300..700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
 </head>
 <body>
-<main>
-<h1>Workbench privacy policy</h1>
-<p><em>Last updated November 2, 2026</em></p>
-<p>Workbench is made by Matt Birchler (Birchtree Productions). This policy covers the Workbench Mac app and the Workbench iPhone app.</p>
-<h2>The short version</h2>
-<p>Workbench has no accounts and no ads. Your code, prompts, and conversations go from your Mac to your own devices and never to us. Both apps share anonymous usage counts to help improve Workbench, and you can turn that off. Notifications pass through Workbench's push service on their way to Apple, encrypted so only your phone can read them.</p>
-<h2>Anonymous usage data</h2>
-<p>Both apps send anonymous counts of what you use to <a href="https://posthog.com">PostHog</a>, an analytics service. This is on unless you turn it off: on the Mac, Settings &gt; General &gt; Share anonymous usage data; on the iPhone, Settings &gt; Share Anonymous Usage Data.</p>
-<ul><li><strong>What's sent:</strong> which features you use, like opening a Claude tab, starting an agent, pairing an iPhone, sending a reply, or answering a permission prompt, plus simple counts such as how many projects you have. Each install gets a random ID that isn't linked to you.</li><li><strong>What's never sent:</strong> your code, prompts, messages, file names, project or branch names, or your name or email.</li><li><strong>What's left out:</strong> location, time zone, language, and device name are removed before anything is sent, and PostHog is set to discard IP addresses.</li></ul>
-<h2>The Mac app</h2>
-<p>Workbench runs on your Mac and keeps its settings and project list there. Besides the usage data above, it connects to:</p>
-<ul><li><strong>GitHub,</strong> to check this repository's feed for updates. If you install the GitHub CLI, Workbench also uses it to show your pull requests, checks, and deploys.</li><li><strong>Anthropic,</strong> using Claude Code's own sign-in, to read your plan's usage limits for the rings in the sidebar. Recaps, the one-line summaries of finished work, are written by Claude Code on your plan.</li><li><strong>Workbench's push service,</strong> when your iPhone has notifications or the Lock Screen dashboard turned on (see below). If you add your own Apple push key in Settings &gt; iPhone, your Mac sends to Apple directly instead.</li></ul>
-<p>Claude Code, which you install separately, talks to Anthropic under Anthropic's own terms and privacy policy. Workbench doesn't change what Claude Code sends.</p>
-<h2>The iPhone app</h2>
-<p>The iPhone app connects directly to Workbench on your own Mac, over your own Tailscale network. Your projects, sessions, and code go from your Mac to your phone without passing through our servers.</p>
-<ul><li><strong>Camera:</strong> used only to scan the pairing code Workbench shows on your Mac. Nothing is recorded or saved.</li><li><strong>Pairing details:</strong> stored in your phone's keychain.</li><li><strong>Notifications:</strong> off unless you turn them on, and only for the projects you choose on your Mac. Your phone's notification token goes to your own Mac. Your Mac encrypts each notification's text so only your phone can read it, then sends it through Workbench's push service to Apple. The service and Apple only see "Open Workbench to see what happened." The service doesn't store or log anything.</li><li><strong>Lock Screen dashboard:</strong> if you turn it on, your Mac sends its updates through the same push service to Apple. These updates aren't encrypted yet: they include your Mac's name, project names, and a short line about each session, like what Claude is doing or asking. Nothing is stored or logged. Turn the dashboard off and these updates stop.</li></ul>
-<h2>Children</h2>
-<p>Workbench isn't directed at children and doesn't knowingly collect information from anyone.</p>
-<h2>Changes</h2>
-<p>If this policy changes, the new version will be posted here with a new date.</p>
-<h2>Contact</h2>
-<p>Questions: <a href="mailto:matt@birchtree.me">matt@birchtree.me</a></p>
-<footer><a href="https://github.com/mattbirchler/bench-releases">Workbench</a></footer>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/app-icon.webp" alt="" width="30" height="30"><span>Workbench</span></a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav-hide" href="./#features">Features</a>
+      <a href="releases.html">Version history</a>
+      <a class="nav-hide" href="support.html">Support</a>
+      <a class="btn btn-primary btn-small" data-download href="https://github.com/mattbirchler/bench-releases/releases/latest">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap page-head">
+    <h1 class="display">Privacy policy</h1>
+    <p>Last updated November 7, 2026</p>
+  </div>
+
+  <div class="wrap">
+    <article class="prose">
+      <p>Workbench is made by Matt Birchler (Birchtree Productions). This policy covers the Workbench Mac app and the Workbench iPhone app.</p>
+
+      <h2>The short version</h2>
+      <div class="short">
+        <p>Workbench has no accounts and no ads. Your code, prompts, and conversations go from your Mac to your own devices and never to us. Both apps share anonymous usage counts to help improve Workbench, and you can turn that off. Notifications pass through Workbench's push service on their way to Apple, encrypted so only your phone can read them.</p>
+      </div>
+
+      <h2>Anonymous usage data</h2>
+      <p>Both apps send anonymous counts of what you use to <a href="https://posthog.com">PostHog</a>, an analytics service. This is on unless you turn it off: on the Mac, Settings &gt; General &gt; Share anonymous usage data; on the iPhone, Settings &gt; Share Anonymous Usage Data.</p>
+      <ul>
+        <li><strong>What's sent:</strong> which features you use, like opening a Claude tab, starting an agent, pairing an iPhone, sending a reply, or answering a permission prompt, plus simple counts such as how many projects you have. Each install gets a random ID that isn't linked to you.</li>
+        <li><strong>What's never sent:</strong> your code, prompts, messages, file names, project or branch names, or your name or email.</li>
+        <li><strong>What's left out:</strong> location, time zone, language, and device name are removed before anything is sent, and PostHog is set to discard IP addresses.</li>
+      </ul>
+
+      <h2>The Mac app</h2>
+      <p>Workbench runs on your Mac and keeps its settings and project list there. Besides the usage data above, it connects to:</p>
+      <ul>
+        <li><strong>GitHub,</strong> to check this repository's feed for updates. If you install the GitHub CLI, Workbench also uses it to show your pull requests, checks, and deploys.</li>
+        <li><strong>Anthropic,</strong> using Claude Code's own sign-in, to read your plan's usage limits for the rings in the sidebar. Recaps, the one-line summaries of finished work, are written by Claude Code on your plan.</li>
+        <li><strong>Workbench's push service,</strong> when your iPhone has notifications or the Lock Screen dashboard turned on (see below). If you add your own Apple push key in Settings &gt; iPhone, your Mac sends to Apple directly instead.</li>
+      </ul>
+      <p>Claude Code, which you install separately, talks to Anthropic under Anthropic's own terms and privacy policy. Workbench doesn't change what Claude Code sends.</p>
+
+      <h2>The iPhone app</h2>
+      <p>The iPhone app connects directly to Workbench on your own Mac, over your own Tailscale network. Your projects, sessions, and code go from your Mac to your phone without passing through our servers.</p>
+      <ul>
+        <li><strong>Camera:</strong> used only to scan the pairing code Workbench shows on your Mac. Nothing is recorded or saved.</li>
+        <li><strong>Pairing details:</strong> stored in your phone's keychain.</li>
+        <li><strong>Notifications:</strong> off unless you turn them on, and only for the projects you choose on your Mac. Your phone's notification token goes to your own Mac. Your Mac encrypts each notification's text so only your phone can read it, then sends it through Workbench's push service to Apple. The service and Apple only see "Open Workbench to see what happened." The service doesn't store or log anything.</li>
+        <li><strong>Lock Screen dashboard:</strong> if you turn it on, your Mac sends its updates through the same push service to Apple. These updates aren't encrypted yet: they include your Mac's name, project names, and a short line about each session, like what Claude is doing or asking. Nothing is stored or logged. Turn the dashboard off and these updates stop.</li>
+      </ul>
+
+      <h2>This website</h2>
+      <p>This site doesn't use cookies or analytics. To show the latest version and the version history, your browser asks GitHub for Workbench's public release list. The site's fonts come from Google Fonts, and the version history page loads two small scripts from cdnjs. Those services see your browser's request the way any website would, under their own privacy policies. Your browser keeps the release list for 15 minutes so it isn't fetched again on every page, and it's never sent anywhere.</p>
+
+      <h2>Children</h2>
+      <p>Workbench isn't directed at children and doesn't knowingly collect information from anyone.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be posted here with a new date.</p>
+
+      <h2>Contact</h2>
+      <p>Questions: <a href="mailto:matt@birchtree.me">matt@birchtree.me</a></p>
+    </article>
+  </div>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/app-icon.webp" alt="" width="30" height="30"><span>Workbench</span></a>
+    <nav aria-label="Footer">
+      <a href="releases.html">Version history</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="mailto:matt@birchtree.me">Contact</a>
+    </nav>
+    <p class="legal">Made by <a href="https://birchtree.productions">Birchtree Productions</a>. Workbench is an independent app, not made by or affiliated with Anthropic. Claude and Claude Code are trademarks of Anthropic.</p>
+  </div>
+</footer>
 </body>
 </html>
