@@ -6,6 +6,52 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9</title>
+      <pubDate>Sat, 07 Nov 2026 19:34:13 GMT</pubDate>
+      <sparkle:version>49</sparkle:version>
+      <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>Keep working</h3>
+<p>Sometimes you want to restart Workbench, but you don&#x27;t want to interrupt your agents. So you wait for them to be done. And they keep going so you wait some more.</p>
+<p>This is off by default for now, but there is a new feature you can enable from the general settings called &quot;Keep Working&quot;. When this is enabled, your Claude Code sessions operate independently of the Workbench UI. What this means is that if you have 1, 2, or 20 agents grinding away on stuff, and the next Workbench update shows up, you can install it and restart without slowing your agents down at all.</p>
+<p>I&#x27;m not the first person to implement something like this by any means, but it&#x27;s so cool once you get used to having this.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9/keep-working.png" alt="The Keep Working setting in Settings › General, turned on" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Performance improvements</h3>
+<p>I&#x27;ve been adding a lot of features to the app, and this release is clearly no different, but I did take some time to go through some of the core code flows in the project and make sure that they were solid. And I took a look at some of the performance issues in the app and figured out ways to make them better.</p>
+<p>There&#x27;s more to do here for sure, but hopefully some things will feel a bit more zippy than before.</p>
+<h3>Switch models and effort from the chat</h3>
+<p>Type <code>/model</code> in the chat, or click the model name under the message box, to get the same list of models Claude Code shows in its terminal. The list sets effort too! On iPhone, tap the model name at the top of a session, or send <code>/model</code> as well.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9/model-list.png" alt="The model list over the chat, with Opus 5.5 checked and an effort row set to High" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Run a command from the chat</h3>
+<p>Start a message with <code>!</code> to run it in the shell, the way you would in Claude Code&#x27;s terminal. This works from iPhone as well.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9/shell-command.png" alt="A ! bun test card in the chat showing three passing tests" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>See when Claude edits another project</h3>
+<p>Sometimes you have related projects, and while your chat exists in one of them, you need it to update a different one. Previously that was effectively impossible to track, but now the right sidebar shows you what other projects are being edited by Claude in a new &quot;Also Changed&quot; section.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9/edits-elsewhere.png" alt="An edit to BuyButton.tsx marked storefront in the chat, and storefront listed under Also Changed" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Commit, push, and open a PR in one click</h3>
+<p>The Changes panel has <strong>Commit</strong>, <strong>Push</strong>, and <strong>Open PR</strong> buttons. Each one sends a message to the project&#x27;s Claude tab, and Claude does the git work, so the buttons work with GitHub, GitLab, or anything else. Reword them, reorder them, or add your own in <strong>Settings › Shortcuts › Claude Actions</strong>.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9/claude-actions.png" alt="The Claude Actions list in Settings with Commit, Push, and Open PR" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Better narrow windows</h3>
+<p>Sometimes you just want a narrow window, and Workbench now does this better than before. As the window gets smaller, the side panels will collapse to make sure you can still see the chat and you can still see them as needed. Also when the project sidebar is collapsed, you can still see project icons, so you can navigate from a more streamlined view if you prefer.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9/narrow-window.png" alt="A narrow Workbench window with project icons down the left and the chat beside them" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>A new app icon</h3>
+<p>Workbench has a new icon that&#x27;s more fun! Five others are available, from <strong>Settings › Appearance</strong> on the Mac or in the iPhone app&#x27;s settings.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9/app-icons.png" alt="The six app icons: Northern Lights, Classic, Coral Pop, Ember Ridge, Lagoon, and Ultraviolet" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Appearance settings</h3>
+<p>Colors, fonts, and text size have their own page in Settings, with a live preview that changes as you do.</p>
+<p>Appearance also has a new <strong>Motion</strong> setting, for when the sparkles and glows are more than you want:</p>
+<ul><li><strong>Full</strong> is how Workbench looks today, and it&#x27;s the default.</li><li><strong>Calm</strong> stops the big effects, like the sparkles on a working project and the glow on the start page. The small spinners keep moving, so you can still tell when Claude is working.</li><li><strong>Still</strong> stops everything that moves on its own.</li></ul>
+<p>Calm and Still also use less of your Mac&#x27;s power, so play with these if you want to make the app as light on your system as possible. If Reduce Motion is on in System Settings, Workbench uses Still automatically.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9/appearance.png" alt="The Appearance page&#x27;s live preview in the Northern Lights theme, with a Light and Dark switch" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Fixes and smaller changes</h3>
+<ul><li><strong>Notifications from Claude.</strong> Claude can run <code>bench notify</code> in a Workbench tab to send you a notification on your Mac and your paired iPhone.</li><li><strong>Lists in the message box.</strong> Type a dash or a number, then press Shift-Return (Return on iPhone), and the next line continues the list. Your own messages now show as Markdown, so lists read as lists.</li><li><strong>File paths open in the Finder.</strong> Click a file path in Claude&#x27;s reply to show that file in the Finder.</li><li><strong>A steadier iPhone connection.</strong> A dropped connection is noticed within a minute, and a reply that didn&#x27;t reach the Mac says so and gives you your draft back.</li><li><strong>The version is in the sidebar.</strong> The bottom of the sidebar shows the version and build you&#x27;re running.</li><li><strong>Crash reports.</strong> If Workbench crashes, it sends a report so the bug can be fixed. It&#x27;s part of <strong>Share anonymous usage data</strong> in <strong>Settings › General</strong>, so turning that off turns this off too.</li><li><strong>Easier to install.</strong> Downloads now come as a disk image. Open it and drag Workbench into Applications.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9-49/Workbench-0.9-49.zip" type="application/octet-stream" sparkle:edSignature="uYImr/uLziv9DTBWKK1V/y/1QOHRoedK1M091V0N1a91V/U4muaHMfZ+eaIT6PBNO3ubHyK7s8gG/PxJ0bbpAQ==" length="31757340"/>
+    </item>
+    <item>
       <title>Workbench 0.8.4</title>
       <pubDate>Fri, 06 Nov 2026 16:53:38 GMT</pubDate>
       <sparkle:version>48</sparkle:version>
