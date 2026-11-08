@@ -12,7 +12,7 @@ Workbench has no accounts and no ads. Your code, prompts, and conversations go f
 
 Both apps send anonymous counts of what you use to [PostHog](https://posthog.com), an analytics service. This is on unless you turn it off: on the Mac, Settings > General > Share anonymous usage data; on the iPhone, Settings > Share Anonymous Usage Data.
 
-- **What's sent:** which features you use, like opening a Claude tab, starting an agent, pairing an iPhone, sending a reply, or answering a permission prompt, plus simple counts such as how many projects you have. Each install gets a random ID that isn't linked to you.
+- **What's sent:** which features you use, like opening a Claude tab, starting an agent, pairing an iPhone, sending a reply, or answering a permission prompt, plus simple counts such as how many projects you have, and which kind of Claude model a session uses (like Opus or Haiku) and its effort level. Each install gets a random ID that isn't linked to you.
 - **What's never sent:** your code, prompts, messages, file names, project or branch names, or your name or email.
 - **What's left out:** location, time zone, language, and device name are removed before anything is sent, and PostHog is set to discard IP addresses.
 
