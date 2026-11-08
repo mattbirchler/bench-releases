@@ -6,6 +6,26 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.1</title>
+      <pubDate>Sun, 08 Nov 2026 16:28:01 GMT</pubDate>
+      <sparkle:version>50</sparkle:version>
+      <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>Mention files with @</h3>
+<p>Type <code>@</code> anywhere in a chat message to pick from the project&#x27;s files and folders, the same way you would in Claude Code&#x27;s terminal. Use the arrow keys and Tab or Return to choose one. Picking a folder fills in <code>@Sources/</code> and keeps suggesting what&#x27;s inside it, so you can drill down to the file you want. This works for remote Mac tabs too.</p>
+<h3>Slash commands in the middle of a message</h3>
+<p>You no longer have to start a message with a command to use one. Type something like &quot;clean this up with /uns&quot; and Workbench suggests <code>/unslop</code>. Commands that only make sense on their own, like <code>/clear</code> or <code>/model</code>, still only show up when they&#x27;re the whole message.</p>
+<h3>Select across a whole reply</h3>
+<p>On the Mac, you can now drag across several paragraphs, headings, and list items in Claude&#x27;s reply and copy them all at once. Before, each paragraph had to be selected on its own. Code blocks and tables are still selected separately.</p>
+<h3>Fixes and smaller changes</h3>
+<ul><li><strong>SSH works in Workbench tabs again.</strong> If your Ghostty config turned on its SSH shell features, running <code>ssh</code> in Workbench failed with &quot;Unknown command: ghostty&quot;. Workbench now turns off just those two features and keeps the rest of your settings.</li><li><strong>New Claude tabs work after logging out.</strong> With Keep Working on, logging out of your Mac and back in could leave new Claude tabs stuck at &quot;Login incorrect&quot;. Workbench now notices and starts fresh, and your conversations pick up where they left off.</li><li><strong>Your message stays when you change models.</strong> Picking a model from the model name under the message box used to erase what you&#x27;d typed. Now it stays put.</li><li><strong>A new home on the web.</strong> The Workbench website is now at [workbenchapp.dev](https://workbenchapp.dev). Old links still work.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.1-50/Workbench-0.9.1-50.zip" type="application/octet-stream" sparkle:edSignature="MOFP6Z2erlNgCkuN91Edd96YwWb8FKmxiQHJRYLUUUWHRnlDZoy5XA3elENr/12K+O1YdHK2iLPpm1D5BGVjDw==" length="31817718"/>
+    </item>
+    <item>
       <title>Workbench 0.9</title>
       <pubDate>Sat, 07 Nov 2026 19:34:13 GMT</pubDate>
       <sparkle:version>49</sparkle:version>
