@@ -7,6 +7,28 @@
     <language>en</language>
     <item>
       <title>Workbench 0.9.1</title>
+      <pubDate>Mon, 09 Nov 2026 02:29:05 GMT</pubDate>
+      <sparkle:version>51</sparkle:version>
+      <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>Queue prompts while your Mac is asleep</h3>
+<p>Have an idea while you&#x27;re out? Open a project in the iPhone app and queue a prompt. When your Mac wakes up, Workbench starts it as a new agent on its own branch, with nothing for you to confirm. Your project list stays on your phone while the Mac is offline, and prompts are encrypted so only your devices can read them. Needs the iPhone app 1.1.1, rolling out now.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.1/queue-prompt.png" alt="The iPhone app showing a project while the Mac is asleep, with a box to queue a prompt and two prompts waiting" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Up arrow brings back your last message</h3>
+<p>In the chat, press up in an empty message box to get back what you sent last, just like the terminal. Keep pressing to go further back, edit, and send again.</p>
+<h3>Fable is marked amber</h3>
+<p>Fable uses your plan limits faster than the other models, so its name under the message box is now an amber capsule with a flame. In the model list, Fable says so and Haiku gets a leaf as the light, economy model.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.1/model-list.png" alt="The model list over the chat, with Fable marked &quot;Uses your limits faster&quot; and a leaf beside Haiku" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Smaller changes</h3>
+<ul><li>Anonymous usage counts now include which Claude model a session uses and when you switch. &quot;Share anonymous usage data&quot; in Settings turns this off, as before.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.1-51/Workbench-0.9.1-51.zip" type="application/octet-stream" sparkle:edSignature="4pY4sX3U+M0D44SP7IodcTR9EggydD/bWRJ8Oxrc6s4kt6+H+d36jRshzP0ZCLabj0/RWdg4+lzbxx95o1prDg==" length="31938551"/>
+    </item>
+    <item>
+      <title>Workbench 0.9.1</title>
       <pubDate>Sun, 08 Nov 2026 16:28:01 GMT</pubDate>
       <sparkle:version>50</sparkle:version>
       <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
