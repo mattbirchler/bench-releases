@@ -9,7 +9,18 @@
   const dateFormat = { month: "long", day: "numeric", year: "numeric" };
   const shortDate = { month: "short", day: "numeric" };
 
-  function anchor(release) { return "v" + release.version; }
+  // The newest build of a version gets #v0.9.1; older builds of the same
+  // version get their build too (#v0.9.1-50), so every link is unique.
+  function assignAnchors(releases) {
+    const seen = new Set();
+    releases.forEach((r) => {
+      const plain = "v" + r.version;
+      r.anchor = seen.has(plain) && r.build ? `${plain}-${r.build}` : plain;
+      seen.add(plain);
+    });
+  }
+
+  function anchor(release) { return release.anchor; }
 
   function render(markdown) {
     const html = window.marked.parse(markdown, { gfm: true, breaks: false });
@@ -120,6 +131,7 @@
 
   WB.fetchReleases().then((releases) => {
     if (!releases.length) throw new Error("no releases yet");
+    assignAnchors(releases);
     status.remove();
     const frag = document.createDocumentFragment();
     releases.forEach((r, i) => frag.append(article(r, i)));
