@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Workbench Privacy Policy</title>
-<meta name="description" content="What the Workbench Mac and iPhone apps collect, what they connect to, and what never leaves your devices.">
+<meta name="description" content="What the Workbench Mac and iPhone apps collect, what they connect to, and what stays on your devices.">
 <meta name="theme-color" content="#111522">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -32,7 +32,7 @@
 <main id="main">
   <div class="wrap page-head">
     <h1 class="display">Privacy policy</h1>
-    <p>Last updated November 7, 2026</p>
+    <p>Last updated November 8, 2026</p>
   </div>
 
   <div class="wrap">
@@ -41,7 +41,7 @@
 
       <h2>The short version</h2>
       <div class="short">
-        <p>Workbench has no accounts and no ads. Your code, prompts, and conversations go from your Mac to your own devices and never to us. Both apps share anonymous usage counts to help improve Workbench, and you can turn that off. Notifications pass through Workbench's push service on their way to Apple, encrypted so only your phone can read them.</p>
+        <p>Workbench has no accounts and no ads. Your code, prompts, and conversations go from your Mac to your own devices. The one exception is a prompt you queue while your Mac is offline: it waits on Workbench's server, encrypted so only your devices can read it. Both apps share anonymous usage counts to help improve Workbench, and you can turn that off. Notifications pass through Workbench's push service on their way to Apple, encrypted so only your phone can read them.</p>
       </div>
 
       <h2>Anonymous usage data</h2>
@@ -58,17 +58,23 @@
         <li><strong>GitHub,</strong> to check this repository's feed for updates. If you install the GitHub CLI, Workbench also uses it to show your pull requests, checks, and deploys.</li>
         <li><strong>Anthropic,</strong> using Claude Code's own sign-in, to read your plan's usage limits for the rings in the sidebar. Recaps, the one-line summaries of finished work, are written by Claude Code on your plan.</li>
         <li><strong>Workbench's push service,</strong> when your iPhone has notifications or the Lock Screen dashboard turned on (see below). If you add your own Apple push key in Settings &gt; iPhone, your Mac sends to Apple directly instead.</li>
+        <li><strong>Workbench's queue service,</strong> while your iPhone connection is on in Workbench, to check for prompts you queued while your Mac was offline.</li>
       </ul>
       <p>Claude Code, which you install separately, talks to Anthropic under Anthropic's own terms and privacy policy. Workbench doesn't change what Claude Code sends.</p>
 
       <h2>The iPhone app</h2>
-      <p>The iPhone app connects directly to Workbench on your own Mac, over your own Tailscale network. Your projects, sessions, and code go from your Mac to your phone without passing through our servers.</p>
+      <p>The iPhone app connects directly to Workbench on your own Mac, over your own Tailscale network. Your projects, sessions, and code go from your Mac to your phone without passing through our servers. The one exception is a prompt you queue while your Mac is offline (see below).</p>
       <ul>
         <li><strong>Camera:</strong> used only to scan the pairing code Workbench shows on your Mac. Nothing is recorded or saved.</li>
         <li><strong>Pairing details:</strong> stored in your phone's keychain.</li>
-        <li><strong>Notifications:</strong> off unless you turn them on, and only for the projects you choose on your Mac. Your phone's notification token goes to your own Mac. Your Mac encrypts each notification's text so only your phone can read it, then sends it through Workbench's push service to Apple. The service and Apple only see "Open Workbench to see what happened." The service doesn't store or log anything.</li>
-        <li><strong>Lock Screen dashboard:</strong> if you turn it on, your Mac sends its updates through the same push service to Apple. These updates aren't encrypted yet: they include your Mac's name, project names, and a short line about each session, like what Claude is doing or asking. Nothing is stored or logged. Turn the dashboard off and these updates stop.</li>
+        <li><strong>Notifications:</strong> off unless you turn them on, and only for the projects you choose on your Mac. Your phone's notification token goes to your own Mac. Your Mac encrypts each notification's text so only your phone can read it, then sends it through Workbench's push service to Apple. The service and Apple only see "Open Workbench to see what happened." Workbench doesn't store or log anything in the push service.</li>
+        <li><strong>Lock Screen dashboard:</strong> if you turn it on, your Mac sends its updates through the same push service to Apple. These updates aren't encrypted yet: they include your Mac's name, project names, and a short line about each session, like what Claude is doing or asking. Workbench doesn't store or log anything in the push service. Turn the dashboard off and these updates stop.</li>
+        <li><strong>Queued prompts:</strong> if your Mac is asleep or Workbench is closed, you can queue a prompt on your phone. Your phone encrypts it with a key made from your pairing code, then stores it on Workbench's queue service until your Mac picks it up, or until 14 days pass with no new prompts queued. The service keeps only the scrambled text, each waiting prompt's random id, a random mailbox number, and when it was added. For 14 days after your Mac picks prompts up, it also keeps the random ids of the prompts already picked up, so none start twice. A prompt your Mac has picked up stays, still scrambled, for up to a day until your Mac confirms it has it, so it isn't lost on the way. Nothing else is stored. Workbench, its host (Vercel), and its database provider (Upstash) can't read your prompts. When you make a new pairing code, your Mac first picks up anything waiting under the old one. After that, your Mac stops checking the old one, and anything still queued under the old code is deleted after 14 days. Your phone also keeps its own copy of your queued prompts, on your phone only.</li>
+        <li><strong>Saved project list:</strong> your phone keeps a copy of your Mac's project list from the last time it connected, so it can show your projects while your Mac is offline. It stays on your phone only.</li>
       </ul>
+
+      <h2>Server logs</h2>
+      <p>Workbench doesn't log requests to its own services. The companies that host them, like Vercel, keep standard request logs that can briefly record the IP address and time of each request. Your queued prompts stay unreadable, but the requests themselves aren't invisible.</p>
 
       <h2>This website</h2>
       <p>This site doesn't use cookies or analytics. To show the latest version and the version history, your browser asks GitHub for Workbench's public release list. The site's fonts come from Google Fonts, and the version history page loads two small scripts from cdnjs. Those services see your browser's request the way any website would, under their own privacy policies. Your browser keeps the release list for 15 minutes so it isn't fetched again on every page, and it's never sent anywhere.</p>
