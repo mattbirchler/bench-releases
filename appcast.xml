@@ -6,6 +6,24 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.2</title>
+      <pubDate>Mon, 09 Nov 2026 16:18:20 GMT</pubDate>
+      <sparkle:version>52</sparkle:version>
+      <sparkle:shortVersionString>0.9.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>A steadier chat</h3>
+<p>Numerous updates to make the chat view more stable and faster, and to make sure it never shows you a blank screen ever again.</p>
+<h3>Drag tabs to reorder them</h3>
+<p>Tabs can now be dragged along the tab bar, and the other tabs move out of the way as you go. A split pair moves together as one tab.</p>
+<h3>Fixes and smaller changes</h3>
+<ul><li><strong>Ctrl-Tab works in every tab.</strong> Ctrl-Tab and Ctrl-Shift-Tab used to switch tabs only from a terminal. In a chat, the message box treated them as typing. Now they step through the project&#x27;s tabs from anywhere in the main window.</li><li><strong>Clicking near a tab&#x27;s close button selects the tab.</strong> The gaps around a tab&#x27;s title and close button used to grab the window instead, so a click there could drag the window out of its tiled spot.</li><li><strong>Quit Workbench Completely means completely.</strong> With Keep Working on, this now ends the Claude tabs Workbench was keeping running, too.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.2-52/Workbench-0.9.2-52.zip" type="application/octet-stream" sparkle:edSignature="wE9Fl2ON/2HNvXklGXFDTQo1s+TspiqoSiVeNfhop2jxBkXD3jtBTZaz9LHqxYv7PYgEgQHK70Te3LPTeAOVAA==" length="31965922"/>
+    </item>
+    <item>
       <title>Workbench 0.9.1</title>
       <pubDate>Mon, 09 Nov 2026 02:29:05 GMT</pubDate>
       <sparkle:version>51</sparkle:version>
