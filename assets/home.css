@@ -564,3 +564,4 @@
 .reqs ul { margin: 0 0 24px; padding-left: 1.1em; color: var(--text-2); display: grid; gap: 6px; }
 .reqs ul:last-child { margin-bottom: 0; }
 .reqs a { color: var(--accent); text-underline-offset: 3px; }
+.phone-cta { margin-top: 28px; }

@@ -34,6 +34,7 @@
     </g>
   </symbol>
   <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="branch" viewBox="0 0 24 24"><path d="M6 3v12M6 15a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm12-9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 0c0 6-12 3-12 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
@@ -63,6 +64,9 @@
       <div class="hero-cta">
         <a class="btn btn-primary" data-download href="https://github.com/mattbirchler/bench-releases/releases/latest/download/Workbench.dmg">
           <svg aria-hidden="true"><use href="#download"/></svg>Download for Mac
+        </a>
+        <a class="btn btn-ghost" href="https://apps.apple.com/us/app/workbench-manage-your-agents/id6827762868">
+          <svg aria-hidden="true"><use href="#phone"/></svg>Get the iPhone app
         </a>
         <p class="hero-meta">Free. <span class="ver">Version <span data-latest-version>0.9.1</span>,</span> for Apple silicon Macs on macOS&nbsp;26 or later.</p>
       </div>
@@ -327,6 +331,9 @@
     <div class="feature-text wide">
       <h2 class="display">Keep up from your iPhone.</h2>
       <p>The iPhone app connects to your Mac over your own Tailscale network, with nothing in between. Sessions that need you sit at the top. Read along as Claude works, answer its questions, tap Allow or Deny, reply with a message or a photo, and review diffs from the couch. You can start new tabs and agents too.</p>
+      <a class="btn btn-ghost phone-cta" href="https://apps.apple.com/us/app/workbench-manage-your-agents/id6827762868">
+        <svg aria-hidden="true"><use href="#phone"/></svg>Get it on the App Store
+      </a>
     </div>
     <figure class="phone-media">
       <img src="assets/img/iphone.webp" alt="The Workbench iPhone app: a project list with sessions that need you, are working, and are done; a working session with its checklist; and a permission prompt with Allow and Deny" width="2400" height="1589" loading="lazy">
@@ -334,7 +341,7 @@
     <ul class="phone-points">
       <li><h3>Notifications you choose</h3><p>Right-click a project on the Mac to hear when Claude needs you, when it finishes, and when checks and deploys are done.</p></li>
       <li><h3>A Lock Screen dashboard</h3><p>Put every session on your Lock Screen at once, kept up to date by your Mac.</p></li>
-      <li><h3>iPad too</h3><p>The app is in beta on TestFlight, needs iOS 27, and runs as a full iPad app.</p></li>
+      <li><h3>iPad too</h3><p>The same app runs as a full iPad app. Both need iOS 27.</p></li>
     </ul>
   </div>
 </section>
@@ -421,6 +428,7 @@ Field Notes  ~/Code/field-notes  agent/export</span>
       <h3>Nice to have</h3>
       <ul>
         <li>The <a href="https://cli.github.com">GitHub CLI</a> for pull requests, checks, and deploys</li>
+        <li>The <a href="https://apps.apple.com/us/app/workbench-manage-your-agents/id6827762868">Workbench iPhone app</a> from the App Store</li>
         <li><a href="https://tailscale.com/download/mac">Tailscale</a> for the iPhone app and other Macs</li>
       </ul>
     </div>
