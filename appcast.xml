@@ -6,6 +6,31 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.4</title>
+      <pubDate>Wed, 11 Nov 2026 13:29:12 GMT</pubDate>
+      <sparkle:version>54</sparkle:version>
+      <sparkle:shortVersionString>0.9.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>Commands that are easier to follow</h3>
+<p>The commands Claude runs read much better in the chat now.</p>
+<ul><li><strong>Quiet rows for quick looks.</strong> When Claude only reads a file, searches or checks <code>git status</code>, it shows as a single quiet line, like &quot;Read PantryStore.swift lines 10–20&quot;. Click it to open the file.</li><li><strong>Claude&#x27;s own words first.</strong> A command card leads with Claude&#x27;s description of what it&#x27;s doing, like &quot;Ran the tests&quot;, with the command underneath. While it runs, a timer ticks so you know it&#x27;s still going.</li><li><strong>The output you care about.</strong> Short output shows in full. Longer output shows the last few lines, where the results usually are, with <strong>Show all</strong> for the rest.</li><li><strong>Past tense when it&#x27;s done.</strong> Finished commands read &quot;Ran&quot;, &quot;Read&quot;, &quot;Searched for&quot; and so on, so you can tell at a glance what already happened.</li><li><strong>Files written from the shell look like files.</strong> When Claude writes a file with a shell here-document, the chat shows it like any other file Claude wrote, with its contents and line count.</li></ul>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.4/command-cards.png" alt="A chat where Claude searches and reads a file as quiet one-line rows, edits a file, writes a test file, runs the tests with the last lines of output and a &quot;Show all 12 lines&quot; button, and checks git status" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Pictures, front and center</h3>
+<p>Click a picture in the chat and it opens over the whole Workbench window instead of in a small sheet. Pinch to zoom with your trackpad, or double-click. The viewer fades in gently and darkens toward the edges, so the picture stands out.</p>
+<p>Right-click a picture, in the chat or in the full-screen viewer, to <strong>Copy Image</strong> or <strong>Save Image…</strong>.</p>
+<h3>Rename a tab</h3>
+<p>Right-click a tab and choose <strong>Rename Tab…</strong> to give it a name of your own. <strong>Use Default Name</strong> puts the original back.</p>
+<h3>Fixes and smaller changes</h3>
+<ul><li><strong>Claude&#x27;s question stays in view while subagents work.</strong> It used to get pushed out of sight as subagent updates came in.</li><li><strong>The copy button sits at the bottom of Claude&#x27;s replies.</strong> You no longer have to scroll back up to copy a long reply you just finished reading.</li><li><strong>Active projects with no open tabs move down.</strong> In the Active list, projects you&#x27;re working in now come first.</li><li><strong>Smoother scrolling past plans</strong> in the chat.</li><li><strong>Checking this Mac&#x27;s HTTPS address is more reliable.</strong> The check skips system proxies, and if it fails, it says what went wrong.</li></ul>
+<h3>Workbench for iPad</h3>
+<p>The iPhone and iPad app now has a Mac-style layout on a wide iPad: projects on the left, the chat in the middle, and Changes, Files and Artifacts on the right. That update is on its way to the App Store now.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.4-54/Workbench-0.9.4-54.zip" type="application/octet-stream" sparkle:edSignature="Pl5GiqWoZ3MxYpRBMUrOKQu6tEcYVTgwPR6ur6TbDrc3JM0+ZmVaruNnu/VG1Oagt0cHHKriqUs2uYEPXIXnCQ==" length="32101017"/>
+    </item>
+    <item>
       <title>Workbench 0.9.3</title>
       <pubDate>Tue, 10 Nov 2026 13:58:12 GMT</pubDate>
       <sparkle:version>53</sparkle:version>
