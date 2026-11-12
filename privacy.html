@@ -52,9 +52,6 @@
         <li><strong>What's left out:</strong> location, time zone, language, and device name are removed before anything is sent, and PostHog is set to discard IP addresses.</li>
       </ul>
 
-      <h2>This website</h2>
-      <p>The Workbench website counts page views, also with PostHog. Each view sends which page it was and the site that linked you here, if any. It uses no cookies. A random ID lasts until you close the tab, so a visit counts once, and nothing connects one visit to your next. Location isn't looked up, and IP addresses are discarded. Nothing is sent if your browser has Do Not Track or Global Privacy Control turned on.</p>
-
       <h2>The Mac app</h2>
       <p>Workbench runs on your Mac and keeps its settings and project list there. Besides the usage data above, it connects to:</p>
       <ul>
@@ -80,7 +77,8 @@
       <p>Workbench doesn't log requests to its own services. The companies that host them, like Vercel, keep standard request logs that can briefly record the IP address and time of each request. Your queued prompts stay unreadable, but the requests themselves aren't invisible.</p>
 
       <h2>This website</h2>
-      <p>This site doesn't use cookies or analytics. To show the latest version and the version history, your browser asks GitHub for Workbench's public release list. The site's fonts come from Google Fonts, and the version history page loads two small scripts from cdnjs. Those services see your browser's request the way any website would, under their own privacy policies. Your browser keeps the release list for 15 minutes so it isn't fetched again on every page, and it's never sent anywhere.</p>
+      <p>This site doesn't use cookies. It counts page views with PostHog: each view sends which page it was and the site that linked you here, if any. A random ID lasts until you close the tab, so a visit counts once, and nothing connects one visit to your next. Location isn't looked up, and IP addresses are discarded. Nothing is sent if your browser has Do Not Track or Global Privacy Control turned on.</p>
+      <p>To show the latest version and the version history, your browser asks GitHub for Workbench's public release list. The site's fonts come from Google Fonts, and the version history page loads two small scripts from cdnjs. Those services see your browser's request the way any website would, under their own privacy policies. Your browser keeps the release list for 15 minutes so it isn't fetched again on every page, and it's never sent anywhere.</p>
 
       <h2>Children</h2>
       <p>Workbench isn't directed at children and doesn't knowingly collect information from anyone.</p>
