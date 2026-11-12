@@ -1,5 +1,5 @@
-// Shared by every page: the header, and the latest release behind each
-// download button.
+// Shared by every page: the header, the latest release behind each
+// download button, and an anonymous count of page views.
 (function () {
   "use strict";
 
@@ -83,9 +83,59 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
+  // ---------- Page views ----------
+
+  // One anonymous event per page, sent straight to PostHog: no cookies and
+  // no script from anyone else. The random ID lasts as long as the tab, so
+  // a visit across pages counts once, and nothing ties one visit to the
+  // next. PostHog is told not to look up a location, and the project
+  // discards IP addresses. privacy.html says all of this; keep them in step.
+  const POSTHOG_URL = "https://us.i.posthog.com/i/v0/e/";
+  const POSTHOG_TOKEN = "phc_rBkGD8e38uUJjekGXqxFiBGNaJnDQf8A5TADoNRehTAc";
+  const VISIT_KEY = "wb-visit";
+
+  function sendPageView() {
+    try {
+      // Only the live site counts, and never someone who asked not to be tracked.
+      if (!/(^|\.)workbenchapp\.dev$/.test(location.hostname)) return;
+      if (navigator.doNotTrack === "1" || navigator.globalPrivacyControl) return;
+      let visit = sessionStorage.getItem(VISIT_KEY);
+      if (!visit) {
+        visit = crypto.randomUUID();
+        sessionStorage.setItem(VISIT_KEY, visit);
+      }
+      let referrer = "";
+      try {
+        const from = document.referrer && new URL(document.referrer);
+        // Where a visit came from, not which page of the site was before this one.
+        if (from && from.hostname !== location.hostname) referrer = from.hostname;
+      } catch (e) {}
+      fetch(POSTHOG_URL, {
+        method: "POST",
+        keepalive: true,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          api_key: POSTHOG_TOKEN,
+          event: "$pageview",
+          distinct_id: visit,
+          properties: {
+            app: "Workbench Website",
+            $current_url: location.origin + location.pathname,
+            $host: location.hostname,
+            $pathname: location.pathname,
+            $referring_domain: referrer || "$direct",
+            $process_person_profile: false,
+            $geoip_disable: true,
+          },
+        }),
+      }).catch(() => {});
+    } catch (e) {}
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     wireHeader();
     wireDownloads();
+    sendPageView();
   });
 
   // Chrome and Safari can restore a page from memory when you come back to
