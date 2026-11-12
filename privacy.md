@@ -37,7 +37,7 @@ The iPhone app connects directly to Workbench on your own Mac, over your own Tai
 
 ## This website
 
-This site doesn't use cookies. It counts page views with PostHog: each view sends which page it was and the site that linked you here, if any. A random ID lasts until you close the tab, so a visit counts once, and nothing connects one visit to your next. Location isn't looked up, and IP addresses are discarded. Nothing is sent if your browser has Do Not Track or Global Privacy Control turned on.
+This site doesn't use cookies. It counts page views and clicks on the download links with PostHog: each one sends which page it was on, and a page view also sends the site that linked you here, if any. A random ID lasts until you close the tab, so a visit counts once, and nothing connects one visit to your next. Location isn't looked up, and IP addresses are discarded. Nothing is sent if your browser has Do Not Track or Global Privacy Control turned on.
 
 To show the latest version and the version history, your browser asks GitHub for Workbench's public release list. The site's fonts come from Google Fonts, and the version history page loads two small scripts from cdnjs. Those services see your browser's request the way any website would, under their own privacy policies. Your browser keeps the release list for 15 minutes so it isn't fetched again on every page, and it's never sent anywhere.
 
