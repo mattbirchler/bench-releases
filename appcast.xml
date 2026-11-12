@@ -6,6 +6,31 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.5</title>
+      <pubDate>Thu, 12 Nov 2026 11:09:10 GMT</pubDate>
+      <sparkle:version>55</sparkle:version>
+      <sparkle:shortVersionString>0.9.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>Ask a side question with /btw</h3>
+<p>Start a message with <strong>/btw</strong> and the message box turns into a side question: a &quot;btw&quot; chip appears in front of what you type, and a hint reminds you that the answer stays out of the conversation.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.5/btw-chip.png" alt="The message box with a &quot;btw&quot; chip in front of the question &quot;why did it sort by name first?&quot; and the hint &quot;Claude answers on the side. It isn&#x27;t added to the conversation.&quot;" style="max-width:100%;height:auto;border-radius:8px"></p>
+<p>Claude answers in a card above the box, with everything it knows about the conversation so far, while the conversation itself carries on untouched. Copy the answer, or close the card when you&#x27;re done. Side questions can only be answered, so Claude can&#x27;t run commands or change files from one.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.5/btw-answer.png" alt="A side question card above the message box, with the question &quot;why did it sort by name first?&quot; and Claude&#x27;s answer" style="max-width:100%;height:auto;border-radius:8px"></p>
+<p>To go back to a normal message, press Escape, or Delete at the start of the line. Side questions work from the iPhone and iPad app and from your other Macs too.</p>
+<h3>Pair your iPhone without Tailscale</h3>
+<p>You no longer need Tailscale to use Workbench on your iPhone or iPad. Workbench on your Mac shows a pairing code right away, and the app connects over your home Wi-Fi. If you do use Tailscale, Workbench still prefers it, and falls back to Wi-Fi when Tailscale is off.</p>
+<p>To get the Wi-Fi connection on a phone you already paired, update the iPhone app and pair it again once.</p>
+<h3>Copying that pastes properly</h3>
+<p>The copy button on a message, and any text you select in the chat, now copy as formatted text and as Markdown. Paste into Mail or Notes and you get headings, lists and links. Paste into a plain-text field or a terminal and you get the Markdown.</p>
+<h3>Fixes and smaller changes</h3>
+<ul><li><strong>Tabs animate</strong> as they open and close.</li><li><strong>Every Claude tab shows on the sidebar card.</strong> A project&#x27;s card used to describe only one of them.</li><li><strong>Tab moves to the next field</strong> in a form prompt box.</li><li><strong>The ⌘ number hints in the sidebar</strong> wait until you hold Command, and no longer shift the rows around.</li><li><strong>Paths with ~ stay intact in the chat.</strong> Text between two ~ characters used to get a line through it.</li><li><strong>Messages that end on an @ file mention send.</strong> They used to sit unsent in the terminal.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.5-55/Workbench-0.9.5-55.zip" type="application/octet-stream" sparkle:edSignature="fxnFdx2pWflI/Ujh9p8PN/oWm0OpWsjL1NYvQ8kUef9MvR8EIEoMkFxLNPwhWm/JCLdodm+i9aEjV/IDsPMTCA==" length="32254048"/>
+    </item>
+    <item>
       <title>Workbench 0.9.4</title>
       <pubDate>Wed, 11 Nov 2026 13:29:12 GMT</pubDate>
       <sparkle:version>54</sparkle:version>
