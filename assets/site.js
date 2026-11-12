@@ -1,5 +1,5 @@
 // Shared by every page: the header, the latest release behind each
-// download button, and an anonymous count of page views.
+// download button, and anonymous counts of page views and download clicks.
 (function () {
   "use strict";
 
@@ -85,7 +85,7 @@
 
   // ---------- Page views ----------
 
-  // One anonymous event per page, sent straight to PostHog: no cookies and
+  // One anonymous event per page, and one per download click, sent straight to PostHog: no cookies and
   // no script from anyone else. The random ID lasts as long as the tab, so
   // a visit across pages counts once, and nothing ties one visit to the
   // next. PostHog is told not to look up a location, and the project
@@ -94,7 +94,8 @@
   const POSTHOG_TOKEN = "phc_rBkGD8e38uUJjekGXqxFiBGNaJnDQf8A5TADoNRehTAc";
   const VISIT_KEY = "wb-visit";
 
-  function sendPageView() {
+  // Sends one event, with the page it happened on.
+  function track(event, properties) {
     try {
       // Only the live site counts, and never someone who asked not to be tracked.
       if (!/(^|\.)workbenchapp\.dev$/.test(location.hostname)) return;
@@ -104,37 +105,58 @@
         visit = crypto.randomUUID();
         sessionStorage.setItem(VISIT_KEY, visit);
       }
-      let referrer = "";
-      try {
-        const from = document.referrer && new URL(document.referrer);
-        // Where a visit came from, not which page of the site was before this one.
-        if (from && from.hostname !== location.hostname) referrer = from.hostname;
-      } catch (e) {}
       fetch(POSTHOG_URL, {
         method: "POST",
+        // Lets a click's event finish sending as the page leaves for the download.
         keepalive: true,
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           api_key: POSTHOG_TOKEN,
-          event: "$pageview",
+          event,
           distinct_id: visit,
-          properties: {
+          properties: Object.assign({
             app: "Workbench Website",
             $current_url: location.origin + location.pathname,
             $host: location.hostname,
             $pathname: location.pathname,
-            $referring_domain: referrer || "$direct",
             $process_person_profile: false,
             $geoip_disable: true,
-          },
+          }, properties),
         }),
       }).catch(() => {});
     } catch (e) {}
   }
 
+  function sendPageView() {
+    let referrer = "";
+    try {
+      const from = document.referrer && new URL(document.referrer);
+      // Where a visit came from, not which page of the site was before this one.
+      if (from && from.hostname !== location.hostname) referrer = from.hostname;
+    } catch (e) {}
+    track("$pageview", { $referring_domain: referrer || "$direct" });
+  }
+
+  // ---------- Download clicks ----------
+
+  // Counts clicks on any link to the Mac app's disk image (the buttons, and
+  // older versions on the releases page) or to the iPhone app's App Store
+  // page. One listener on the page, so links added later count too.
+  function wireDownloadClicks() {
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest && event.target.closest("a[href]");
+      if (!link) return;
+      let platform = null;
+      if (/\.(dmg|zip)$/i.test(link.pathname)) platform = "mac";
+      else if (link.hostname === "apps.apple.com") platform = "iphone";
+      if (platform) track("download_clicked", { platform });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     wireHeader();
     wireDownloads();
+    wireDownloadClicks();
     sendPageView();
   });
 
