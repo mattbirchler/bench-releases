@@ -1,6 +1,6 @@
 # Workbench privacy policy
 
-*Last updated November 7, 2026*
+*Last updated November 12, 2026*
 
 Workbench is made by Matt Birchler (Birchtree Productions). This policy covers the Workbench Mac app and the Workbench iPhone app.
 
@@ -37,7 +37,9 @@ The iPhone app connects directly to Workbench on your own Mac, over your own Tai
 
 ## This website
 
-This site doesn't use cookies or analytics. To show the latest version and the version history, your browser asks GitHub for Workbench's public release list. The site's fonts come from Google Fonts, and the version history page loads two small scripts from cdnjs. Those services see your browser's request the way any website would, under their own privacy policies. Your browser keeps the release list for 15 minutes so it isn't fetched again on every page, and it's never sent anywhere.
+This site doesn't use cookies. It counts page views with PostHog: each view sends which page it was and the site that linked you here, if any. A random ID lasts until you close the tab, so a visit counts once, and nothing connects one visit to your next. Location isn't looked up, and IP addresses are discarded. Nothing is sent if your browser has Do Not Track or Global Privacy Control turned on.
+
+To show the latest version and the version history, your browser asks GitHub for Workbench's public release list. The site's fonts come from Google Fonts, and the version history page loads two small scripts from cdnjs. Those services see your browser's request the way any website would, under their own privacy policies. Your browser keeps the release list for 15 minutes so it isn't fetched again on every page, and it's never sent anywhere.
 
 ## Children
 
