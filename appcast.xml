@@ -6,6 +6,39 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.6</title>
+      <pubDate>Fri, 13 Nov 2026 01:26:08 GMT</pubDate>
+      <sparkle:version>56</sparkle:version>
+      <sparkle:shortVersionString>0.9.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>Your other Macs look and work like this one</h3>
+<p>Switch the sidebar to another Mac and its projects are now sorted the way they are here: Pinned at the top, then Active, Recent and Inactive. It&#x27;s the same list you&#x27;d see sitting at that Mac.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.6/another-mac-sidebar.png" alt="Two project lists side by side, one for this Mac and one for another Mac. Both are sorted into Pinned, Active, Recent and Inactive." style="max-width:100%;height:auto;border-radius:8px"></p>
+<p>Right-click a project on another Mac and you get the same menu you get on this one. Start a Claude tab or an agent, pin it, move it to Inactive, clean up a finished agent: all of it now works from wherever you are.</p>
+<h3>See the whole command before you allow it</h3>
+<p>When Claude asks to run a command, the card above the message box now shows all of it. It used to show only the start of the first line, which isn&#x27;t much to say yes to. A long command scrolls.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.6/whole-command.png" alt="A card reading &quot;Claude wants to run a command&quot; with a six-line shell command shown in full, and Allow and Deny buttons beside it." style="max-width:100%;height:auto;border-radius:8px"></p>
+<p>Allow now comes first and Deny second everywhere Workbench asks: in the sidebar, in the Overview and in the chat.</p>
+<p>Workbench also asks before a few things that can&#x27;t be undone: removing a project, discarding your review comments, making a new pairing code, and restoring the default Claude actions.</p>
+<h3>More room to write, and replies that are easier to read</h3>
+<p>The message box now grows to 18 lines before it scrolls, more than twice what it did, so a pasted paragraph or a list of feedback stays in view while you edit it.</p>
+<p>In Claude&#x27;s replies, headings are now larger than the text under them, and code blocks and tables are a size bigger. More of the chat follows the text size you pick with ⌘+ and ⌘-, including the cards above the message box.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.6/reply-and-message-box.png" alt="A reply from Claude with a heading, two subheadings, a list and a code block, above a message box holding nine lines of typed feedback." style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Smoother all over</h3>
+<p>This update went through how everything in Workbench moves.</p>
+<ul><li><strong>The model list</strong> opens out of the model button. It used to fade in with the conversation showing through it.</li><li><strong>Cards above the message box</strong> rise into place, and no longer slide up through the box.</li><li><strong>The sidebar holds still</strong> when you pick a project. New Agent is now a small + on the project&#x27;s row, where it used to be a row of its own that pushed the list down.</li><li><strong>Sidebar sections fold</strong> open and shut, and a project that changes section slides to its new place.</li><li><strong>Switching between the terminal and the chat</strong> no longer shows one through the other.</li><li><strong>Reduce Motion</strong> is respected in the chat: things appear without moving.</li></ul>
+<h3>One name for each thing</h3>
+<p>Menus and buttons that do the same thing now say the same thing. It&#x27;s New Claude Tab, New Shell Tab and New Agent on a Branch wherever you start one, and Side by Side, Stacked and Unsplit wherever you arrange a split. Project menus, and the buttons above a file and its changes, keep one order.</p>
+<h3>Fixes and smaller changes</h3>
+<ul><li><strong>Workbench keeps running</strong> when you close its last window.</li><li><strong>Skills from plugins</strong> show up in the list when you type a slash.</li><li><strong>A Claude tab counts as working</strong> when its title shows the half-circle spinner.</li><li><strong>Small buttons are easier to click</strong>, including tab close and the clear button in the command bar.</li><li><strong>Names that are cut off</strong> show in full when you rest the pointer on them.</li><li><strong>Status colours</strong> (passing, failing, lines added and removed) are easier to read in both light and dark.</li><li><strong>The cards above the message box</strong> share one shape, and Send Answer is the same size as Allow and Deny.</li><li><strong>Settings sheets</strong> follow your theme, and the welcome screens&#x27; buttons follow its accent colour.</li><li><strong>The command bar</strong> lists worktrees by branch, as the sidebar does.</li><li><strong>VoiceOver</strong> reads sidebar rows as buttons and names the buttons in the title bar.</li></ul>
+<p>The iPhone and iPad app is getting the same attention in its next update.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.6-56/Workbench-0.9.6-56.zip" type="application/octet-stream" sparkle:edSignature="zLZEKwQf30jf1G+Q9jRJW4n21ypZQe/Qe1Z1paz8entHzAVRz+U8Iw9O6XxweT/fagQv5ZPCYrjwpu8rpPx+Dg==" length="32372484"/>
+    </item>
+    <item>
       <title>Workbench 0.9.5</title>
       <pubDate>Thu, 12 Nov 2026 11:09:10 GMT</pubDate>
       <sparkle:version>55</sparkle:version>
