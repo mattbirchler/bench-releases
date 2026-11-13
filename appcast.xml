@@ -6,6 +6,29 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.7</title>
+      <pubDate>Fri, 13 Nov 2026 13:39:35 GMT</pubDate>
+      <sparkle:version>57</sparkle:version>
+      <sparkle:shortVersionString>0.9.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>A calmer sidebar</h3>
+<p>The lines under each project now use the full width of the sidebar. What Claude is doing, and its recap when it&#x27;s done, used to stop well short of the right edge and get cut off after a few words.</p>
+<p>A busy project is now just two lines: its name, and what Claude is doing right now. The list of its last few steps is gone. Cut down to a few words each, those steps said little, and the row changed every time Claude did something. The chat still shows every step in full.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.7/sidebar-rows.png" alt="The Active section of the sidebar. Pantry is running its tests, with a &quot;+ Agent&quot; button beside its name. Recipes has finished, with a two-line recap under it. Field Notes is busy reading its importer." style="max-width:100%;height:auto;border-radius:8px"></p>
+<p>The button for a new agent is easier to find. It&#x27;s a round + on the project you&#x27;re in, and it says &quot;Agent&quot; when you point at it. It grows over the row, so nothing in the sidebar moves.</p>
+<h3>Drop a screenshot on Claude</h3>
+<p>Drag a screenshot or any other file onto a Claude tab&#x27;s terminal and Workbench types its path, the way Terminal does. Claude Code takes an image&#x27;s path as an attachment, so this is a quick way to show Claude what you&#x27;re looking at. A picture dragged from a web page is saved to a file first, and links and text type as themselves.</p>
+<h3>Put your Macs in order</h3>
+<p>If you&#x27;ve paired other Macs, drag their buttons at the top of the sidebar into the order you want, or right-click one and choose Move Left or Move Right. This Mac always stays first.</p>
+<h3>Fixes</h3>
+<ul><li><strong>Agent teams:</strong> when Claude works with a team of agents, the messages they send each other no longer show up in the chat as if you sent them. This fixes it on iPhone and iPad too.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.7-57/Workbench-0.9.7-57.zip" type="application/octet-stream" sparkle:edSignature="HQ7roqR1msC9KNdhQfzx162qBdVpRjY0EuWIiETI0mEN/t0b/iX4rT/HaFWRIL1pf/Ebs6s/IW3qmkov2A7WDw==" length="32370649"/>
+    </item>
+    <item>
       <title>Workbench 0.9.6</title>
       <pubDate>Fri, 13 Nov 2026 01:26:08 GMT</pubDate>
       <sparkle:version>56</sparkle:version>
