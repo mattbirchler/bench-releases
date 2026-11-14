@@ -6,6 +6,37 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.8</title>
+      <pubDate>Sat, 14 Nov 2026 02:13:41 GMT</pubDate>
+      <sparkle:version>58</sparkle:version>
+      <sparkle:shortVersionString>0.9.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>Switch Claude&#x27;s mode from the message box</h3>
+<p>There&#x27;s a new button beside the model picker that shows which mode Claude is in, and lets you change it without going to the terminal. Pick from Ask first, Accept edits, Plan, Auto, or Bypass permissions, each with a line explaining what it does.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.8/mode-button.png" alt="The message box in a Claude tab, with a &quot;Bypass permissions&quot; button next to the model picker, and a ring beside the model that&#x27;s a bit under half full." style="max-width:100%;height:auto;border-radius:8px"></p>
+<p>Bypass permissions only works in a session that Claude started with it (like <code>claude --dangerously-skip-permissions</code>). Pick it anywhere else and Workbench tells you so, and leaves the mode as it was.</p>
+<h3>Context at a glance</h3>
+<p>How full Claude&#x27;s context is now shows as a small ring beside the model, instead of numbers like &quot;64k / 1M&quot;. It fills up as the conversation grows, and turns orange, then red, as it gets close to the limit. Point at it to see the exact numbers.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.8/context-ring.png" alt="The model picker reading &quot;Opus 5.5&quot;, with a small ring beside it that&#x27;s a bit under half full." style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Easier to find your place in the sidebar</h3>
+<p>When several agents were working at once, the project you had open could be hard to pick out from the busy ones around it. With some themes, they all had the same light gray outline.</p>
+<p>The project you have open now has a thicker ring and a light fill. Busy projects use your theme&#x27;s orange (or Claude orange) instead of gray, so you can still see at a glance which ones have work going.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.8/sidebar.png" alt="The Active section of the sidebar. Blog and Field Notes are working, with orange outlines. Pantry is also working and is the project that&#x27;s open, with a thick light ring around it." style="max-width:100%;height:auto;border-radius:8px"></p>
+<p>If you&#x27;d rather not see the sparkles on busy projects, choose Calm or Still in Settings › Appearance › Motion.</p>
+<h3>Copy a table from the chat</h3>
+<p>Point at a table in the chat and a copy button appears in its corner, just like on code blocks. It copies the table as Markdown, with its columns lined up so it reads well as plain text too. On iPhone the button is always shown.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.8/table.png" alt="A table in the chat comparing three ways to store a pantry list, with a copy button in its top right corner." style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Smaller things</h3>
+<ul><li><strong>⌘ shortcut hints show sooner.</strong> Holding Command shows the ⌘1 to ⌘9 hints in the sidebar after a tenth of a second, instead of half a second.</li><li><strong>Arrow keys in a long message.</strong> In the message box, Up and Down now move through the lines a long paragraph wraps onto. They only bring back your previous messages from the top or bottom line.</li><li><strong>Tab shortcuts.</strong> Settings now says where your tab shortcuts actually show up: the New Tab page and the + button&#x27;s menu. A project&#x27;s shortcuts also work in its worktrees.</li><li><strong>Freeze reports.</strong> If Workbench ever stops responding for a few seconds, it saves a report of what it was doing in <code>~/Library/Application Support/Bench/hangs</code>. If you send one along with a bug report, it helps a lot.</li></ul>
+<h3>Fixes</h3>
+<ul><li>The green check on a finished project in the sidebar is no longer cut off on its right edge.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.8-58/Workbench-0.9.8-58.zip" type="application/octet-stream" sparkle:edSignature="0yLvjsP9nQmRDQ6fQLNfQe+ioN+mi/dWwH+bnbfrY7FLjYmW8DEWbCIzE+IJusrx1Py0OYPLEknqJklwa4PxAQ==" length="32401743"/>
+    </item>
+    <item>
       <title>Workbench 0.9.7</title>
       <pubDate>Fri, 13 Nov 2026 13:39:35 GMT</pubDate>
       <sparkle:version>57</sparkle:version>
