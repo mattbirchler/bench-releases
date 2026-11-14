@@ -6,6 +6,38 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.9</title>
+      <pubDate>Sat, 14 Nov 2026 21:57:34 GMT</pubDate>
+      <sparkle:version>59</sparkle:version>
+      <sparkle:shortVersionString>0.9.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>More slash commands work in the chat</h3>
+<p>Seven of Claude Code&#x27;s commands used to send you to the terminal, because they open a picker or dialog only the terminal can show. They now work right in the chat:</p>
+<ul><li><strong><code>/context</code> and <code>/agents</code></strong> show what they print as a card in the conversation. Long output folds, with a button for the rest.</li><li><strong><code>/status</code></strong> shows a card with the session&#x27;s model, mode, context, account and folder.</li><li><strong><code>/help</code></strong> lists every command, grouped into Claude Code&#x27;s own, the project&#x27;s, yours and each plugin&#x27;s. Click one to put it in the message box.</li><li><strong><code>/resume</code></strong> opens Past Sessions, the same list as ⌘Y.</li><li><strong><code>/usage</code>, <code>/cost</code> and <code>/stats</code></strong> open Usage and Costs.</li><li><strong><code>/export</code></strong> asks where to save the conversation, then saves it.</li></ul>
+<h3>Merge When Ready</h3>
+<p>When you ask Claude to merge a pull request, it usually sits and waits for the checks to finish. That ties up the session and spends tokens on waiting. Workbench already keeps an eye on each pull request&#x27;s checks, so now it does the waiting.</p>
+<p>There&#x27;s a new Merge action in the Changes panel, and it follows the pull request:</p>
+<ul><li><strong>Checks running:</strong> the button says Merge When Ready. Click it and Workbench asks Claude to merge once the checks pass. A line under the buttons shows how far along they are, and you can click again to cancel.</li><li><strong>Checks passed:</strong> Merge asks Claude right away.</li><li><strong>Checks failing:</strong> the button becomes Fix Checks, which asks Claude to read the failed logs, fix the problem and push.</li></ul>
+<p>A waiting merge is called off if the checks fail or the pull request changes, and you get a notification either way. It&#x27;s also dropped if you quit Workbench.</p>
+<h3>A sidebar that says more</h3>
+<p><strong>What each agent is working on.</strong> In the Standard layout, a busy project now shows its task on the line under its name, then the timer and the current step. With several agents going, &quot;Running the tests&quot; alone didn&#x27;t say which job was which.</p>
+<p><strong>Room for two lines.</strong> What Claude is doing, and a quiet project&#x27;s status (like a pull request&#x27;s title), now wrap onto a second line instead of being cut off after a few words. Short text still takes one line.</p>
+<p><strong>Merged worktrees fold away.</strong> Two or more merged worktrees with nothing going on show as one line, like &quot;4 merged&quot;, under their project. Click it to see them, or Clean Up to remove them all after one question.</p>
+<p><strong>Choose how long projects stay Active and Recent.</strong> Projects used to leave Active after 6 hours and go Inactive (closing their tabs) after a day. If you come back to a project every few days, that meant always finding it closed. In Settings › General › Sidebar you can now pick both times, and turn off closing a project&#x27;s tabs when it goes Inactive.</p>
+<h3>Empty screens with something to look at</h3>
+<p>A new chat, the Overview with no sessions, a project with no changes or no artifacts: these used to be an icon and two lines of gray text. Each now shows a small terminal-style panel that hints at what will be there, and a button where there&#x27;s something to do.</p>
+<p><img src="https://mattbirchler.github.io/bench-releases/images/0.9.9/empty-chat.png" alt="A new, empty chat. A small terminal panel shows the prompt &quot;fix the flaky login test&quot; and Claude&#x27;s first two steps. Under it: &quot;Ready when you are. Tell Claude what to work on. Type / for commands, or @ to point it at a file.&quot;" style="max-width:100%;height:auto;border-radius:8px"></p>
+<h3>Smaller things</h3>
+<ul><li><strong>The context ring explains itself.</strong> Point at the ring beside the model (or click it) and a card shows how full Claude&#x27;s context is, the token count, and what happens when it fills up. When it&#x27;s getting full, the card suggests <code>/compact</code> or a new chat.</li></ul>
+<h3>Fixes</h3>
+<ul><li><strong>Blank chats.</strong> Switching to a chat sometimes showed nothing, with the conversation a long scroll up. The newest part of the conversation is now drawn in a way that can&#x27;t come up empty.</li><li><strong>A crash at launch on some Macs.</strong> On a few Macs, Workbench quit about a second after opening. The menu bar icon was the cause, and it has been rebuilt. Its panel now opens with a small arrow pointing at the icon, and otherwise works the same.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.9-59/Workbench-0.9.9-59.zip" type="application/octet-stream" sparkle:edSignature="j8m7FHAZ9ejs0xBgVe5TM5sderj4OyEKY8ELQonI99fPR6ANh5/9XPJcvpUylbVtHrY7oNKSRISwxqEEEStvDQ==" length="32540598"/>
+    </item>
+    <item>
       <title>Workbench 0.9.8</title>
       <pubDate>Sat, 14 Nov 2026 02:13:41 GMT</pubDate>
       <sparkle:version>58</sparkle:version>
