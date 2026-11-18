@@ -6,6 +6,26 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.10</title>
+      <pubDate>Wed, 18 Nov 2026 00:13:26 GMT</pubDate>
+      <sparkle:version>61</sparkle:version>
+      <sparkle:shortVersionString>0.9.10</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<h3>Copy a whole file</h3>
+<p>The file viewer and the changes viewer now have a copy button at the top, next to the wrap button. Click it to copy everything in the file. In the changes viewer, it copies the file as it is now, not the diff.</p>
+<h3>Removed worktrees free up space right away</h3>
+<p>When you clean up a worktree or discard an agent&#x27;s work, Workbench now deletes the worktree&#x27;s folder outright. Before, it went to the Trash, where it kept taking up room until you emptied it. If you&#x27;d rather keep the safety net, turn on &quot;Move removed worktrees to the Trash&quot; in Settings › General › Agents.</p>
+<h3>Smaller things</h3>
+<ul><li><strong>Switching models doesn&#x27;t ask first.</strong> In a long conversation, picking a different model used to bring up an alert asking if you were sure. Now it just switches, the same as in Claude Code&#x27;s terminal. This applies on iPhone too.</li><li><strong>Syntax colors when reviewing a commit.</strong> The Review view shows every file in a commit together, and none of that code used to be colored. Each file&#x27;s code is now colored for its own language.</li></ul>
+<h3>Fixes</h3>
+<ul><li><strong>⌘C in Claude Code&#x27;s terminal.</strong> If you selected text inside Claude Code and pressed ⌘C, nothing was copied. The key now reaches Claude Code when the terminal itself has nothing selected, so the copy works.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.10-61/Workbench-0.9.10-61.zip" type="application/octet-stream" sparkle:edSignature="GnzLZ92WfhImXXAGH2qfWVShR9kwIJAosO6X5pV/p5zCIRLOBhcpmXM/0d1sp76OjTNutQI72exQJvYjiGyMCA==" length="32554829"/>
+    </item>
+    <item>
       <title>Workbench 0.9.9</title>
       <pubDate>Sat, 14 Nov 2026 23:57:08 GMT</pubDate>
       <sparkle:version>60</sparkle:version>
