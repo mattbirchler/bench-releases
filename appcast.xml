@@ -6,6 +6,19 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.11</title>
+      <pubDate>Thu, 19 Nov 2026 07:37:59 GMT</pubDate>
+      <sparkle:version>62</sparkle:version>
+      <sparkle:shortVersionString>0.9.11</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<ul><li><strong>Dictation.</strong> Many users dictate into Workbench already through an app like Wispr Flow. If you don&#x27;t already have an app for this, you can enable it in settings.</li><li><strong>Visual improvements across the board.</strong></li><li>A new message box, with Claude&#x27;s status and Stop built in</li><li>Chat view is more compact and helpful</li><li>Quiet sounds when Claude finishes or needs you</li><li>Depth on the canvas and a soft fade under the tab bar</li><li>The start page glow in each project&#x27;s color</li><li>Press states on buttons</li><li>The sidebar more clearly distinguishes the active project</li><li>To-do updates no longer appearing as turns</li><li><strong>More questions from Claude can be answered in the chat view.</strong></li><li><strong>Changes panel git header.</strong> A tidier header.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.11-62/Workbench-0.9.11-62.zip" type="application/octet-stream" sparkle:edSignature="0kT5hOnk6x+wkD8wyzQKtW2OCgYDgyAiQ1CHd4aNaSUQyoArw7YZvcDkvxV7Uja+FcDpkgDFG8h0mT43VtGhAQ==" length="34309253"/>
+    </item>
+    <item>
       <title>Workbench 0.9.10</title>
       <pubDate>Wed, 18 Nov 2026 00:13:26 GMT</pubDate>
       <sparkle:version>61</sparkle:version>
