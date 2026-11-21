@@ -6,6 +6,22 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.13</title>
+      <pubDate>Sat, 21 Nov 2026 22:10:47 GMT</pubDate>
+      <sparkle:version>64</sparkle:version>
+      <sparkle:shortVersionString>0.9.13</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<p><strong>Claude can do more for you in Workbench.</strong> Open a new Claude tab and ask. Here are some things you can say now:</p>
+<ul><li>&quot;Start three agents, one for each of these bugs.&quot;</li><li>&quot;How are the agents doing?&quot;</li><li>&quot;Tell the login agent to add tests, and show me what it says when it&#x27;s done.&quot;</li><li>&quot;Remove the agents that are finished.&quot;</li><li>&quot;Reopen the conversation where we worked on the importer.&quot;</li><li>&quot;Open the diff for the settings screen.&quot;</li><li>&quot;Show me localhost:3000.&quot;</li><li>&quot;Start the dev server in a tab I can see.&quot;</li><li>&quot;Run the tests and tell me on my phone when they pass.&quot;</li><li>&quot;How much of my plan have I used?&quot;</li><li>&quot;How are the checks on this pull request?&quot;</li><li>&quot;Pin this project and rename it Recipes.&quot;</li></ul>
+<p><strong>Also in this update</strong></p>
+<ul><li><strong>Review each turn.</strong> When Claude finishes a turn that edited files, a card under the reply lists each file with its added and removed lines. Click a file to see that turn&#x27;s changes, or open the review tab&#x27;s new Latest Turn view to read only what the last turn did.</li><li><strong>Artifacts open in Workbench.</strong> Links to pages Claude publishes can open in their own tab, and you can split one beside the chat. The first link asks where you&#x27;d like them to open, and Settings › Claude › Open Artifacts changes it later.</li><li><strong>More room for tabs.</strong> The tab bar&#x27;s controls are now a + for a new Claude tab and an arrow menu for everything else, including shell tabs, agents, shortcuts, past sessions and accounts. Terminal and Chat are now icons.</li><li><strong>Copy a preview&#x27;s address.</strong> ⇧⌘C copies the current page&#x27;s address from a preview tab.</li><li><strong>A brighter finish.</strong> On an HDR display, the highlight that plays when a project finishes is brighter than white.</li><li><strong>Dictation leaves your headphones alone.</strong> With dictation turned on, Workbench could push Bluetooth headphones into their lower-quality call mode even when you weren&#x27;t dictating. It now touches the microphone only while you dictate.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.13-64/Workbench-0.9.13-64.zip" type="application/octet-stream" sparkle:edSignature="ybVVkJyAauZhMtpaImVFJ+HEymd6gBLieE+bY5MMkNgek6VLg4r62tlS+9fUZJ/mJw6t7crTC1Jc0AWJ5eBHCg==" length="34575025"/>
+    </item>
+    <item>
       <title>Workbench 0.9.12</title>
       <pubDate>Fri, 20 Nov 2026 13:08:34 GMT</pubDate>
       <sparkle:version>63</sparkle:version>
