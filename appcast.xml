@@ -6,6 +6,26 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.14</title>
+      <pubDate>Sun, 22 Nov 2026 19:37:06 GMT</pubDate>
+      <sparkle:version>65</sparkle:version>
+      <sparkle:shortVersionString>0.9.14</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench.</p>
+<p><strong>A browser in your tabs.</strong> Open any site in a Workbench tab, right beside your chat. Press ⌘L and type an address, a search, or a port number for a server on your Mac. Artifacts and dev servers open in the same browser.</p>
+<p><img src="https://workbenchapp.dev/images/0.9.14/browser-tab.png" alt="A Workbench tab showing a web page from a local dev server. Above the page are back, forward and reload buttons and an address field reading &quot;localhost:5173&quot;." style="max-width:100%;height:auto;border-radius:8px"></p>
+<p><strong>Also in this update</strong></p>
+<ul><li><strong>⌘T opens the New Tab page.</strong> With Claude, shell and browser tabs, agents, shortcuts and past sessions to choose from, ⌘T and the + button now show them all. Press ⌘T again to start Claude.</li></ul>
+<p><img src="https://workbenchapp.dev/images/0.9.14/new-tab-page.png" alt="The New Tab page for a project called Pantry. A Start Claude button sits above three smaller buttons: New Shell Tab, New Browser Tab, and New Agent on a Branch." style="max-width:100%;height:auto;border-radius:8px"></p>
+<ul><li><strong>Artifacts say where they open.</strong> Point at a page in the Artifacts panel and it offers Open in Tab, Open in Browser and Copy Link by name. A page that&#x27;s already open in a tab is highlighted, and clicking it takes you there.</li></ul>
+<p><img src="https://workbenchapp.dev/images/0.9.14/artifact-actions.png" alt="The Artifacts panel listing three pages. The first, Weekly Usage Dashboard, is highlighted and shows three actions under its name: Open in Tab, Open in Browser, and Copy Link." style="max-width:100%;height:auto;border-radius:8px"></p>
+<ul><li><strong>Starting Claude looks alive.</strong> A new chat shows light running around the message box and &quot;Starting Claude&quot; while Claude boots.</li><li><strong>Smoother waits.</strong> Compacting a conversation, side questions, opening a conversation, setup checks and starting an agent have gentler motion in place of a stock spinner. All of it follows your Motion setting.</li><li><strong>Click away from a picture.</strong> Clicking the dark space around a picture in the full-window viewer closes it.</li><li><strong>⌘W closes what you&#x27;re looking at.</strong> With Settings, the Overview or the New Tab page in front, ⌘W closes that page and leaves the tab underneath alone.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.14-65/Workbench-0.9.14-65.zip" type="application/octet-stream" sparkle:edSignature="XO4lvmpWvLOqTYTNZXrPboz7r0wDIhtQBoVYhL6b5xazB06uz9F32cNIH+b257CDXb7Hxem16WdxLH4AsNtJBw==" length="34963074"/>
+    </item>
+    <item>
       <title>Workbench 0.9.13</title>
       <pubDate>Sat, 21 Nov 2026 22:10:47 GMT</pubDate>
       <sparkle:version>64</sparkle:version>
