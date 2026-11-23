@@ -6,6 +6,22 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.9.15</title>
+      <pubDate>Mon, 23 Nov 2026 23:37:20 GMT</pubDate>
+      <sparkle:version>66</sparkle:version>
+      <sparkle:shortVersionString>0.9.15</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Here&#x27;s what&#x27;s new in today&#x27;s update to Workbench. This one is about making the app lighter on your Mac.</p>
+<p><strong>Lighter on your Mac while Claude works.</strong> The soft motion that shows a session is busy now runs at 30 frames a second instead of your display&#x27;s full rate, and the light that runs around the message box is much simpler to draw. On Macs with ProMotion displays, this should mean less background work for as long as a session is running.</p>
+<p><strong>Also in this update</strong></p>
+<ul><li><strong>Calm is the starting Motion level.</strong> If you&#x27;ve never picked a Motion level, Workbench now uses Calm: the small spinners and dots still move, and the sparkles, glows and start page hold still. If you picked a level yourself, it stays as you set it, and Full is still in Settings &gt; Appearance.</li><li><strong>No more beach ball with lots of projects.</strong> With dozens of projects or worktrees, the sidebar could pin Workbench at 100% CPU. It now stays quick however many you have.</li><li><strong>Pictures stay off your clipboard.</strong> Sending a message with pictures used to pass each one through your clipboard on its way to Claude, which could set off clipboard tools and briefly replace what you had copied. Pictures now go straight to Claude, and messages with several pictures send faster.</li><li><strong>Open HTML files as pages.</strong> When you&#x27;re viewing an HTML file, a new globe button in its header opens it in a browser tab so you see the page instead of its source.</li></ul>
+<p><img src="https://workbenchapp.dev/images/0.9.15/html-in-browser-tab.png" alt="A file tab showing the source of guide.html. In the header above the code, a globe button sits in the row of buttons on the right, between the copy and folder buttons." style="max-width:100%;height:auto;border-radius:8px"></p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.9.15-66/Workbench-0.9.15-66.zip" type="application/octet-stream" sparkle:edSignature="PquOs/d+ohfJa5OvJWgx50d0caLodW+f81QXrgC1Ab679K6sFEP+CHPpUR6AreeafZ+1xJPlGhExYw+tQZ+hAg==" length="34963156"/>
+    </item>
+    <item>
       <title>Workbench 0.9.14</title>
       <pubDate>Sun, 22 Nov 2026 19:37:06 GMT</pubDate>
       <sparkle:version>65</sparkle:version>
