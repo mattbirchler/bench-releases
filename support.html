@@ -32,7 +32,7 @@
 <main id="main">
   <div class="wrap page-head">
     <h1 class="display">Support</h1>
-    <p>Workbench is a free Mac app for running Claude Code, with an iPhone app that connects to it.</p>
+    <p>Workbench is a free Mac app for running Claude Code, with an iPhone app that connects to it. It can run OpenAI's Codex too, in beta.</p>
   </div>
 
   <div class="wrap">
@@ -68,6 +68,8 @@
       <p><strong>"Found the Mac, but Workbench isn't answering."</strong> Make sure Workbench is open on the Mac and <strong>Let my iPhone connect to Workbench</strong> is on in Settings &gt; iPhone.</p>
       <p><strong>No notifications on your phone.</strong> Turn on notifications in the iPhone app's Settings. Then, on the Mac, right-click each project you want to hear about and choose <strong>Send Notifications to iPhone</strong>. A bell shows on projects that notify.</p>
       <p><strong>Claude tabs say Claude Code isn't installed.</strong> Install it, then open a new Claude tab. Settings &gt; Setup shows where Workbench looked.</p>
+      <p><strong>There's no way to open a Codex tab.</strong> Workbench offers Codex once <a href="https://developers.openai.com/codex/cli">Codex</a> is installed. If it's installed and still missing, check that Codex is turned on in Settings &gt; Agents, where you also choose which agent new tabs run.</p>
+      <p><strong>A Codex tab asks you to review hooks.</strong> The first time, Codex asks you to trust the hooks Workbench passes it. Allow them: without them, Workbench can't tell whether Codex is working, waiting on you, or done.</p>
       <p><strong>macOS says Workbench was blocked from modifying other apps.</strong> Workbench is a terminal, and macOS counts whatever runs in its tabs as Workbench. When a command or Claude Code updates or deletes an app (such as <code>brew upgrade</code>, or a build that replaces an app it made before), macOS asks about Workbench. Other terminals like Terminal and iTerm get the same prompt. Workbench itself doesn't change other apps. To allow it, turn on Workbench in System Settings &gt; Privacy &amp; Security &gt; App Management. If you leave it off, only that one step fails.</p>
       <p><strong>Pull requests don't show up.</strong> Install the <a href="https://cli.github.com">GitHub CLI</a> and run <code>gh auth login</code> in a terminal.</p>
 
@@ -86,7 +88,7 @@
       <a href="privacy.html">Privacy</a>
       <a href="mailto:matt@birchtree.me">Contact</a>
     </nav>
-    <p class="legal">Made by <a href="https://birchtree.productions">Birchtree Productions</a>. Workbench is an independent app, not made by or affiliated with Anthropic. Claude and Claude Code are trademarks of Anthropic.</p>
+    <p class="legal">Made by <a href="https://birchtree.productions">Birchtree Productions</a>. Workbench is an independent app, not made by or affiliated with Anthropic or OpenAI. Claude and Claude Code are trademarks of Anthropic. Codex is a trademark of OpenAI.</p>
   </div>
 </footer>
 </body>

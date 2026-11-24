@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Workbench for Claude Code</title>
-<meta name="description" content="A free Mac app for running Claude Code across all your projects: terminal or chat in every tab, live diffs, agents on their own branches, 36 themes, and an iPhone app to keep up from anywhere.">
+<meta name="description" content="A free Mac app for running Claude Code across all your projects: terminal or chat in every tab, live diffs, agents on their own branches, 36 themes, and an iPhone app to keep up from anywhere. Codex works too, in beta.">
 <meta name="theme-color" content="#111522">
 <meta property="og:title" content="Workbench for Claude Code">
 <meta property="og:description" content="Run Claude across all your projects, control Claude Code running on a headless Mac, and keep an eye on everything from your iPhone.">
@@ -60,7 +60,7 @@
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <h1 class="display hero-title">A coding interface for how we work today<span class="caret" aria-hidden="true"></span></h1>
-      <p class="lede">Run Claude across all your projects, control Claude Code running on a headless Mac, and keep an eye on everything from your iPhone.</p>
+      <p class="lede">Run Claude across all your projects, control Claude Code running on a headless Mac, and keep an eye on everything from your iPhone. Codex works too, in beta.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" data-download href="https://github.com/mattbirchler/bench-releases/releases/latest/download/Workbench.dmg">
           <svg aria-hidden="true"><use href="#download"/></svg>Download for Mac
@@ -221,6 +221,24 @@
     </div>
     <figure class="feature-media">
       <img class="shot" src="assets/img/mac-plan.webp" alt="A Claude tab in chat view showing Claude's plan for a notebook export, with a question card asking you to approve it and buttons for each answer" width="2400" height="1577" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <h2 class="display">Codex too, in beta.</h2>
+      <p>Workbench is built for Claude Code, and it runs OpenAI's Codex in the same kind of tab. Codex tabs get the same chat, permission cards, past sessions, recaps, and iPhone app, with Codex's own models and effort levels right in the message box.</p>
+      <ul class="ticks">
+        <li>Choose which agent new tabs run, or open one of each from the ＋ menu.</li>
+        <li>Start an agent on its own branch with Codex, from the New Agent sheet or with <code>bench agent --with codex</code>.</li>
+        <li>Keep separate Claude and Codex accounts, and pick which ones each project uses.</li>
+        <li>Still Claude-only for now: answering Codex's own questions and plans from the chat, attaching pictures, and switching permission modes.</li>
+      </ul>
+    </div>
+    <figure class="feature-media">
+      <img class="shot" src="assets/img/codex-model-picker.webp" alt="The Switch Model list above a Codex message box, listing ten Codex models with a one-line description each, and effort levels from Low to Max underneath" width="1532" height="958" loading="lazy">
     </figure>
   </div>
 </section>
@@ -428,6 +446,7 @@ Field Notes  ~/Code/field-notes  agent/export</span>
       <h3>Nice to have</h3>
       <ul>
         <li>The <a href="https://cli.github.com">GitHub CLI</a> for pull requests, checks, and deploys</li>
+        <li><a href="https://developers.openai.com/codex/cli">Codex</a>, if you want to run it beside Claude Code (beta)</li>
         <li>The <a href="https://apps.apple.com/us/app/workbench-manage-your-agents/id6827762868">Workbench iPhone app</a> from the App Store</li>
         <li><a href="https://tailscale.com/download/mac">Tailscale</a> for the iPhone app and other Macs</li>
       </ul>
@@ -447,7 +466,7 @@ Field Notes  ~/Code/field-notes  agent/export</span>
       <a href="privacy.html">Privacy</a>
       <a href="mailto:matt@birchtree.me">Contact</a>
     </nav>
-    <p class="legal">Made by <a href="https://birchtree.productions">Birchtree Productions</a>. Workbench is an independent app, not made by or affiliated with Anthropic. Claude and Claude Code are trademarks of Anthropic. Built with Ghostty, Sparkle, and other open source projects.</p>
+    <p class="legal">Made by <a href="https://birchtree.productions">Birchtree Productions</a>. Workbench is an independent app, not made by or affiliated with Anthropic or OpenAI. Claude and Claude Code are trademarks of Anthropic. Codex is a trademark of OpenAI. Built with Ghostty, Sparkle, and other open source projects.</p>
   </div>
 </footer>
 </body>
