@@ -6,6 +6,28 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.10</title>
+      <pubDate>Tue, 24 Nov 2026 23:26:42 GMT</pubDate>
+      <sparkle:version>67</sparkle:version>
+      <sparkle:shortVersionString>0.10</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Workbench 0.10 is a big one. Alongside Claude Code, it can now run Codex, tabs have a cleaner new home, and file tabs have become a place to make quick edits yourself.</p>
+<p><strong>Codex, in beta.</strong> If you have OpenAI&#x27;s Codex installed, you can now open Codex tabs right next to your Claude Code ones. They get the same chat, sidebar states, past sessions, recaps and iPhone app. Its permission requests show up as cards you can allow or deny, and you can switch its model and effort right from the message box. Pick which agent new tabs run in Settings &gt; Agents. Claude Code is still what Workbench is built around, so Codex is marked Beta: its own multiple-choice questions and plans are still answered in its terminal, and a few things like attaching pictures and switching permission modes are Claude-only for now.</p>
+<p><img src="https://workbenchapp.dev/images/0.10/codex-model-picker.png" alt="The Switch Model list above a Codex message box. It lists ten models, from GPT-6.2 Sol to GPT-5.6 Luna, each with a one-line description, and a row of effort levels from Low to Max underneath." style="max-width:100%;height:auto;border-radius:8px"></p>
+<p><strong>Accounts for both agents.</strong> Settings &gt; Claude Accounts is now Settings &gt; Accounts, and it lists your Codex sign-ins too. Workbench finds extra Codex accounts on its own, and each project can pick which Claude account and which Codex account it uses.</p>
+<p><strong>Tabs, rethought.</strong> Tabs now sit in a row at the top of your terminal or chat, with an underline under the one you&#x27;re in, and the empty strip above them is gone, so your work gets that room back. Each tab says what its agent is doing in a word: Working, Needs you, Done or Ping. Two tabs in a split show as one tab with both names. The switch between a Claude tab&#x27;s terminal and chat now sits at the right end of the row.</p>
+<p><strong>Edit files in a file tab.</strong> Open a file and start typing. Press ⌘S to save, and the tab shows a dot while you have unsaved changes. If your agent changes the same file before you save, your edits stay put and Workbench asks whether to reload the file or keep yours. Closing a tab or quitting with unsaved work asks first.</p>
+<p><strong>Start an agent from a GitHub issue.</strong> The New Agent sheet has a From Issue button whenever the repo has open issues. Pick one and Workbench writes the prompt and names the branch for you, and the agent reads the issue and its comments itself.</p>
+<p><strong>See the simulators you left running.</strong> When iOS simulators are running, the sidebar shows how many next to the CPU and memory rings. Hover it to see how long each one has been on and how much memory it&#x27;s holding, and shut them down from there. You can turn this off in Settings &gt; General &gt; Mac Activity.</p>
+<p><img src="https://workbenchapp.dev/images/0.10/simulators.png" alt="The simulator count in the sidebar with its card open. It lists an iPhone 18 Pro and an iPad Pro, each with its iOS version, how long it has been running and its memory, plus Shut Down buttons." style="max-width:100%;height:auto;border-radius:8px"></p>
+<p><strong>Also in this update</strong></p>
+<ul><li><strong>Workbench&#x27;s own colors.</strong> The plain System look now uses Workbench&#x27;s own blue (mint in dark mode) instead of Claude&#x27;s orange, and the welcome opens in your theme from the first moment.</li><li><strong>Shorter permission cards.</strong> A one-line command no longer gets a card seven lines tall.</li><li><strong>No more stray ports badge.</strong> Every Claude tab showed a ports badge, because Claude Code now opens a small port of its own. Workbench leaves the agents&#x27; own ports out, so the badge only shows for servers you or your agent start.</li><li><strong>Sidebar rows stay put.</strong> A project row in the sidebar could go blank until you moved the pointer over it. That&#x27;s fixed.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/bench-releases/releases/download/v0.10-67/Workbench-0.1-67.zip" type="application/octet-stream" sparkle:edSignature="rQhDGod/N3rhdzJFL2DeTevThBJMXyV1uBQlmI2khwrg8ryD7KddbOcUxXD1+R+wAyWC0SK9R5/ZoXOKJhw8Cw==" length="35310937"/>
+    </item>
+    <item>
       <title>Workbench 0.9.15</title>
       <pubDate>Mon, 23 Nov 2026 23:37:20 GMT</pubDate>
       <sparkle:version>66</sparkle:version>
