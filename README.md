@@ -1,3 +1,9 @@
+> **Archived.** Workbench is open source and lives at
+> [github.com/mattbirchler/workbench](https://github.com/mattbirchler/workbench).
+> New releases are made there, and the website and update feed at
+> workbenchapp.dev are served from its `gh-pages` branch. The releases here
+> stay so their download links keep working.
+
 <p align="center">
   <img src="images/app-icon.png" width="128" alt="Workbench app icon">
 </p>
