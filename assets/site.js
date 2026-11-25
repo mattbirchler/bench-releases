@@ -3,12 +3,11 @@
 (function () {
   "use strict";
 
-  const RELEASES_REPO = "mattbirchler/bench-releases";
-  const RELEASES_API = `https://api.github.com/repos/${RELEASES_REPO}/releases?per_page=100`;
-  const RELEASES_PAGE = `https://github.com/${RELEASES_REPO}/releases/latest`;
-  // GitHub always serves the newest release's disk image at this address.
-  const LATEST_DMG = `${RELEASES_PAGE}/download/Workbench.dmg`;
-  const CACHE_KEY = "wb-releases-v3";
+  // Releases are made in the source repo. Those from before it went public
+  // stay in bench-releases, and both are listed.
+  const RELEASES_REPOS = ["mattbirchler/workbench", "mattbirchler/bench-releases"];
+  const releasesAPI = (repo) => `https://api.github.com/repos/${repo}/releases?per_page=100`;
+  const CACHE_KEY = "wb-releases-v4";
   const CACHE_MINUTES = 5;
 
   // A reload means "show me what's new", so it skips the saved copy.
@@ -30,13 +29,22 @@
         const cached = JSON.parse(sessionStorage.getItem(CACHE_KEY) || "null");
         if (!isReload() && cached && Date.now() - cached.at < CACHE_MINUTES * 60e3) return cached.releases;
       } catch (e) { /* no storage */ }
-      const response = await fetch(RELEASES_API, {
-        headers: { Accept: "application/vnd.github+json" },
-        cache: "no-cache",
-      });
-      if (!response.ok) throw new Error(`GitHub answered ${response.status}`);
-      const releases = (await response.json())
+      // One repo failing to answer still lists the other's releases.
+      const answers = await Promise.allSettled(RELEASES_REPOS.map(async (repo) => {
+        const response = await fetch(releasesAPI(repo), {
+          headers: { Accept: "application/vnd.github+json" },
+          cache: "no-cache",
+        });
+        if (!response.ok) throw new Error(`GitHub answered ${response.status}`);
+        return response.json();
+      }));
+      const found = answers.filter((a) => a.status === "fulfilled").flatMap((a) => a.value);
+      if (!answers.some((a) => a.status === "fulfilled")) throw answers[0].reason;
+      const seen = new Set();
+      const releases = found
         .filter((r) => !r.draft && !r.prerelease)
+        .filter((r) => !seen.has(r.tag_name) && seen.add(r.tag_name))
+        .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))
         .map((r) => {
           // The disk image when a release has one, otherwise the zip.
           const assets = r.assets || [];
@@ -62,13 +70,16 @@
     return releasesPromise;
   }
 
-  // Download buttons always point at the latest disk image, so they never go
-  // stale. Only the version number shown next to them comes from GitHub.
+  // Download buttons point at the newest release's disk image, in whichever
+  // repo it is. Until GitHub answers (or if it doesn't), they keep the
+  // address in the page, which always gives a release that updates itself.
   function wireDownloads() {
-    document.querySelectorAll("[data-download]").forEach((a) => { a.href = LATEST_DMG; });
     fetchReleases().then((releases) => {
       const latest = releases[0];
       if (!latest) return;
+      if (latest.format === "dmg") {
+        document.querySelectorAll("[data-download]").forEach((a) => { a.href = latest.download; });
+      }
       document.querySelectorAll("[data-latest-version]").forEach((el) => { el.textContent = latest.version; });
     }).catch(() => { /* the version text keeps its default */ });
   }
@@ -167,5 +178,5 @@
     if (event.persisted && Date.now() - loadedAt > CACHE_MINUTES * 60e3) location.reload();
   });
 
-  window.WB = { fetchReleases, RELEASES_PAGE, LATEST_DMG };
+  window.WB = { fetchReleases, RELEASES_REPOS };
 })();

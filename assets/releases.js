@@ -122,11 +122,14 @@
     status.innerHTML = "";
     status.className = "log-status error";
     const text = document.createElement("span");
-    text.textContent = `GitHub didn't send the release notes (${error.message}). This usually clears up within the hour. Until then, every release and its notes are on `;
-    const link = document.createElement("a");
-    link.href = "https://github.com/mattbirchler/bench-releases/releases";
-    link.textContent = "the GitHub releases page";
-    status.append(text, link, ".");
+    text.textContent = `GitHub didn't send the release notes (${error.message}). This usually clears up within the hour. Until then, every release and its notes are on GitHub: `;
+    const link = (repo, words) => {
+      const a = document.createElement("a");
+      a.href = `https://github.com/${repo}/releases`;
+      a.textContent = words;
+      return a;
+    };
+    status.append(text, link(WB.RELEASES_REPOS[0], "recent releases"), " and ", link(WB.RELEASES_REPOS[1], "older ones"), ".");
   }
 
   WB.fetchReleases().then((releases) => {
