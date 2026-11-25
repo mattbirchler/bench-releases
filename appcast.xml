@@ -6,6 +6,20 @@
     <description>Updates for Workbench, a Mac app for running Claude Code.</description>
     <language>en</language>
     <item>
+      <title>Workbench 0.10.1</title>
+      <pubDate>Wed, 25 Nov 2026 12:04:34 GMT</pubDate>
+      <sparkle:version>69</sparkle:version>
+      <sparkle:shortVersionString>0.10.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description><![CDATA[
+<p>Workbench is now open source. The code for the Mac app, the iPhone app and everything around them is on GitHub at github.com/mattbirchler/workbench under the MIT License, and new releases are posted there too. Nothing changes for you: Workbench keeps updating itself the same way.</p>
+<p><strong>Workbench for iPhone is on the App Store.</strong> The sidebar card, the welcome and Settings &gt; Remote Access now link to the App Store instead of TestFlight. If you closed the old TestFlight card, the new one shows once more.</p>
+<p><strong>Chat works with Claude you restarted yourself.</strong> If you quit Claude in a tab and started it again by hand, for example with <code>claude --continue</code>, the chat could say Claude wasn&#x27;t running and stop you from sending messages, even while Claude was visibly working. Now, when Claude is the program running in the tab and its message box is on screen, you can send from the chat. Permission cards and the Stop button still need the terminal for a Claude started this way.</p>
+      ]]></description>
+      <enclosure url="https://github.com/mattbirchler/workbench/releases/download/v0.10.1-69/Workbench-0.10.1-69.zip" type="application/octet-stream" sparkle:edSignature="QwKHot8fdbU2VSYv/0In/5ZjltRtepNEqBpB0kvNXhOJf3QIWo77izBv4NwISc5tvMDsV6yCzNsoJukWCrwGDw==" length="35316850"/>
+    </item>
+    <item>
       <title>Workbench 0.10</title>
       <pubDate>Tue, 24 Nov 2026 23:45:09 GMT</pubDate>
       <sparkle:version>68</sparkle:version>
